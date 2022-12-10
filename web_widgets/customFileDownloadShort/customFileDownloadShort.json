@@ -1,0 +1,53 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Label",
+      "name" : "label",
+      "type" : "text",
+      "defaultValue" : "Nom du fichier",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Donnée du document",
+      "name" : "donnee",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Style",
+      "name" : "bouton",
+      "type" : "choice",
+      "defaultValue" : "info",
+      "choiceValues" : [
+        "primary",
+        "success",
+        "danger",
+        "info",
+        "warning"
+      ],
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customFileDownloadShort",
+  "name" : "FileDownloadShort",
+  "lastUpdate" : 1666032934553,
+  "template" : "@customFileDownloadShort.tpl.html",
+  "controller" : "@customFileDownloadShort.ctrl.js",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "603ba352-1fb2-4b4e-a19f-cb6a6dfca583",
+      "name" : "bootstrap.min.css",
+      "type" : "css",
+      "order" : 1,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [
+    "ui.bootstrap"
+  ],
+  "type" : "widget",
+  "hasHelp" : false
+}

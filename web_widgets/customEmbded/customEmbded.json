@@ -1,0 +1,55 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Value",
+      "name" : "value",
+      "type" : "text",
+      "defaultValue" : "This is the initial value",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Color",
+      "name" : "color",
+      "type" : "choice",
+      "defaultValue" : "RebeccaPurple",
+      "choiceValues" : [
+        "RebeccaPurple",
+        "Chartreuse",
+        "Tomato",
+        "DeepSkyBlue"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "Background color on click",
+      "name" : "background",
+      "type" : "choice",
+      "defaultValue" : "Yellow",
+      "choiceValues" : [
+        "Yellow",
+        "LightGray"
+      ],
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customEmbded",
+  "name" : "embded",
+  "lastUpdate" : 1666032936637,
+  "template" : "@customEmbded.tpl.html",
+  "controller" : "@customEmbded.ctrl.js",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "fbb02b06-92a8-4335-8f4e-5cc411284469",
+      "name" : "iframe.css",
+      "type" : "css",
+      "order" : 1,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

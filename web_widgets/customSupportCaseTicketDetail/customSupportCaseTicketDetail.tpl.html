@@ -1,0 +1,55 @@
+<div ng-repeat="p in ctrl.results track by $index" ng-click="ctrl.selectRowHandler(p)">
+    <div class="row ticket">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+            <div class="panel panel-default" >
+                <div class="row padall">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="">
+                            <span class="icon title">{{p.title }}</span>
+                            <p class="pull-right">
+                                {{p.category | uiTranslate}} |
+                                <span ng-class="p.severity == 'Low' ? 'green b' : (p.severity == 'High') ? 'red b' : 'orange b' ">{{p.severity | uiTranslate}}</span>
+                                | via {{p.source | uiTranslate}}
+                            </p>
+                            <h4><span class="fa fa-map-marker icon" ng-class="p.severity == 'Low' ? 'green b' : (p.severity == 'High') ? 'red b' : 'orange b' "></span> {{p.city }}</h4>
+                            {{p.description | limitTo:250 }}<br/>
+                            <span ng-class="
+                                    p.status == 'New' ? 'red fa-exclamation-circle' :
+                                    (p.status == 'Onsite Visit Scheduled' || p.status == 'Schedule Onsite Visit') ? 'orange fa-user-md' :
+                                    (p.status == 'Closed') ? 'blue fa-smile-o' : 'grey fa-check' "
+                                  class="fa iconTiny pull-right">   {{p.status | uiTranslate}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="table-responsive">
+    
+    <div class="hidden-xs"
+         ng-repeat="options in [{'maxSize': 5, 'rotate': false}]"
+         ng-include="'/dataTable/pagination.html'">
+    </div>
+    <div class="visible-xs text-center"
+         ng-repeat="options in [{'maxSize': 3, 'rotate': true}]"
+         ng-include="'/dataTable/pagination.html'">
+    </div>
+
+    <script type="text/ng-template" id="/dataTable/pagination.html">
+        <pagination ng-if="ctrl.pagination.total > properties.pageSize"
+                    total-items="ctrl.pagination.total"
+                    items-per-page="properties.pageSize"
+                    direction-links="true"
+                    boundary-links="true"
+                    previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"
+                    rotate="{{options.rotate}}"
+                    max-size="{{options.maxSize}}"
+                    ng-model="ctrl.pagination.currentPage"
+                    ng-change="ctrl.paginationHandler()">
+        </pagination>
+    </script>
+</div>

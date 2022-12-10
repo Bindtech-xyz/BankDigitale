@@ -1,0 +1,23 @@
+<div class="row"> 
+    <div> 
+        <div class="col-xs-12 img-thumbnail">
+            <!-- LINE 1  -->
+            <div class="row"> 
+                <div class="col-xs-2"><p class="text-left"><b>Date décision:</b></p></div>
+                <div class="col-xs-10"><p class="text-left">{{properties.afficheDetails.dateDecision | date:'dd MMM yyyy à HH:mm'}} - <span class="label label-success">{{properties.afficheDetails.dateDecision | dateAgo }}</span></p></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8"><p class="text-left" ng-show="{{properties.afficheDetails.nbJengagement > 0}}">Une notification d'engagement sera envoyée, <span class="label label-success">{{properties.afficheDetails.nbJengagement}}</span> jour(s) après la date de décision.</p></div>
+            </div> 
+            <!-- LINE 2 -->
+            <div class="row"> 
+                <div class="col-xs-2"><p class="text-left"><b>Avis :</b></p></div>
+                <div class="col-xs-8"><p class="text-left">
+                    {{properties.afficheDetails.avis}}
+                </p>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>

@@ -1,0 +1,92 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "id" : "pendingTaskItem",
+  "name" : "pendingTaskItem",
+  "lastUpdate" : 1666032935588,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<i class=\"glyphicon glyphicon-edit\" title=\"Task Name\"></i> : <em>{{task.displayName}}</em><br/>\n<i class=\"glyphicon glyphicon-calendar\" title=\"Assigned Date\"></i> : <em>{{formatDate|uiDate}}</em><br/>\n<i class=\"glyphicon glyphicon-user\" title=\"Assigned User\"></i> : <em>{{assignedUser.firstname}} {{assignedUser.lastname|uppercase}}</em><br/>"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "1d438135-b683-4c55-aed7-2d40772d7c39",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "task" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "assignedUser" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user/{{task.assigned_id}}"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "formatDate" : {
+      "type" : "expression",
+      "value" : [
+        "var formatDate = $data.task.assigned_date.split(\".\")",
+        "",
+        "",
+        "return formatDate[0];"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

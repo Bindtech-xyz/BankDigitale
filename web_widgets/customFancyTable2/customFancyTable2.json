@@ -1,0 +1,46 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Headers",
+      "name" : "headers",
+      "type" : "collection",
+      "defaultValue" : [
+        "Id",
+        "Name",
+        "Description",
+        "Date"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "Available values",
+      "name" : "availableValues",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Columns key",
+      "name" : "columnsKey",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Selected Row",
+      "name" : "selectedRow",
+      "type" : "text",
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customFancyTable2",
+  "name" : "fancyTable2",
+  "lastUpdate" : 1666032936291,
+  "template" : "@customFancyTable2.tpl.html",
+  "controller" : "@customFancyTable2.ctrl.js",
+  "custom" : true,
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

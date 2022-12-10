@@ -1,0 +1,131 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "id" : "messagePillFragment",
+  "name" : "messagePillFragment",
+  "lastUpdate" : 1666032936471,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<i class=\"glyphicon glyphicon-chevron-right\"></i><strong>{{message.toGroup|uppercase}}</strong>:<br/><i>{{message.message}}</i><br/><i class=\"glyphicon glyphicon-user\"></i><strong> {{sender.userName}} </strong><i class=\"glyphicon glyphicon-time\"></i><strong>  {{message.messageTimestamp|uiDate}}</strong>"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "f9be1a57-7c8f-42a7-8044-2051106e5359",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      },
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 6,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : ""
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "6c78233b-3e1a-47fc-84ed-2fedc0706d63",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "sender" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user/{{message.sender}}"
+      ],
+      "exposed" : false
+    },
+    "message" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    }
+  },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

@@ -1,0 +1,24 @@
+{
+  "modelVersion" : "2.3",
+  "properties" : [ ],
+  "id" : "customCurrency",
+  "name" : "currency",
+  "lastUpdate" : 1666475480672,
+  "template" : "@customCurrency.tpl.html",
+  "controller" : "@customCurrency.ctrl.js",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "e798cab0-0ef9-47a9-9dac-d82749327bf6",
+      "name" : "currency-format.min.js",
+      "type" : "js",
+      "order" : 1,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [
+    "currencyFormat"
+  ],
+  "type" : "widget",
+  "hasHelp" : false
+}

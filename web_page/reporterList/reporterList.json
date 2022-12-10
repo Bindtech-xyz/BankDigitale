@@ -1,0 +1,676 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "id" : "reporterList",
+  "name" : "reporterList",
+  "lastUpdate" : 1666032936513,
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 1,
+          "lg" : 1
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "84d960bc-3dad-4e8d-b28c-4dd2d1ce115e",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [ ]
+        ]
+      },
+      {
+        "type" : "container",
+        "dimension" : {
+          "md" : 10,
+          "sm" : 12,
+          "xs" : 12,
+          "lg" : 10
+        },
+        "propertyValues" : {
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "container-box-shadow-padding"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          }
+        },
+        "reference" : "7591ac40-def2-442a-a7fc-c086130d350a",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "description" : "Auto generate ui for business object \"com.company.ticketing.Reporter\"",
+        "rows" : [
+          [
+            {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : "container-box-shadow"
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable",
+                  "value" : ""
+                }
+              },
+              "reference" : "88bb1a2e-7b04-4f20-a25b-d2d9ba9b542e",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "description" : "\"com.company.ticketing.Reporter\" object from \"allReporters\" variable",
+              "rows" : [
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "md" : 12,
+                      "sm" : 12,
+                      "xs" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "level" : {
+                        "type" : "constant",
+                        "value" : "Level 4"
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "container-header"
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "List of Reporters"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "left"
+                      },
+                      "dimension" : {
+                        "type" : "constant",
+                        "value" : 12
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : true
+                      }
+                    },
+                    "reference" : "be17f14d-1301-4b1c-b4da-a47481a76ca7",
+                    "hasValidationError" : false,
+                    "id" : "pbTitle",
+                    "description" : ""
+                  }
+                ],
+                [
+                  {
+                    "type" : "container",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "container-box-content"
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "repeatedCollection" : {
+                        "type" : "variable",
+                        "value" : ""
+                      }
+                    },
+                    "reference" : "db60b44d-ba4e-4412-93ba-d4f72c3b2a91",
+                    "hasValidationError" : false,
+                    "id" : "pbContainer",
+                    "rows" : [
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "xs" : 12,
+                            "sm" : 12,
+                            "md" : 8,
+                            "lg" : 8
+                          },
+                          "propertyValues" : {
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "hidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "required" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "minLength" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "maxLength" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "readOnly" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "labelHidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "Filter Reporters"
+                            },
+                            "labelPosition" : {
+                              "type" : "constant",
+                              "value" : "left"
+                            },
+                            "labelWidth" : {
+                              "type" : "constant",
+                              "value" : 4
+                            },
+                            "placeholder" : {
+                              "type" : "interpolation",
+                              "value" : ""
+                            },
+                            "value" : {
+                              "type" : "variable",
+                              "value" : "reporterFilter"
+                            },
+                            "type" : {
+                              "type" : "constant",
+                              "value" : "text"
+                            },
+                            "min" : {
+                              "type" : "constant"
+                            },
+                            "max" : {
+                              "type" : "constant"
+                            },
+                            "step" : {
+                              "type" : "constant",
+                              "value" : 1
+                            },
+                            "allowHTML" : {
+                              "type" : "constant",
+                              "value" : true
+                            }
+                          },
+                          "reference" : "3ddad8a0-c5fb-4896-8590-3785320d17f0",
+                          "hasValidationError" : false,
+                          "id" : "pbInput"
+                        },
+                        {
+                          "type" : "container",
+                          "dimension" : {
+                            "xs" : 12,
+                            "sm" : 12,
+                            "md" : 4,
+                            "lg" : 4
+                          },
+                          "propertyValues" : {
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "hidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "repeatedCollection" : {
+                              "type" : "variable",
+                              "value" : ""
+                            }
+                          },
+                          "reference" : "c69144a8-07fa-41e0-8805-746f4a802d99",
+                          "hasValidationError" : false,
+                          "id" : "pbContainer",
+                          "rows" : [
+                            [
+                              {
+                                "type" : "container",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "repeatedCollection" : {
+                                    "type" : "variable",
+                                    "value" : ""
+                                  }
+                                },
+                                "reference" : "b8ca8488-2372-4a62-b853-8ab7277789cc",
+                                "hasValidationError" : false,
+                                "id" : "pbContainer",
+                                "rows" : [
+                                  [
+                                    {
+                                      "type" : "component",
+                                      "dimension" : {
+                                        "xs" : 12,
+                                        "sm" : 12,
+                                        "md" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "hidden" : {
+                                          "type" : "expression",
+                                          "value" : "!allReporters_selected"
+                                        },
+                                        "text" : {
+                                          "type" : "interpolation",
+                                          "value" : "<i class=\"glyphicon glyphicon-eye-open\"></i> {{ \"View\" | uiTranslate }}"
+                                        },
+                                        "type" : {
+                                          "type" : "constant",
+                                          "value" : "page"
+                                        },
+                                        "targetUrl" : {
+                                          "type" : "constant",
+                                          "value" : "http://"
+                                        },
+                                        "pageToken" : {
+                                          "type" : "constant",
+                                          "value" : "reporterDetails"
+                                        },
+                                        "processName" : {
+                                          "type" : "constant"
+                                        },
+                                        "processVersion" : {
+                                          "type" : "constant"
+                                        },
+                                        "taskId" : {
+                                          "type" : "constant"
+                                        },
+                                        "caseId" : {
+                                          "type" : "constant"
+                                        },
+                                        "target" : {
+                                          "type" : "constant",
+                                          "value" : "_self"
+                                        },
+                                        "appToken" : {
+                                          "type" : "constant"
+                                        },
+                                        "urlParams" : {
+                                          "type" : "expression",
+                                          "value" : "setReporterId"
+                                        },
+                                        "alignment" : {
+                                          "type" : "constant",
+                                          "value" : "center"
+                                        },
+                                        "buttonStyle" : {
+                                          "type" : "constant",
+                                          "value" : "success"
+                                        },
+                                        "allowHTML" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        }
+                                      },
+                                      "reference" : "ce1d2433-e015-4486-9ee6-c68e24edeca0",
+                                      "hasValidationError" : false,
+                                      "id" : "pbLink"
+                                    }
+                                  ]
+                                ]
+                              },
+                              {
+                                "type" : "container",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "repeatedCollection" : {
+                                    "type" : "variable",
+                                    "value" : ""
+                                  }
+                                },
+                                "reference" : "f54f9d1b-6e09-4eaa-93ca-dbb5c39c5cd6",
+                                "hasValidationError" : false,
+                                "id" : "pbContainer",
+                                "rows" : [
+                                  [
+                                    {
+                                      "type" : "component",
+                                      "dimension" : {
+                                        "xs" : 12,
+                                        "sm" : 12,
+                                        "md" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "hidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "text" : {
+                                          "type" : "interpolation",
+                                          "value" : "<i class=\"glyphicon glyphicon-plus\"></i> {{ \"Create\" | uiTranslate }}"
+                                        },
+                                        "type" : {
+                                          "type" : "constant",
+                                          "value" : "process"
+                                        },
+                                        "targetUrl" : {
+                                          "type" : "constant",
+                                          "value" : "http://"
+                                        },
+                                        "pageToken" : {
+                                          "type" : "constant"
+                                        },
+                                        "processName" : {
+                                          "type" : "expression",
+                                          "value" : "newReporter[0].name"
+                                        },
+                                        "processVersion" : {
+                                          "type" : "expression",
+                                          "value" : "newReporter[0].version"
+                                        },
+                                        "taskId" : {
+                                          "type" : "constant"
+                                        },
+                                        "caseId" : {
+                                          "type" : "constant"
+                                        },
+                                        "target" : {
+                                          "type" : "constant",
+                                          "value" : "_self"
+                                        },
+                                        "appToken" : {
+                                          "type" : "constant"
+                                        },
+                                        "urlParams" : {
+                                          "type" : "constant"
+                                        },
+                                        "alignment" : {
+                                          "type" : "constant",
+                                          "value" : "center"
+                                        },
+                                        "buttonStyle" : {
+                                          "type" : "constant",
+                                          "value" : "primary"
+                                        },
+                                        "allowHTML" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        }
+                                      },
+                                      "reference" : "9976c5b6-bb0e-4624-b95d-e912e1ab5540",
+                                      "hasValidationError" : false,
+                                      "id" : "pbLink"
+                                    }
+                                  ]
+                                ]
+                              }
+                            ]
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "md" : 12,
+                            "sm" : 12,
+                            "xs" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "hidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "allowHTML" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "headers" : {
+                              "type" : "constant",
+                              "value" : [
+                                "First Name",
+                                "Last Name",
+                                "Email",
+                                "Twitter Handler",
+                                "Bonita Username"
+                              ]
+                            },
+                            "type" : {
+                              "type" : "constant",
+                              "value" : "Variable"
+                            },
+                            "apiUrl" : {
+                              "type" : "constant",
+                              "value" : "../API/"
+                            },
+                            "params" : {
+                              "type" : "constant"
+                            },
+                            "content" : {
+                              "type" : "expression",
+                              "value" : "allReporters"
+                            },
+                            "columnsKey" : {
+                              "type" : "constant",
+                              "value" : [
+                                "firstName",
+                                "lastName",
+                                "email",
+                                "twitterId",
+                                "bonitaUsername  + \"  (#\" + bonitaUserId + \")\""
+                              ]
+                            },
+                            "sortColumns" : {
+                              "type" : "constant"
+                            },
+                            "selectedRow" : {
+                              "type" : "variable",
+                              "value" : "allReporters_selected"
+                            },
+                            "pageSize" : {
+                              "type" : "constant",
+                              "value" : 10
+                            },
+                            "filter" : {
+                              "type" : "expression",
+                              "value" : "reporterFilter"
+                            },
+                            "striped" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "condensed" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "bordered" : {
+                              "type" : "constant",
+                              "value" : false
+                            }
+                          },
+                          "reference" : "8b843872-a2c2-4c2e-b686-8267e8c95ffd",
+                          "hasValidationError" : false,
+                          "id" : "pbDataTable"
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 1,
+          "lg" : 1
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "fad2c0fb-49c9-410c-ac7f-ed2cb8d9f44a",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [ ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "2ef63a66-1c1d-4e91-a4a8-bb4ab7e78c4f",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "fa509c77-d60f-4901-ad5d-6a559cf4f57e",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "allReporters" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"find [com.company.ticketing.Reporter]\",\"businessObjectName\":\"Reporter\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.company.ticketing.Reporter\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"1000\"}}"
+      ],
+      "exposed" : false
+    },
+    "allReporters_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
+    },
+    "reporterFilter" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "newReporter" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/process?f=name={{newReporterProcessName}}&p=0&c=10&o=version%20desc&f=activationState=ENABLED"
+      ],
+      "exposed" : false
+    },
+    "setReporterId" : {
+      "type" : "expression",
+      "value" : [
+        "return {\"id\": $data.allReporters_selected.bonitaUserId}"
+      ],
+      "exposed" : false
+    },
+    "newReporterProcessName" : {
+      "type" : "constant",
+      "value" : [
+        "createReporter"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "e72de4d6-8057-4267-a7a2-e038aac78de5",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer",
+  "displayName" : "Ticketing - Reporter List"
+}

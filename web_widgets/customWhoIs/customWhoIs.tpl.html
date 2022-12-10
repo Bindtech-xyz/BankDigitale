@@ -1,0 +1,22 @@
+<div class="row"> 
+    <div> 
+        <div class="col-xs-12 img-thumbnail">
+            <!-- LINE 1  -->
+            <div class="row"> 
+                <div class="col-xs-4">
+                    <p class="text-left">Bienvenue, <b>{{properties.userInfo.lastname | uppercase }} {{properties.userInfo.firstname }}</b></p>
+                </div>
+                
+                <div class="col-xs-4">
+                    <!--<p class="text-left"><b>Date : </b>{{properties.today | date:'EEEE dd MMM yyyy'}} </p>-->
+                    <p class="text-center">{{ today | date:'EEEE dd MMM yyyy hh:mm' | uppercase}}</p>
+                    
+                     <!-- <p class="text-center"><span class="label label-warning">[] en attente(s)</span> | <span class="label label-info">[] assignée(s)</span></p> -->
+                </div>
+                <div class="col-xs-4">
+                    <p class="text-right">Dossiers en attente(s) : <b><span class="label label-danger">{{properties.enAttente}}</span></b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

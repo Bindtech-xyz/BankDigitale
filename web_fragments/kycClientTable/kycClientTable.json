@@ -1,0 +1,584 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "id" : "kycClientTable",
+  "name" : "kycClientTable",
+  "lastUpdate" : 1666032935064,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 2,
+          "lg" : 2
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "N° Dossier"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{process.caseId}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "effe3519-f047-42ce-b75e-b1ad195622cf",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      },
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 2,
+          "lg" : 2
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Indice"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{oneClientData.indice}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "84e1d103-0544-4a1f-a418-850f4f72aa60",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      },
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 2,
+          "lg" : 2
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Nom du client"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{oneClientData.nomClient}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "4029fed5-3ef7-4c05-a12f-a81e581848ab",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      },
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 3,
+          "lg" : 3
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Chargé"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<i class=\"glyphicon glyphicon-user text-primary\" title=\"Initiateur\"></i> {{oneClientData.prenomCharge}} {{oneClientData.nomCharge}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "d4fcce16-7dca-4d13-ae3d-c08760a118f8",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      },
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 1,
+          "lg" : 1
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Score"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{oneClientData.score}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "084baf65-37b7-4d88-946d-fd7c28af3911",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      },
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 2,
+          "lg" : 2
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "ba89805f-9586-4a5a-ba93-4585718a07a1",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : "vertical-bottom"
+                },
+                "hidden" : {
+                  "type" : "expression",
+                  "value" : "process.assigned_id"
+                },
+                "repeatedCollection" : {
+                  "type" : "variable",
+                  "value" : ""
+                }
+              },
+              "reference" : "b8f37f14-6566-4a8e-88b1-94b39495b2d7",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "disabled" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "label" : {
+                        "type" : "interpolation",
+                        "value" : "<i class=\"glyphicon glyphicon-edit\" title=\"Traiter\"></i> Traiter"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "right"
+                      },
+                      "buttonStyle" : {
+                        "type" : "constant",
+                        "value" : "success"
+                      },
+                      "action" : {
+                        "type" : "constant",
+                        "value" : "PUT"
+                      },
+                      "assign" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "url" : {
+                        "type" : "interpolation",
+                        "value" : "../API/bpm/humanTask/{{process.id}}"
+                      },
+                      "responseStatusCode" : {
+                        "type" : "variable",
+                        "value" : ""
+                      },
+                      "dataToSend" : {
+                        "type" : "expression",
+                        "value" : "selectedCaseAutoAssign"
+                      },
+                      "dataFromSuccess" : {
+                        "type" : "variable",
+                        "value" : "actionResponse"
+                      },
+                      "closeOnSuccess" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "dataFromError" : {
+                        "type" : "variable",
+                        "value" : "actionResponse"
+                      },
+                      "targetUrlOnSuccess" : {
+                        "type" : "interpolation",
+                        "value" : "{{ selectedCaseTaskUrl }}"
+                      },
+                      "collectionToModify" : {
+                        "type" : "variable"
+                      },
+                      "modalId" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "collectionPosition" : {
+                        "type" : "constant",
+                        "value" : "Last"
+                      },
+                      "valueToAdd" : {
+                        "type" : "constant"
+                      },
+                      "removeItem" : {
+                        "type" : "variable"
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : true
+                      }
+                    },
+                    "reference" : "0fdd5442-df37-4860-b1b1-a2458a8cda0b",
+                    "hasValidationError" : false,
+                    "id" : "pbButton"
+                  }
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : "vertical-bottom"
+                },
+                "hidden" : {
+                  "type" : "expression",
+                  "value" : "!process.assigned_id"
+                },
+                "repeatedCollection" : {
+                  "type" : "variable",
+                  "value" : ""
+                }
+              },
+              "reference" : "76e7b217-7f5f-4b75-b48d-9215f3399f80",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "<i class=\"glyphicon glyphicon-eye-open\" title=\"Afficher\"></i> Afficher"
+                      },
+                      "type" : {
+                        "type" : "constant",
+                        "value" : "URL"
+                      },
+                      "targetUrl" : {
+                        "type" : "expression",
+                        "value" : "selectedCaseTaskUrl"
+                      },
+                      "pageToken" : {
+                        "type" : "constant"
+                      },
+                      "processName" : {
+                        "type" : "constant"
+                      },
+                      "processVersion" : {
+                        "type" : "constant"
+                      },
+                      "taskId" : {
+                        "type" : "constant"
+                      },
+                      "caseId" : {
+                        "type" : "constant"
+                      },
+                      "target" : {
+                        "type" : "constant",
+                        "value" : "_self"
+                      },
+                      "appToken" : {
+                        "type" : "constant"
+                      },
+                      "urlParams" : {
+                        "type" : "constant"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "right"
+                      },
+                      "buttonStyle" : {
+                        "type" : "constant",
+                        "value" : "info"
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : true
+                      }
+                    },
+                    "reference" : "cb5b8671-7aeb-4d3c-a516-f095ceded005",
+                    "hasValidationError" : false,
+                    "id" : "pbLink"
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "process" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "clientData" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByCaseId [xyz.bindtech.model.OuvertureCompte]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"findByCaseId\",\"displayName\":\"findByCaseId\"},\"id\":\"xyz.bindtech.model.OuvertureCompte\",\"filters\":[{\"name\":\"caseId\",\"type\":\"LONG\",\"collection\":false,\"value\":\"{{process.caseId}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"1\"}}"
+      ],
+      "exposed" : false
+    },
+    "oneClientData" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.clientData[0];"
+      ],
+      "exposed" : false
+    },
+    "actionResponse" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "session" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "selectedCaseTaskUrl" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.processDefinition && $data.processDefinition.length && $data.process) { ",
+        "    var process = $data.processDefinition[0]; ",
+        "    // var task = $data.taskId;",
+        "    return \"/bonita/portal/resource/taskInstance/\"+ encodeURI(process.name) +\"/\"+ encodeURI(process.version) +\"/\"+ encodeURI($data.process.name) +\"/content/?id=\"+ $data.process.id +\"&indiceId=\"+ $data.oneClientData.indice +\"&senderUrl=\"+ window.self.location.href;",
+        "    ",
+        "    //return \"/bonita/portal/resource/taskInstance/\"+ encodeURI(process.name) +\"/\"+ encodeURI(process.version) +\"/\"+ encodeURI($data.process.name) +\"/content/?id=\"+ $data.process.id +\"&senderUrl=\"+ window.self.location.href;",
+        "} "
+      ],
+      "exposed" : false
+    },
+    "selectedCaseAutoAssign" : {
+      "type" : "expression",
+      "value" : [
+        "return { 'assigned_id': $data.session.user_id }; "
+      ],
+      "exposed" : false
+    },
+    "processDefinition" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    }
+  },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

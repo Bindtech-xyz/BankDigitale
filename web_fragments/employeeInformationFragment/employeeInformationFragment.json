@@ -1,0 +1,1485 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "id" : "employeeInformationFragment",
+  "name" : "employeeInformationFragment",
+  "lastUpdate" : 1666032935580,
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "2d8fb21a-12b3-41ee-a59c-6f961b5af8ef",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "tabsContainer",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "vertical" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "type" : {
+                  "type" : "constant",
+                  "value" : "tabs"
+                }
+              },
+              "reference" : "5d0c408f-e8c1-40d1-853e-8fd1c431c7c1",
+              "hasValidationError" : false,
+              "id" : "pbTabsContainer",
+              "tabList" : [
+                {
+                  "type" : "tabContainer",
+                  "dimension" : {
+                    "xs" : 12,
+                    "sm" : 12,
+                    "md" : 12,
+                    "lg" : 12
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "disabled" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "title" : {
+                      "type" : "interpolation",
+                      "value" : "Personal details"
+                    },
+                    "active" : {
+                      "type" : "variable",
+                      "value" : ""
+                    },
+                    "allowHTML" : {
+                      "type" : "constant",
+                      "value" : true
+                    }
+                  },
+                  "reference" : "48ad6206-ded8-4df1-93ad-b481695637a6",
+                  "hasValidationError" : false,
+                  "id" : "pbTabContainer",
+                  "container" : {
+                    "type" : "container",
+                    "dimension" : {
+                      "xs" : 12
+                    },
+                    "propertyValues" : { },
+                    "reference" : "ffb3b650-f8ed-4afc-aa0f-0f34d454b681",
+                    "hasValidationError" : false,
+                    "id" : "pbContainer",
+                    "rows" : [
+                      [
+                        {
+                          "type" : "container",
+                          "dimension" : {
+                            "xs" : 12,
+                            "sm" : 12,
+                            "md" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "hidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "repeatedCollection" : {
+                              "type" : "variable",
+                              "value" : ""
+                            }
+                          },
+                          "reference" : "eb4a57c5-6cbc-4ac8-be07-fe011b291a8b",
+                          "hasValidationError" : false,
+                          "id" : "pbContainer",
+                          "rows" : [
+                            [
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "required" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "minLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "maxLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "readOnly" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  },
+                                  "labelHidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "label" : {
+                                    "type" : "interpolation",
+                                    "value" : "First Name"
+                                  },
+                                  "labelPosition" : {
+                                    "type" : "constant",
+                                    "value" : "top"
+                                  },
+                                  "labelWidth" : {
+                                    "type" : "constant",
+                                    "value" : 4
+                                  },
+                                  "placeholder" : {
+                                    "type" : "interpolation"
+                                  },
+                                  "value" : {
+                                    "type" : "variable",
+                                    "value" : "person[0].firstName"
+                                  },
+                                  "type" : {
+                                    "type" : "constant",
+                                    "value" : "text"
+                                  },
+                                  "min" : {
+                                    "type" : "constant"
+                                  },
+                                  "max" : {
+                                    "type" : "constant"
+                                  },
+                                  "step" : {
+                                    "type" : "constant",
+                                    "value" : 1
+                                  },
+                                  "allowHTML" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  }
+                                },
+                                "reference" : "658f2838-3467-4c74-8bf6-76bdb7696e15",
+                                "hasValidationError" : false,
+                                "id" : "pbInput"
+                              },
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "required" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "minLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "maxLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "readOnly" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  },
+                                  "labelHidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "label" : {
+                                    "type" : "interpolation",
+                                    "value" : "Last Name"
+                                  },
+                                  "labelPosition" : {
+                                    "type" : "constant",
+                                    "value" : "top"
+                                  },
+                                  "labelWidth" : {
+                                    "type" : "constant",
+                                    "value" : 4
+                                  },
+                                  "placeholder" : {
+                                    "type" : "interpolation"
+                                  },
+                                  "value" : {
+                                    "type" : "variable",
+                                    "value" : "person[0].lastName"
+                                  },
+                                  "type" : {
+                                    "type" : "constant",
+                                    "value" : "text"
+                                  },
+                                  "min" : {
+                                    "type" : "constant"
+                                  },
+                                  "max" : {
+                                    "type" : "constant"
+                                  },
+                                  "step" : {
+                                    "type" : "constant",
+                                    "value" : 1
+                                  },
+                                  "allowHTML" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  }
+                                },
+                                "reference" : "eaa14401-2f0f-49a4-babd-ad907281bd45",
+                                "hasValidationError" : false,
+                                "id" : "pbInput"
+                              }
+                            ],
+                            [
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "required" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "minLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "maxLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "readOnly" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  },
+                                  "labelHidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "label" : {
+                                    "type" : "interpolation",
+                                    "value" : "Email"
+                                  },
+                                  "labelPosition" : {
+                                    "type" : "constant",
+                                    "value" : "top"
+                                  },
+                                  "labelWidth" : {
+                                    "type" : "constant",
+                                    "value" : 4
+                                  },
+                                  "placeholder" : {
+                                    "type" : "interpolation"
+                                  },
+                                  "value" : {
+                                    "type" : "variable",
+                                    "value" : "person[0].email"
+                                  },
+                                  "type" : {
+                                    "type" : "constant",
+                                    "value" : "text"
+                                  },
+                                  "min" : {
+                                    "type" : "constant"
+                                  },
+                                  "max" : {
+                                    "type" : "constant"
+                                  },
+                                  "step" : {
+                                    "type" : "constant",
+                                    "value" : 1
+                                  },
+                                  "allowHTML" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  }
+                                },
+                                "reference" : "60900040-757a-4ec1-aea2-c58c5c188ee1",
+                                "hasValidationError" : false,
+                                "id" : "pbInput"
+                              },
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "required" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "minLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "maxLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "readOnly" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  },
+                                  "labelHidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "label" : {
+                                    "type" : "interpolation",
+                                    "value" : "Mobile"
+                                  },
+                                  "labelPosition" : {
+                                    "type" : "constant",
+                                    "value" : "top"
+                                  },
+                                  "labelWidth" : {
+                                    "type" : "constant",
+                                    "value" : 4
+                                  },
+                                  "placeholder" : {
+                                    "type" : "interpolation"
+                                  },
+                                  "value" : {
+                                    "type" : "variable",
+                                    "value" : "person[0].phone"
+                                  },
+                                  "type" : {
+                                    "type" : "constant",
+                                    "value" : "text"
+                                  },
+                                  "min" : {
+                                    "type" : "constant"
+                                  },
+                                  "max" : {
+                                    "type" : "constant"
+                                  },
+                                  "step" : {
+                                    "type" : "constant",
+                                    "value" : 1
+                                  },
+                                  "allowHTML" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  }
+                                },
+                                "reference" : "06c03bbe-2c3a-4bf5-b730-893746fd3008",
+                                "hasValidationError" : false,
+                                "id" : "pbInput"
+                              }
+                            ],
+                            [
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "required" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "minLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "maxLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "readOnly" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  },
+                                  "labelHidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "label" : {
+                                    "type" : "interpolation",
+                                    "value" : "Gender"
+                                  },
+                                  "labelPosition" : {
+                                    "type" : "constant",
+                                    "value" : "top"
+                                  },
+                                  "labelWidth" : {
+                                    "type" : "constant",
+                                    "value" : 4
+                                  },
+                                  "placeholder" : {
+                                    "type" : "interpolation"
+                                  },
+                                  "value" : {
+                                    "type" : "variable",
+                                    "value" : "person[0].gender"
+                                  },
+                                  "type" : {
+                                    "type" : "constant",
+                                    "value" : "text"
+                                  },
+                                  "min" : {
+                                    "type" : "constant"
+                                  },
+                                  "max" : {
+                                    "type" : "constant"
+                                  },
+                                  "step" : {
+                                    "type" : "constant",
+                                    "value" : 1
+                                  },
+                                  "allowHTML" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  }
+                                },
+                                "reference" : "b329f657-3cc0-4aaa-8f1f-cc098e3103a4",
+                                "hasValidationError" : false,
+                                "id" : "pbInput"
+                              },
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "readOnly" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  },
+                                  "required" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "labelHidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "label" : {
+                                    "type" : "interpolation",
+                                    "value" : "Date Of Birth"
+                                  },
+                                  "labelPosition" : {
+                                    "type" : "constant",
+                                    "value" : "top"
+                                  },
+                                  "labelWidth" : {
+                                    "type" : "constant",
+                                    "value" : 4
+                                  },
+                                  "value" : {
+                                    "type" : "variable",
+                                    "value" : "person[0].dateOfBirth"
+                                  },
+                                  "dateFormat" : {
+                                    "type" : "constant",
+                                    "value" : "MM/dd/yyyy"
+                                  },
+                                  "placeholder" : {
+                                    "type" : "interpolation",
+                                    "value" : "Enter a date (mm/dd/yyyy)"
+                                  },
+                                  "showToday" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "todayLabel" : {
+                                    "type" : "interpolation",
+                                    "value" : "Today"
+                                  },
+                                  "allowHTML" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  }
+                                },
+                                "reference" : "8336d8bd-4b83-44a4-a3c2-b921d9686481",
+                                "hasValidationError" : false,
+                                "id" : "pbDatePicker"
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "type" : "tabContainer",
+                  "dimension" : {
+                    "xs" : 12,
+                    "sm" : 12,
+                    "md" : 12,
+                    "lg" : 12
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "disabled" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "title" : {
+                      "type" : "interpolation",
+                      "value" : "Job details"
+                    },
+                    "active" : {
+                      "type" : "variable",
+                      "value" : ""
+                    },
+                    "allowHTML" : {
+                      "type" : "constant",
+                      "value" : true
+                    }
+                  },
+                  "reference" : "8af2cb15-10e1-4f5a-98d9-0bb3261a7812",
+                  "hasValidationError" : false,
+                  "id" : "pbTabContainer",
+                  "container" : {
+                    "type" : "container",
+                    "dimension" : {
+                      "xs" : 12
+                    },
+                    "propertyValues" : { },
+                    "reference" : "704cc861-8560-45a4-9768-e509017153b8",
+                    "hasValidationError" : false,
+                    "id" : "pbContainer",
+                    "rows" : [
+                      [
+                        {
+                          "type" : "container",
+                          "dimension" : {
+                            "xs" : 12,
+                            "sm" : 12,
+                            "md" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "hidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "repeatedCollection" : {
+                              "type" : "variable",
+                              "value" : ""
+                            }
+                          },
+                          "reference" : "1c439894-2a19-4d5e-86ed-0f189f5a7eca",
+                          "hasValidationError" : false,
+                          "id" : "pbContainer",
+                          "rows" : [
+                            [
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "required" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "minLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "maxLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "readOnly" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  },
+                                  "labelHidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "label" : {
+                                    "type" : "interpolation",
+                                    "value" : "Hiring manager"
+                                  },
+                                  "labelPosition" : {
+                                    "type" : "constant",
+                                    "value" : "top"
+                                  },
+                                  "labelWidth" : {
+                                    "type" : "constant",
+                                    "value" : 4
+                                  },
+                                  "placeholder" : {
+                                    "type" : "interpolation"
+                                  },
+                                  "value" : {
+                                    "type" : "variable",
+                                    "value" : "employee[0].hiringManager"
+                                  },
+                                  "type" : {
+                                    "type" : "constant",
+                                    "value" : "text"
+                                  },
+                                  "min" : {
+                                    "type" : "constant"
+                                  },
+                                  "max" : {
+                                    "type" : "constant"
+                                  },
+                                  "step" : {
+                                    "type" : "constant",
+                                    "value" : 1
+                                  },
+                                  "allowHTML" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  }
+                                },
+                                "reference" : "7d8f7e96-2a82-4caa-9409-20274d4abdff",
+                                "hasValidationError" : false,
+                                "id" : "pbInput"
+                              },
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "readOnly" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  },
+                                  "required" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "labelHidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "label" : {
+                                    "type" : "interpolation",
+                                    "value" : "Start date"
+                                  },
+                                  "labelPosition" : {
+                                    "type" : "constant",
+                                    "value" : "top"
+                                  },
+                                  "labelWidth" : {
+                                    "type" : "constant",
+                                    "value" : 4
+                                  },
+                                  "value" : {
+                                    "type" : "variable",
+                                    "value" : "employee[0].startDate"
+                                  },
+                                  "dateFormat" : {
+                                    "type" : "constant",
+                                    "value" : "MM/dd/yyyy"
+                                  },
+                                  "placeholder" : {
+                                    "type" : "interpolation",
+                                    "value" : "Enter a date (mm/dd/yyyy)"
+                                  },
+                                  "showToday" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "todayLabel" : {
+                                    "type" : "interpolation",
+                                    "value" : "Today"
+                                  },
+                                  "allowHTML" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  }
+                                },
+                                "reference" : "a478c0ee-48be-4154-b551-dd81384375be",
+                                "hasValidationError" : false,
+                                "id" : "pbDatePicker"
+                              }
+                            ],
+                            [
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "required" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "minLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "maxLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "readOnly" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  },
+                                  "labelHidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "label" : {
+                                    "type" : "interpolation",
+                                    "value" : "Department"
+                                  },
+                                  "labelPosition" : {
+                                    "type" : "constant",
+                                    "value" : "top"
+                                  },
+                                  "labelWidth" : {
+                                    "type" : "constant",
+                                    "value" : 4
+                                  },
+                                  "placeholder" : {
+                                    "type" : "interpolation"
+                                  },
+                                  "value" : {
+                                    "type" : "variable",
+                                    "value" : "employee[0].department"
+                                  },
+                                  "type" : {
+                                    "type" : "constant",
+                                    "value" : "text"
+                                  },
+                                  "min" : {
+                                    "type" : "constant"
+                                  },
+                                  "max" : {
+                                    "type" : "constant"
+                                  },
+                                  "step" : {
+                                    "type" : "constant",
+                                    "value" : 1
+                                  },
+                                  "allowHTML" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  }
+                                },
+                                "reference" : "8f732c3c-93c4-4b21-a0d0-509b759b02d4",
+                                "hasValidationError" : false,
+                                "id" : "pbInput"
+                              },
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "required" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "minLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "maxLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "readOnly" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  },
+                                  "labelHidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "label" : {
+                                    "type" : "interpolation",
+                                    "value" : "Position"
+                                  },
+                                  "labelPosition" : {
+                                    "type" : "constant",
+                                    "value" : "top"
+                                  },
+                                  "labelWidth" : {
+                                    "type" : "constant",
+                                    "value" : 4
+                                  },
+                                  "placeholder" : {
+                                    "type" : "interpolation"
+                                  },
+                                  "value" : {
+                                    "type" : "variable",
+                                    "value" : "employee[0].jobPosition"
+                                  },
+                                  "type" : {
+                                    "type" : "constant",
+                                    "value" : "text"
+                                  },
+                                  "min" : {
+                                    "type" : "constant"
+                                  },
+                                  "max" : {
+                                    "type" : "constant"
+                                  },
+                                  "step" : {
+                                    "type" : "constant",
+                                    "value" : 1
+                                  },
+                                  "allowHTML" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  }
+                                },
+                                "reference" : "27e31438-3149-4e7f-bade-737c730781f5",
+                                "hasValidationError" : false,
+                                "id" : "pbInput"
+                              }
+                            ],
+                            [
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "required" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "minLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "maxLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "readOnly" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  },
+                                  "labelHidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "label" : {
+                                    "type" : "interpolation",
+                                    "value" : "Home office"
+                                  },
+                                  "labelPosition" : {
+                                    "type" : "constant",
+                                    "value" : "top"
+                                  },
+                                  "labelWidth" : {
+                                    "type" : "constant",
+                                    "value" : 4
+                                  },
+                                  "placeholder" : {
+                                    "type" : "interpolation"
+                                  },
+                                  "value" : {
+                                    "type" : "variable",
+                                    "value" : "employee[0].homeOffice"
+                                  },
+                                  "type" : {
+                                    "type" : "constant",
+                                    "value" : "text"
+                                  },
+                                  "min" : {
+                                    "type" : "constant"
+                                  },
+                                  "max" : {
+                                    "type" : "constant"
+                                  },
+                                  "step" : {
+                                    "type" : "constant",
+                                    "value" : 1
+                                  },
+                                  "allowHTML" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  }
+                                },
+                                "reference" : "1a6fe0e9-20c1-452d-800a-8503face502d",
+                                "hasValidationError" : false,
+                                "id" : "pbInput"
+                              },
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "required" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "minLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "maxLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "readOnly" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  },
+                                  "labelHidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "label" : {
+                                    "type" : "interpolation",
+                                    "value" : "Contract type"
+                                  },
+                                  "labelPosition" : {
+                                    "type" : "constant",
+                                    "value" : "top"
+                                  },
+                                  "labelWidth" : {
+                                    "type" : "constant",
+                                    "value" : 4
+                                  },
+                                  "placeholder" : {
+                                    "type" : "interpolation"
+                                  },
+                                  "value" : {
+                                    "type" : "variable",
+                                    "value" : "employee[0].contractType"
+                                  },
+                                  "type" : {
+                                    "type" : "constant",
+                                    "value" : "text"
+                                  },
+                                  "min" : {
+                                    "type" : "constant"
+                                  },
+                                  "max" : {
+                                    "type" : "constant"
+                                  },
+                                  "step" : {
+                                    "type" : "constant",
+                                    "value" : 1
+                                  },
+                                  "allowHTML" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  }
+                                },
+                                "reference" : "aee59545-cda4-48a9-81c7-d12a9a8e9b03",
+                                "hasValidationError" : false,
+                                "id" : "pbInput"
+                              }
+                            ],
+                            [
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "required" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "minLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "maxLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "readOnly" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  },
+                                  "labelHidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "label" : {
+                                    "type" : "interpolation",
+                                    "value" : "Fixed gross salary (annual)"
+                                  },
+                                  "labelPosition" : {
+                                    "type" : "constant",
+                                    "value" : "top"
+                                  },
+                                  "labelWidth" : {
+                                    "type" : "constant",
+                                    "value" : 4
+                                  },
+                                  "placeholder" : {
+                                    "type" : "interpolation"
+                                  },
+                                  "value" : {
+                                    "type" : "variable",
+                                    "value" : "employee[0].fixedSalary"
+                                  },
+                                  "type" : {
+                                    "type" : "constant",
+                                    "value" : "text"
+                                  },
+                                  "min" : {
+                                    "type" : "constant"
+                                  },
+                                  "max" : {
+                                    "type" : "constant"
+                                  },
+                                  "step" : {
+                                    "type" : "constant",
+                                    "value" : 1
+                                  },
+                                  "allowHTML" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  }
+                                },
+                                "reference" : "1c8e0e76-53a4-4820-98b4-72395c3f22a5",
+                                "hasValidationError" : false,
+                                "id" : "pbInput"
+                              },
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "required" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "minLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "maxLength" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "readOnly" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  },
+                                  "labelHidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "label" : {
+                                    "type" : "interpolation",
+                                    "value" : "Variable gross salary (annual)"
+                                  },
+                                  "labelPosition" : {
+                                    "type" : "constant",
+                                    "value" : "top"
+                                  },
+                                  "labelWidth" : {
+                                    "type" : "constant",
+                                    "value" : 4
+                                  },
+                                  "placeholder" : {
+                                    "type" : "interpolation"
+                                  },
+                                  "value" : {
+                                    "type" : "variable",
+                                    "value" : "employee[0].variableSalary"
+                                  },
+                                  "type" : {
+                                    "type" : "constant",
+                                    "value" : "text"
+                                  },
+                                  "min" : {
+                                    "type" : "constant"
+                                  },
+                                  "max" : {
+                                    "type" : "constant"
+                                  },
+                                  "step" : {
+                                    "type" : "constant",
+                                    "value" : 1
+                                  },
+                                  "allowHTML" : {
+                                    "type" : "constant",
+                                    "value" : true
+                                  }
+                                },
+                                "reference" : "48597740-5232-4aae-960a-2862650e812a",
+                                "hasValidationError" : false,
+                                "id" : "pbInput"
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "type" : "tabContainer",
+                  "dimension" : {
+                    "xs" : 12,
+                    "sm" : 12,
+                    "md" : 12,
+                    "lg" : 12
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "disabled" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "title" : {
+                      "type" : "interpolation",
+                      "value" : "Benefits"
+                    },
+                    "active" : {
+                      "type" : "variable",
+                      "value" : ""
+                    },
+                    "allowHTML" : {
+                      "type" : "constant",
+                      "value" : true
+                    }
+                  },
+                  "reference" : "7309fd01-c358-460c-9fbe-a04baa598a8d",
+                  "hasValidationError" : false,
+                  "id" : "pbTabContainer",
+                  "container" : {
+                    "type" : "container",
+                    "dimension" : {
+                      "xs" : 12
+                    },
+                    "propertyValues" : { },
+                    "reference" : "8e332d05-eb7f-4db3-8f70-1f72eb00e1a6",
+                    "hasValidationError" : false,
+                    "id" : "pbContainer",
+                    "rows" : [
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "xs" : 12,
+                            "sm" : 12,
+                            "md" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "hidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "disabled" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "inline" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "labelHidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "Benefits"
+                            },
+                            "labelPosition" : {
+                              "type" : "constant",
+                              "value" : "top"
+                            },
+                            "labelWidth" : {
+                              "type" : "constant",
+                              "value" : 4
+                            },
+                            "availableValues" : {
+                              "type" : "expression",
+                              "value" : "benefits"
+                            },
+                            "displayedKey" : {
+                              "type" : "constant"
+                            },
+                            "returnedKey" : {
+                              "type" : "constant"
+                            },
+                            "selectedValues" : {
+                              "type" : "variable",
+                              "value" : "employee[0].benefits"
+                            },
+                            "allowHTML" : {
+                              "type" : "constant",
+                              "value" : true
+                            }
+                          },
+                          "reference" : "5b378f0a-9b12-4e30-b9b0-bf86f92203ca",
+                          "hasValidationError" : false,
+                          "id" : "pbChecklist"
+                        }
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "id" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "employee" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findById [com.company.hr.OBDEmployee]\",\"businessObjectName\":\"OBDEmployee\",\"query\":{\"name\":\"findById\",\"displayName\":\"findById\"},\"id\":\"com.company.hr.OBDEmployee\",\"filters\":[{\"name\":\"id\",\"type\":\"LONG\",\"collection\":false,\"value\":\"{{id}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"100\"}}"
+      ],
+      "exposed" : false
+    },
+    "person" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findById [com.company.hr.OBDPerson]\",\"businessObjectName\":\"OBDPerson\",\"query\":{\"name\":\"findById\",\"displayName\":\"findById\"},\"id\":\"com.company.hr.OBDPerson\",\"filters\":[{\"name\":\"id\",\"type\":\"LONG\",\"collection\":false,\"value\":\"{{id}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "benefits" : {
+      "type" : "json",
+      "value" : [
+        "[\"Car\",\"Meal Vouchers\",\"Stocks & Shares\",\"Mobile Phone\",\"Home Internet\"]"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

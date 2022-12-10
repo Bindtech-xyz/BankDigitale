@@ -1,0 +1,15 @@
+
+<div ng-if="properties.value && properties.value !== null" class="text-{{ properties.alignment }}">
+    <h4><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span></h4>
+</div>
+<div ng-if="!properties.value && properties.value !== null" class="text-{{ properties.alignment }}">
+    <h4><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span></h4>
+</div>
+
+<!-- <p ng-if="properties.value" class="text-{{ properties.alignment }}" ng-bind-html=""></p>
+
+
+<p ng-if="properties.value" class="text-{{ properties.alignment }}" ng-bind-html="properties.text | uiTranslate"></p>
+
+
+ "<h4><span class=\"glyphicon glyphicon-ok text-success\" aria-hidden=\"true\"></span></h4>" -->

@@ -1,0 +1,34 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Value",
+      "name" : "value",
+      "type" : "text",
+      "defaultValue" : "This is the initial value",
+      "bond" : "variable"
+    },
+    {
+      "label" : "Morgans WebService",
+      "name" : "restUrl",
+      "type" : "text",
+      "defaultValue" : "localhost:8085",
+      "choiceValues" : [
+        "Yellow",
+        "LightGray"
+      ],
+      "bond" : "variable"
+    }
+  ],
+  "id" : "customLoadData",
+  "name" : "loadData",
+  "lastUpdate" : 1666032936741,
+  "template" : "@customLoadData.tpl.html",
+  "controller" : "@customLoadData.ctrl.js",
+  "custom" : true,
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

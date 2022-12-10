@@ -1,0 +1,151 @@
+{
+  "modelVersion" : "2.3",
+  "id" : "Visualisation",
+  "name" : "Visualisation",
+  "lastUpdate" : 1670684398270,
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "bfa1f11f-7172-4ea2-9d96-b6689ea7ea52",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "Default label"
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "<script src=\"https://cdn.jsdelivr.net/npm/bpmn-visualization@0.27.1/dist/bpmn-visualization.js\"></script>"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                }
+              },
+              "reference" : "291e4f97-de8c-41f2-9276-2d66f4e7791b",
+              "hasValidationError" : false,
+              "id" : "pbText"
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "Process document"
+          },
+          "url" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "document" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "showPreview" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "20167d31-945c-4588-bbf4-893013653f42",
+        "hasValidationError" : false,
+        "id" : "pbFileViewer"
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "f9a8781f-dae4-44eb-9ef6-05e59d20a626",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "99897c27-01ca-43e6-997e-df46cae6bdc1",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : { },
+  "hasValidationError" : false,
+  "uuid" : "3a10acc9-0f16-49a8-a2f9-bbb9eb8d9594",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}

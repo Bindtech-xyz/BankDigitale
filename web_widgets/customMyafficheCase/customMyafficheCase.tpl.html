@@ -1,0 +1,35 @@
+<div class="row"> 
+    <div> 
+        <div class="col-xs-12 img-thumbnail">
+            <!-- LINE 1  -->
+            <div class="row"> 
+                <div class="col-xs-4"><p class="text-left"><b>Date émission :</b></p></div>
+                <div class="col-xs-8"><p class="text-left">{{properties.afficheDetails.dateEmission | date:'dd MMM yyyy à HH:mm'}} - <span class="label label-info">{{properties.afficheDetails.dateEmission | dateAgo }}</span></p></div>
+            </div> 
+            
+            <!-- LINE 2 -->
+            <div class="row"> 
+                <div class="col-xs-4"><p class="text-left"><b>Provenance :</b></p></div>
+                <div class="col-xs-8"><p class="text-left">{{properties.afficheDetails.agence | uppercase}}</p></div>
+            </div>
+            <div class="row"> 
+                <div class="col-xs-4"><p class="text-left"><b>Nom du client :</b></p></div>
+                <div class="col-xs-8"><p class="text-left">{{properties.afficheDetails.nomClient | uppercase}}</p></div>
+            </div>
+            <!-- LINE 3  -->
+            <div class="row"> 
+                <div class="col-xs-4"><p class="text-left"><b>Marché :</b></p></div>
+                <div class="col-xs-8"><p class="text-left">{{properties.afficheDetails.marche | uppercase}}</p></div>
+            </div>
+            <!-- LINE 5 -->
+            <div class="row"> 
+                <div class="col-xs-4"><p class="text-left"><h4>Montant :</h4></p></div>
+                <div class="col-xs-8 bg-warning text-danger img-thumbnail">
+                    <p class="text-center">
+                    <h4><span>{{properties.afficheDetails.montant | currency:"XOF ":0}}</span></h4>
+                    </p>
+                </div>
+            </div> 
+        </div>
+    </div> 
+</div>

@@ -1,0 +1,43 @@
+<div class="row"> 
+    <div> 
+        <div class="col-xs-12 img-thumbnail">
+            <!-- LINE 1  -->
+            <div class="row"> 
+                <div class="col-xs-2"><p class="text-left"><b>Date émission</b></p></div>
+                <div class="col-xs-4"><p class="text-left">{{properties.afficheDetails.dateEmission | date:'EEEE dd MMM yyyy à HH:mm'}}</p></div>
+                <div class="col-xs-2"><p class="text-left"><b>Nom Client</b></p></div>
+                <div class="col-xs-4"><p class="text-left">{{properties.afficheDetails.nomClient | uppercase}}</p></div> 
+            </div> 
+            <!-- LINE 2 -->
+            <div class="row"> 
+                <div class="col-xs-2"><p class="text-left"><b>Provenance</b></p></div>
+                <div class="col-xs-4"><p class="text-left">{{properties.afficheDetails.agence | uppercase}}</p></div>
+                <div class="col-xs-2"><p class="text-left"><b>Indice</b></p></div>
+                <div class="col-xs-4"><p class="text-left">{{properties.afficheDetails.indice}}</p></div>
+            </div>
+            <!-- LINE 3  -->
+            <div class="row"> 
+                <div class="col-xs-2"><p class="text-left"><b>Gestionnaire</b></p></div>
+                <div class="col-xs-4"><p class="text-left">{{properties.afficheDetails.gestionnaire}}</p></div>
+                <div class="col-xs-2"><p class="text-left"><b>N° Compte</b></p></div>
+                <div class="col-xs-4"><p class="text-left">{{properties.afficheDetails.noCompte}}</p></div>
+            </div>
+            <!-- LINE 4 -->
+            <div class="row"> 
+                <div class="col-xs-2"><p class="text-left"><b>Objet</b></p></div>
+                <div class="col-xs-10"> 
+                    <p class="text-left">{{properties.afficheDetails.objetDde}}</p>
+                </div>
+            </div>
+            <!-- LINE 5 -->
+            <div class="row"> 
+                <div class="col-xs-2"><p class="text-left"><b>Marché</b></p></div>
+                <div class="col-xs-4"><p class="text-left">{{properties.afficheDetails.marche | uppercase}}</p></div>
+                <div class="col-xs-2"><p class="text-left"><h4>Montant</h4></p></div>
+                <div class="col-xs-4 bg-warning text-danger img-thumbnail">
+                    <p class="text-center"><h4><span>{{properties.afficheDetails.montant | currency:"XOF ":0}}</span></h4></p>
+                </div>
+            </div> 
+        </div>
+    </div> 
+</div>

@@ -1,0 +1,10 @@
+.progress { 
+  height: 2em!important;
+}
+.progress div i{
+	line-height: 2.1em!important; 
+}
+
+.progress-bar { 
+  transition: width 1s ease-in-out; 
+}

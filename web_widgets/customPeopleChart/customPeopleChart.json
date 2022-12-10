@@ -1,0 +1,147 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Shadow",
+      "name" : "shadow",
+      "help" : "Toggle for shadow effect on node and lines",
+      "type" : "boolean",
+      "defaultValue" : true,
+      "bond" : "constant"
+    },
+    {
+      "label" : "Hierarchy",
+      "name" : "hierarchy",
+      "help" : "Orientation of hierarchy - up/down (UD), down/up (DU), left/right (LR), and right/left (RL).",
+      "type" : "choice",
+      "defaultValue" : "UD",
+      "choiceValues" : [
+        "UD",
+        "DU",
+        "LR",
+        "RL"
+      ],
+      "bond" : "constant"
+    },
+    {
+      "label" : "Node shape",
+      "name" : "shape",
+      "help" : "Select the shape of the nodes in diagram",
+      "type" : "choice",
+      "defaultValue" : "box",
+      "choiceValues" : [
+        "ellipse",
+        "circle",
+        "database",
+        "box",
+        "diamond",
+        "dot",
+        "square",
+        "triangle",
+        "triangleDown",
+        "text",
+        "star"
+      ],
+      "bond" : "constant"
+    },
+    {
+      "label" : "Line shape",
+      "name" : "lineShape",
+      "help" : "Select the type of line between nodes",
+      "type" : "choice",
+      "defaultValue" : "cubicBezier",
+      "choiceValues" : [
+        "cubicBezier",
+        "dynamic",
+        "continuous",
+        "discrete",
+        "diagonalCross",
+        "straightCross",
+        "horizontal",
+        "vertical",
+        "curvedCW",
+        "curvedCCW"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "Font colors",
+      "name" : "fontColors",
+      "help" : "Font color in hex. Use comma separated values to define font colors for multiple levels, If none are assigned a default color will be used",
+      "type" : "text",
+      "defaultValue" : "#000000",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Level colors",
+      "name" : "levelColors",
+      "help" : "Node color in hex for each level. Use comma separated values to define for multiple levels. If a value is not assigned a default color will be assigned.",
+      "type" : "text",
+      "defaultValue" : "#99C2F9",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Height (px)",
+      "name" : "height",
+      "help" : "Height of widget in pixels",
+      "type" : "integer",
+      "defaultValue" : 400,
+      "bond" : "expression"
+    },
+    {
+      "label" : "Level Separation",
+      "name" : "levelSeparation",
+      "help" : "Distance between levels in pixels",
+      "type" : "integer",
+      "defaultValue" : 150,
+      "bond" : "expression"
+    },
+    {
+      "label" : "Group to display",
+      "name" : "groupToDisplay",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Level from",
+      "name" : "levelFrom",
+      "type" : "integer",
+      "defaultValue" : 0,
+      "bond" : "expression"
+    },
+    {
+      "label" : "Level to",
+      "name" : "levelTo",
+      "type" : "integer",
+      "defaultValue" : 0,
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customPeopleChart",
+  "name" : "PeopleChart",
+  "lastUpdate" : 1666032935903,
+  "template" : "@customPeopleChart.tpl.html",
+  "controller" : "@customPeopleChart.ctrl.js",
+  "description" : "Generates an organization people chart from current information",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "453c7d00-81ba-42cb-a43a-c3b4f535d22f",
+      "name" : "vis-network.min.js",
+      "type" : "css",
+      "order" : 1,
+      "external" : false
+    },
+    {
+      "id" : "7294f0ae-d635-410f-a1ff-e07cc29085e6",
+      "name" : "vis.min.js",
+      "type" : "js",
+      "order" : 2,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

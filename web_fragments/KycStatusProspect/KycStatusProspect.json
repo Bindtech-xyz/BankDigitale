@@ -1,0 +1,210 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "id" : "KycStatusProspect",
+  "name" : "KycStatusProspect",
+  "lastUpdate" : 1666032935720,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "panel-fixed-height"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "style" : {
+            "type" : "expression",
+            "value" : "colorHeader"
+          },
+          "title" : {
+            "type" : "interpolation",
+            "value" : "Dossier N° : <b>{{prospet.caseId}}</b>"
+          },
+          "panelContent" : {
+            "type" : "expression",
+            "value" : "panelContent"
+          },
+          "derogation" : {
+            "type" : "expression",
+            "value" : "derogation"
+          }
+        },
+        "reference" : "533f0687-4e29-4d59-bd2f-40a578c8eece",
+        "hasValidationError" : false,
+        "id" : "customPanelInfo"
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "dateFormat" : {
+      "type" : "constant",
+      "value" : [
+        "D MMM YYYY hh:mm:ss A"
+      ],
+      "exposed" : false
+    },
+    "panelContent" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.prospet){",
+        " let result =  [",
+        "            {",
+        "                \"dt\" : \"<span class=\\\"glyphicon glyphicon-calendar\\\"> </span> Opened\",",
+        "                \"dd\" : format($data.prospet.dateCharge)",
+        "            },",
+        "            {",
+        "                \"dt\" : \"<span class=\\\"glyphicon glyphicon-asterisk\\\"> </span> Indice\",",
+        "                \"dd\" : $data.prospet.indice",
+        "            },",
+        "            {",
+        "                \"dt\" : \"<span class=\\\"glyphicon glyphicon-tags\\\"> </span> Client\",",
+        "                \"dd\" : $data.prospet.nomClient",
+        "            },",
+        "            {",
+        "                \"dt\" : \"<span> </span> Type de client\",",
+        "                \"dd\" : $data.prospet.typeClient",
+        "            },",
+        "            {",
+        "                \"dt\" : \"<span class=\\\"glyphicon glyphicon-map-marker\\\"> </span> Agence\",",
+        "                \"dd\" : $data.prospet.agence",
+        "            },",
+        "            {",
+        "                \"dt\" : \"<span class=\\\"glyphicon glyphicon-user\\\"> </span> Gestionnaire\",",
+        "                \"dd\" : $data.prospet.prenomCharge + ' ' +  $data.prospet.nomCharge",
+        "            },",
+        "            {",
+        "                \"dt\" : \"<span class=\\\"glyphicon glyphicon-info-sign\\\"> </span> <abbr title=\\\"Status du Dossier\\\"> Status </abbr>\",",
+        "                \"dd\" : $data.prospet.statusCase",
+        "            }",
+        "    ];",
+        "    return result;",
+        "}",
+        "",
+        "function format(date){",
+        "    return date ? moment(date).format($data.dateFormat) : '';",
+        "}",
+        "",
+        "function scoring(status){",
+        "    switch(status) {",
+        "     case \"green\": return \"success\";",
+        "     case \"red\": return \"danger\";",
+        "     case \"yellow\": return \"warning\";",
+        "     default:",
+        "       return \"default\";",
+        "   }",
+        "}",
+        "return \"nothing\";"
+      ],
+      "exposed" : false
+    },
+    "colorHeader" : {
+      "type" : "expression",
+      "value" : [
+        "let color = $data.prospet.score;",
+        "function scoring(status){",
+        "    switch(status) {",
+        "     case \"green\": return \"success\";",
+        "     case \"red\": return \"danger\";",
+        "     case \"yellow\": return \"warning\";",
+        "     default:",
+        "       return \"default\";",
+        "   }",
+        "}",
+        "return scoring(color);"
+      ],
+      "exposed" : false
+    },
+    "derogation" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.prospet.demandeDerogation){",
+        " let result =  [",
+        "            {",
+        "                \"dt\" : \"<span class=\\\"glyphicon glyphicon-calendar\\\"> </span> Opened\",",
+        "                \"dd\" : format($data.prospet.dateDerogation)",
+        "            },",
+        "            {",
+        "                \"dt\" : \"<span class=\\\"glyphicon glyphicon-asterisk\\\"> </span> Indice\",",
+        "                \"dd\" : $data.prospet.documentDerogation",
+        "            }",
+        "    ];",
+        "    return result;",
+        "}",
+        "",
+        "function format(date){",
+        "    return date ? moment(date).format($data.dateFormat) : '';",
+        "}",
+        "",
+        "return null;"
+      ],
+      "exposed" : false
+    },
+    "dummyData" : {
+      "type" : "json",
+      "value" : [
+        "{ ",
+        "    \"persistenceId\": 1, ",
+        "    \"persistenceId_string\": \"1\", ",
+        "    \"persistenceVersion\": 1, ",
+        "    \"persistenceVersion_string\": \"1\", ",
+        "    \"id\": null, ",
+        "    \"id_string\": null, ",
+        "    \"caseId\": null, ",
+        "    \"caseId_string\": null, ",
+        "    \"processId\": null, ",
+        "    \"processId_string\": null, ",
+        "    \"processVersion\": null, ",
+        "    \"indice\": \"345365345\", ",
+        "    \"nomClient\": \">dfgsdsdgsdfdg\", ",
+        "    \"typeClient\": \"Particulier\", ",
+        "    \"demandeDerogation\": null, ",
+        "    \"agence\": \"DFGDFG\", ",
+        "    \"documentDerogation\": null, ",
+        "    \"dateDerogation\": null, ",
+        "    \"idCharge\": \"1\", ",
+        "    \"nomCharge\": \"bates\", ",
+        "    \"prenomCharge\": \"Walter\", ",
+        "    \"dateCharge\": \"2022-07-30T01:36:39.440337Z\", ",
+        "    \"statusOfficer\": null, ",
+        "    \"dateOfficer\": null, ",
+        "    \"idOfficer\": null, ",
+        "    \"nomOfficer\": null, ",
+        "    \"prenomOfficer\": null, ",
+        "    \"statusCompliance\": null, ",
+        "    \"idCompliance\": null,",
+        "    \"nomCompliance\": null, ",
+        "    \"prenomCompliance\": null, ",
+        "    \"dateCompliance\": null, ",
+        "    \"statusCase\": \"pending\", ",
+        "    \"agenceId\": null, ",
+        "    \"agenceId_string\": null, ",
+        "    \"score\": \"green\" ",
+        "    ",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "prospet" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    }
+  },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

@@ -1,0 +1,26 @@
+
+<div class="table-responsive">
+    <table class="table table-striped fancyTable" ng-class="{'table-hover': ctrl.isClickable()}">
+        <thead>
+            <tr>
+                <th ng-repeat="header in properties.headers">
+                    {{ header | translate }}
+                </th>
+            </tr>
+        </thead>
+        <tbody ng-if="ctrl.isArray(properties.availableValues) && ctrl.isArray(properties.columnsKey)">
+            <tr ng-repeat="row in properties.availableValues track by $index" ng-click="ctrl.selectRow(row)">
+                <td ng-repeat="column in properties.columnsKey" >
+                    
+                    <a ng-if="row.nextTaskFlag && column=='nextTask'" ng-click="assignMe(row.id, row.userId)" href="/bonita/portal/resource/taskInstance/{{row.pName}}/{{row.pVersion}}/{{row.name}}/content/?id={{row.id}}&user={{row.userId}}&displayConfirmation=false&app=ticketing">{{row.nextTask}} <i class="glyphicon glyphicon-exclamation-sign" style="color:#0669BF" title="{{ 'Pending task' | translate }}"></i></a>
+                    <span ng-if="!(row.nextTaskFlag && column=='nextTask')">{{ $eval(column, row) }}</span>
+                 </td>
+            </tr>
+        </tbody>
+        <tbody ng-if="ctrl.isArray(properties.availableValues) && !ctrl.isArray(properties.columnsKey)">
+            <tr ng-repeat="row in properties.availableValues" ng-click="ctrl.selectRow(row)">
+                <td> {{ row }} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

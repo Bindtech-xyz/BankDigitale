@@ -1,0 +1,48 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Label hidden",
+      "name" : "labelHidden",
+      "type" : "boolean",
+      "defaultValue" : false,
+      "bond" : "constant"
+    },
+    {
+      "label" : "Label",
+      "name" : "label",
+      "type" : "text",
+      "defaultValue" : "Default Label",
+      "choiceValues" : [
+        "RebeccaPurple",
+        "Chartreuse",
+        "Tomato",
+        "DeepSkyBlue"
+      ],
+      "bond" : "interpolation"
+    },
+    {
+      "label" : "Label position",
+      "name" : "labelPosition",
+      "type" : "choice",
+      "defaultValue" : "left",
+      "choiceValues" : [
+        "left",
+        "center",
+        "right"
+      ],
+      "bond" : "constant"
+    }
+  ],
+  "id" : "customLabel",
+  "name" : "label",
+  "lastUpdate" : 1666032937797,
+  "template" : "@customLabel.tpl.html",
+  "controller" : "@customLabel.ctrl.js",
+  "custom" : true,
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

@@ -1,0 +1,154 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "id" : "holidayProgressBar",
+  "name" : "holidayProgressBar",
+  "lastUpdate" : 1666491980354,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{userAvatar}} <strong>{{userData.firstname}} {{userData.lastname|uppercase}} </strong><i>({{userData.job_title | uiTranslate}}) </i> {{ \"has\" | uiTranslate }} <b>{{daysAvailables}} </b> {{\"days available.\" | uiTranslate }}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "6a65ffbd-461d-4dc4-b608-e8ac6f6dabc8",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "lg" : 12,
+          "md" : 12,
+          "sm" : 12,
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "value" : {
+            "type" : "expression",
+            "value" : "$item"
+          },
+          "total" : {
+            "type" : "constant",
+            "value" : 25
+          }
+        },
+        "reference" : "dc151fb7-f20f-417a-babd-b4a3fdf8b5fb",
+        "hasValidationError" : false,
+        "id" : "customProgressBarNoLabel"
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "userData" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user/{{id}}"
+      ],
+      "exposed" : false
+    },
+    "userAvatar" : {
+      "type" : "expression",
+      "value" : [
+        " if (!$data.userData) {\r",
+        "    return '';\r",
+        "}\r",
+        "\r",
+        "var isCustomIconPath = $data.userData.icon && $data.userData.icon!='icons/default/icon_user.png';\r",
+        "\r",
+        "const htmlContentForImage = `<span><img title=\"${$data.userData.userName}\" src=\"${$data.userData.icon}\" alt=\"${uiTranslate('User icon')}\" class=\"mini-avatar\"></span>`;\r",
+        "\r",
+        "const htmlContentForDefaultIcon = `<i title=\"${$data.userData.userName}\" class=\"fa fa-user-circle\"></i>`;\r",
+        "\r",
+        "return isCustomIconPath ? htmlContentForImage : htmlContentForDefaultIcon;\r"
+      ],
+      "exposed" : false
+    },
+    "id" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "daysAvailables" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "daysTaken" : {
+      "type" : "expression",
+      "value" : [
+        "var daysTaken = 0;",
+        "",
+        "if ($data.daysAvailables < 25){",
+        "    daysTaken = 25 - $data.daysAvailables;",
+        "}",
+        "",
+        "return daysTaken;"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

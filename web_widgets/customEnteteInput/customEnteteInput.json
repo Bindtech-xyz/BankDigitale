@@ -1,0 +1,42 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Label Input",
+      "name" : "label",
+      "type" : "text",
+      "defaultValue" : "This is the initial value",
+      "bond" : "interpolation"
+    },
+    {
+      "label" : "Value",
+      "name" : "value",
+      "type" : "text",
+      "choiceValues" : [
+        "RebeccaPurple",
+        "Chartreuse",
+        "Tomato",
+        "DeepSkyBlue"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "Label Width",
+      "name" : "labelWidth",
+      "type" : "integer",
+      "defaultValue" : 5,
+      "bond" : "constant"
+    }
+  ],
+  "id" : "customEnteteInput",
+  "name" : "enteteInput",
+  "lastUpdate" : 1666032936239,
+  "template" : "@customEnteteInput.tpl.html",
+  "controller" : "@customEnteteInput.ctrl.js",
+  "custom" : true,
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.15.0">
+    <businessObjects>
+        <businessObject qualifiedName="xyz.bindtech.model.Agence">
+            <fields>
+                <field type="STRING" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nom" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="code" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="telephone" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="address" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="clos" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="xyz.bindtech.model.Commentaires">
+            <fields>
+                <field type="LONG" length="255" name="id" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="caseId" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="processId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="processVersion" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="dateComment" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="idUser" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomUser" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="prenomUser" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="comment" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nivo" nullable="true" collection="false">
+                    <description>Le nivo dépend si c'est l'initiateur ou autre</description>
+                </field>
+                <field type="BOOLEAN" length="255" name="lu" nullable="true" collection="false">
+                    <description>Si le message est lu ou non dépendra pour afficher uniquement le dernier message</description>
+                </field>
+            </fields>
+            <uniqueConstraints/>
+            <queries>
+                <query name="findByCaseIdSort" content="SELECT c &#10;FROM Commentaires c &#10;WHERE c.caseId = :caseId&#10;ORDER BY c.dateComment DESC" returnType="xyz.bindtech.model.Commentaires">
+                    <description>Trouver Les commantaires </description>
+                    <queryParameters>
+                        <queryParameter name="caseId" className="java.lang.Long"/>
+                    </queryParameters>
+                </query>
+            </queries>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="xyz.bindtech.model.Comments">
+            <fields>
+                <field type="LONG" length="255" name="caseId" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="processId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="idUser" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomUser" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="prenomUser" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="commentaire" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="dateCommentaire" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="decision" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nivo" nullable="true" collection="false">
+                    <description>Nivo de l'acteur exemple 
+- CHARGE CLIENT
+- OFFICER
+- CONFORMITE</description>
+                </field>
+            </fields>
+            <uniqueConstraints/>
+            <queries>
+                <query name="findByCaseIdDesc" content="SELECT c &#10;FROM Comments c &#10;WHERE c.caseId = :caseId&#10;ORDER BY c.dateCommentaire DESC" returnType="java.util.List">
+                    <queryParameters>
+                        <queryParameter name="caseId" className="java.lang.Long"/>
+                    </queryParameters>
+                </query>
+                <query name="countFindByCaseIdDesc" content="SELECT COUNT(c) &#10;FROM Comments c &#10;WHERE c.caseId = :caseId&#10;ORDER BY c.dateCommentaire DESC" returnType="xyz.bindtech.model.Comments">
+                    <queryParameters>
+                        <queryParameter name="caseId" className="java.lang.Long"/>
+                        <queryParameter name="processId" className="java.lang.Long"/>
+                        <queryParameter name="idUser" className="java.lang.String"/>
+                        <queryParameter name="nomUser" className="java.lang.String"/>
+                        <queryParameter name="prenomUser" className="java.lang.String"/>
+                        <queryParameter name="commentaire" className="java.lang.String"/>
+                        <queryParameter name="dateCommentaire" className="java.time.LocalDateTime"/>
+                        <queryParameter name="decision" className="java.lang.String"/>
+                        <queryParameter name="nivo" className="java.lang.String"/>
+                    </queryParameters>
+                </query>
+            </queries>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="xyz.bindtech.model.Decisions">
+            <fields>
+                <field type="LONG" length="255" name="caseId" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="infoPartPersonnel" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="infoPartContact" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="infoPartFinance" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="infoPartExtras" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="infoEts" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="infoEtsContacts" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="infoEtsFinance" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="infoEtsActionnaires" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="infoEtsExtras" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="idUser" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomUser" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="prenomUser" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="dateUser" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="xyz.bindtech.model.DemandeTransfert">
+            <fields>
+                <field type="LONG" length="255" name="caseId" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="processInstanceId" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="processDefinitionId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="indice" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="devise" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="montant" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="tauxChange" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="dateVirement" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="motif" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="bnfNom" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="bnfRib" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="bnfBic" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="bnfPays" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="numeroDomiciliation" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="idInitiateur" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomInitiateur" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="prenomInitiateur" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="dateCase" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="status" nullable="true" collection="false">
+                    <description>- pending
+- done</description>
+                </field>
+                <field type="STRING" length="255" name="steps" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="decision" nullable="true" collection="false">
+                    <description>- approved
+- rejected</description>
+                </field>
+                <field type="LOCALDATETIME" length="255" name="dateFin" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="duration" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="fatca" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="ppe" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="xyz.bindtech.model.Documentaires">
+            <fields>
+                <field type="LONG" length="255" name="caseId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nom" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="url" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="codification" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="status" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="validityTime" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="expirationDate" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="retentionTime" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="processId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="processVersion" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="documentId" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="xyz.bindtech.model.OuvertureCompte">
+            <fields>
+                <field type="LONG" length="255" name="id" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="caseId" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="processId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="processVersion" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="indice" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomClient" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="typeClient" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="demandeDerogation" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="agence" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="documentDerogation" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="dateDerogation" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="idCharge" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomCharge" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="prenomCharge" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="dateCharge" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="statusOfficer" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="dateOfficer" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="idOfficer" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomOfficer" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="prenomOfficer" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="statusCompliance" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="idCompliance" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomCompliance" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="prenomCompliance" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="dateCompliance" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="statusCase" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="agenceId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="score" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="steps" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="prime" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="valeurPrime" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="autresRevenu" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="montantDomicilie" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="clientPP" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="clientFatca" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="xyz.bindtech.model.ParamGed">
+            <fields>
+                <field type="STRING" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="processVersion" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="processDef" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="processId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="gedHost" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="gedUser" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="gedPort" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="getPass" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="xyz.bindtech.model.Scoring">
+            <fields>
+                <field type="LONG" length="255" name="caseId" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="processId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="indiceClient" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="score" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="expired" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="dateCalcul" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="xyz.bindtech.model.SettingsParams">
+            <fields>
+                <field type="LONG" length="255" name="processDef" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="typeapp" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="hostapp" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="portapp" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="userapp" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="passapp" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="statusapp" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="createdAt" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="updatedAt" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints>
+                <uniqueConstraint name="uniqueSettings">
+                    <fieldNames>
+                        <fieldName>processDef</fieldName>
+                        <fieldName>typeapp</fieldName>
+                    </fieldNames>
+                </uniqueConstraint>
+            </uniqueConstraints>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

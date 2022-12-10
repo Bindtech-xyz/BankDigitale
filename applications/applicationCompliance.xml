@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="compliance" version="1.0" profile="User" homePage="home" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
+        <displayName>Digitale Compliance</displayName>
+        <description>KYC Onbording</description>
+        <applicationPages>
+            <applicationPage customPage="custompage_ComplianceHome" token="home"/>
+            <applicationPage customPage="custompage_ComplianceHome" token="acceuil"/>
+            <applicationPage customPage="custompage_ApplicationKyc" token="kyc"/>
+            <applicationPage customPage="custompage_ApplicationKyt" token="kyt"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="acceuil">
+                <displayName>Accueil</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="kyc">
+                <displayName>KYC</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="kyt">
+                <displayName>KYT</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>

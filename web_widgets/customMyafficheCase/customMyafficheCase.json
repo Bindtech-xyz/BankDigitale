@@ -1,0 +1,51 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Données",
+      "name" : "afficheDetails",
+      "type" : "collection",
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customMyafficheCase",
+  "name" : "myafficheCase",
+  "lastUpdate" : 1666032934565,
+  "template" : "@customMyafficheCase.tpl.html",
+  "controller" : "@customMyafficheCase.ctrl.js",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "632ae431-5d0c-4a18-9e7f-b8aa7ecd113b",
+      "name" : "moment2.js",
+      "type" : "js",
+      "order" : 3,
+      "external" : false
+    },
+    {
+      "id" : "13645127-bd5f-4aa5-8d19-2ffe12676cb0",
+      "name" : "bootstrap.min.css",
+      "type" : "css",
+      "order" : 1,
+      "external" : false
+    },
+    {
+      "id" : "919e68ed-141f-4c46-90da-0b80637edc00",
+      "name" : "angular-locale_fr-fr.js",
+      "type" : "js",
+      "order" : 2,
+      "external" : false
+    },
+    {
+      "id" : "8a02b23f-2a45-4838-826b-5a015285618b",
+      "name" : "date-ago-filter.js",
+      "type" : "js",
+      "order" : 4,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

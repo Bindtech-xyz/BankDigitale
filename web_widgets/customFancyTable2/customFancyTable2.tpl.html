@@ -1,0 +1,99 @@
+
+<style>
+body {
+font-family:verdana;
+font-size:15px;
+}
+
+a {text-decoration:none}
+a:hover {color:#ccc; text-decoration:none}
+
+#mask {
+  position:absolute;
+  left:0;
+  top:-470px;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+  
+#boxes .window {
+  position:fixed;
+  left:0;
+  top:0;
+  /*width:440px;*/
+  height:80%;
+  
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+
+#boxes #dialog {
+  /*width:375px; */
+  /*height:203px;*/
+  padding:10px;
+  background-color:#ffffff;
+ /* overflow: scroll;*/
+}
+
+#boxes #dialog ul li{
+    
+    font-size: 14px;
+    font-family: Hervetica;
+    list-style: none;
+    border-bottom: 1px dotted #ccc;
+}
+
+#bonitaframe{
+    width:100%;
+    height:100%;
+}
+
+</style>
+
+<div class="table-responsive">
+    <table  class="table table-striped fancyTable" ng-class="{'table-hover': ctrl.isClickable()}">
+        <thead>
+            <tr>
+                <th ng-repeat="header in properties.headers">
+                    {{ header | translate}}
+                </th>
+            </tr>
+        </thead>
+        <tbody ng-if="ctrl.isArray(properties.availableValues) && ctrl.isArray(properties.columnsKey)">
+            <tr ng-repeat="row in properties.availableValues" ng-click="ctrl.selectRow(row)">
+                <td ng-repeat="column in properties.columnsKey" >
+                    <span>{{ $eval(column, row) }}</span>
+                 </td>
+            </tr>
+        </tbody>
+        <tbody ng-if="ctrl.isArray(properties.availableValues) && !ctrl.isArray(properties.columnsKey)">
+            <tr ng-repeat="row in properties.availableValues" ng-click="ctrl.selectRow(row)">
+                <td> {{ row }} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div id="mask"></div>
+<div id="boxes">
+
+    <div id="dialog" class="window col-xs-10 col-md-10 col-lg-10 col-sm-10">
+        
+        <iframe id="bonitaframe" ng-src="{{ctrl.iframeUrl}}"></iframe>
+        <!--
+        <p class="text-center">{{ properties.selectedRow.processId }}# Ticket details  <a style="float:right;overflow:hidden;color:blue" class="close" href="#" >X</a></p>
+        <div>
+            <ul>
+                <li ng-repeat="t in taskDone">
+                    <h5>Task name: {{ t.displayName }} <span style="float:right;overflow:hidden;">Finished on: {{ t.archivedDate }}</span></h5>
+                    <p ng-if="t.description && t.executedBy != 0">Description: {{ t.description }} <span style="float:right;overflow:hidden;">Executed by: {{ t.executedBy.firstname }} {{ t.executedBy.lastname }}</span></p>
+                    <p ng-if="!t.description && t.executedBy = 0">Description: None <span style="float:right;overflow:hidden;">Executed by: System</span></p>
+                </li>
+            </ul>
+            
+        </div>
+        -->
+    </div>
+</div>

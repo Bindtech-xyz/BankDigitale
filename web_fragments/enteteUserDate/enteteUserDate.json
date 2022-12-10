@@ -1,0 +1,130 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "id" : "enteteUserDate",
+  "name" : "enteteUserDate",
+  "lastUpdate" : 1666459255676,
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "f521ddeb-213c-4a22-a049-7f0953b92b58",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "userInfo" : {
+                  "type" : "expression",
+                  "value" : "userData.userInfo"
+                },
+                "donnee" : {
+                  "type" : "expression",
+                  "value" : "uploadErrorResponse"
+                },
+                "enAttente" : {
+                  "type" : "expression",
+                  "value" : "tacheEnAttente"
+                }
+              },
+              "reference" : "a2478177-81fc-4ce5-a383-28114a4f7f95",
+              "hasValidationError" : false,
+              "id" : "customWhoIs"
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "userData" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "dummyData" : {
+      "type" : "json",
+      "value" : [
+        "{ \"userInfo\": { \"firstname\": \"Walter\", \"professional_data\": { \"country\": \"\", \"website\": \"\", \"address\": \"qsdqsdqsdqsdqsd\", \"city\": \"\", \"fax_number\": \"\", \"building\": \"\", \"room\": \"\", \"zipcode\": \"\", \"phone_number\": \"2343245353423\", \"state\": \"\", \"id\": \"1\", \"mobile_number\": \"\", \"email\": \"walter.bates@digital.com\" }, \"icon\": \"icons/default/icon_user.png\", \"creation_date\": \"2022-07-26 22:11:11.215\", \"userName\": \"walter.bates\", \"title\": \"Mr\", \"created_by_user_id\": \"-1\", \"enabled\": \"true\", \"lastname\": \"bates\", \"last_connection\": \"2022-07-31 00:40:00.842\", \"password\": \"\", \"manager_id\": \"19\", \"id\": \"1\", \"job_title\": \"\", \"last_update_date\": \"2022-07-26 22:11:11.215\" }, \"taskInfo\": [ { \"displayDescription\": \"\", \"executedBy\": \"0\", \"rootContainerId\": \"2012\", \"assigned_date\": \"\", \"displayName\": \"CORRECTION\", \"executedBySubstitute\": \"0\", \"dueDate\": \"\", \"description\": \"\", \"type\": \"USER_TASK\", \"priority\": \"normal\", \"actorId\": \"332\", \"processId\": \"5660675411949425958\", \"caseId\": \"2012\", \"name\": \"CORRECTION\", \"reached_state_date\": \"2022-07-31 00:41:10.368\", \"rootCaseId\": \"2012\", \"id\": \"40063\", \"state\": \"ready\", \"parentCaseId\": \"2012\", \"last_update_date\": \"2022-07-31 00:41:10.368\", \"assigned_id\": \"\" }, { \"displayDescription\": \"\", \"executedBy\": \"0\", \"rootContainerId\": \"2013\", \"assigned_date\": \"2022-07-31 01:34:37.347\", \"displayName\": \"Step Validation Officer\", \"executedBySubstitute\": \"0\", \"dueDate\": \"\", \"description\": \"\", \"type\": \"USER_TASK\", \"priority\": \"normal\", \"actorId\": \"331\", \"processId\": \"5660675411949425958\", \"caseId\": \"2013\", \"name\": \"Validation Officer\", \"reached_state_date\": \"2022-07-31 01:33:44.639\", \"rootCaseId\": \"2013\", \"id\": \"40067\", \"state\": \"ready\", \"parentCaseId\": \"2013\", \"last_update_date\": \"2022-07-31 01:33:44.639\", \"assigned_id\": \"1\" } ] }"
+      ],
+      "exposed" : false
+    },
+    "ecrase" : {
+      "type" : "expression",
+      "value" : [
+        "//$data.userData = $data.dummyData;",
+        "return \"hello\";"
+      ],
+      "exposed" : false
+    },
+    "tacheEnAttente" : {
+      "type" : "expression",
+      "value" : [
+        "let tasks = $data.userData.taskInfo;",
+        "let count = tasks.filter(item => item.assigned_id === \"\").length;",
+        "return count;"
+      ],
+      "exposed" : false
+    },
+    "totalTaches" : {
+      "type" : "expression",
+      "value" : [
+        "let all = $data.userData.taskInfo",
+        "//l.count { it>3 } ",
+        "return all.length;"
+      ],
+      "exposed" : false
+    },
+    "tacheAssignee" : {
+      "type" : "expression",
+      "value" : [
+        "let tasks = $data.userData.taskInfo;",
+        "let count = tasks.filter(item => item.assigned_id !== \"\").length;",
+        "return count;"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

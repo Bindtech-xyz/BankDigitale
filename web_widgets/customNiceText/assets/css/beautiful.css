@@ -1,0 +1,30 @@
+/* CSS used here will be applied after bootstrap.css */
+/* .dl-horizontal dt { text-align: left; } */
+.dl-horizontal {
+    background: green;
+margin-right: auto;
+margin-left: auto;
+}
+
+.dl-horizontal dl {
+    border: 0.5em solid #00FF00;
+    padding: 0.5em;
+    border-width: 1px 13px 0 0;
+    background: green;
+    margin-right: auto;
+    margin-left: auto;
+  }
+.dl-horizontal dt {
+    width: 25%;
+    background: red;
+    text-align: right;
+    font-weight: bold;
+    
+  }
+.dl-horizontal dt::after {
+    content: " :";
+  }
+.dl-horizontal dd {
+    margin-left:25%;
+    padding: 0 0 0.2em 0.2em;
+    background: yellow;}

@@ -1,0 +1,1983 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "id" : "testing",
+  "name" : "testing",
+  "lastUpdate" : 1666032936638,
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "07efeff4-8b55-4941-9135-b3c182b84020",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "HELLO TESTING"
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 2"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
+                }
+              },
+              "reference" : "93cb9cdc-85df-4745-9c3b-b1079e69eb0b",
+              "hasValidationError" : false,
+              "id" : "pbTitle"
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "358d8475-9d89-4480-bce5-a4fe9fe33b47",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "tabsContainer",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "vertical" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "type" : {
+                  "type" : "constant",
+                  "value" : "tabs"
+                }
+              },
+              "reference" : "4b236784-ee7e-41d6-88c6-8e117d7c1a77",
+              "hasValidationError" : false,
+              "id" : "pbTabsContainer",
+              "tabList" : [
+                {
+                  "type" : "tabContainer",
+                  "dimension" : {
+                    "xs" : 12,
+                    "sm" : 12,
+                    "md" : 12,
+                    "lg" : 12
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "disabled" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "title" : {
+                      "type" : "interpolation",
+                      "value" : "Tab 1"
+                    },
+                    "active" : {
+                      "type" : "variable",
+                      "value" : ""
+                    },
+                    "allowHTML" : {
+                      "type" : "constant",
+                      "value" : true
+                    }
+                  },
+                  "reference" : "327acfca-e272-4d73-a6f1-87da86b5af31",
+                  "hasValidationError" : false,
+                  "id" : "pbTabContainer",
+                  "container" : {
+                    "type" : "container",
+                    "dimension" : {
+                      "xs" : 12
+                    },
+                    "propertyValues" : { },
+                    "reference" : "685f402b-bbd6-40aa-92ac-46bf63bd0363",
+                    "hasValidationError" : false,
+                    "id" : "pbContainer",
+                    "rows" : [
+                      [ ]
+                    ]
+                  }
+                },
+                {
+                  "type" : "tabContainer",
+                  "dimension" : {
+                    "xs" : 12,
+                    "sm" : 12,
+                    "md" : 12,
+                    "lg" : 12
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "disabled" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "title" : {
+                      "type" : "interpolation",
+                      "value" : "Tab 2"
+                    },
+                    "active" : {
+                      "type" : "variable",
+                      "value" : ""
+                    },
+                    "allowHTML" : {
+                      "type" : "constant",
+                      "value" : true
+                    }
+                  },
+                  "reference" : "6d61b0ba-e8bf-4d18-9a7d-01d164bc84b7",
+                  "hasValidationError" : false,
+                  "id" : "pbTabContainer",
+                  "container" : {
+                    "type" : "container",
+                    "dimension" : {
+                      "xs" : 12
+                    },
+                    "propertyValues" : { },
+                    "reference" : "faabcefc-4de0-42b0-8113-42d177c0d32a",
+                    "hasValidationError" : false,
+                    "id" : "pbContainer",
+                    "rows" : [
+                      [
+                        {
+                          "type" : "container",
+                          "dimension" : {
+                            "xs" : 12,
+                            "sm" : 12,
+                            "md" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "hidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "repeatedCollection" : {
+                              "type" : "variable",
+                              "value" : ""
+                            }
+                          },
+                          "reference" : "57fa2212-10ac-428a-9462-ddee5b23bbf0",
+                          "hasValidationError" : false,
+                          "id" : "pbContainer",
+                          "rows" : [
+                            [
+                              {
+                                "type" : "container",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 1,
+                                  "lg" : 1
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "repeatedCollection" : {
+                                    "type" : "variable",
+                                    "value" : ""
+                                  }
+                                },
+                                "reference" : "f22b5858-6efb-4547-a20d-930f825f533f",
+                                "hasValidationError" : false,
+                                "id" : "pbContainer",
+                                "rows" : [
+                                  [ ]
+                                ]
+                              },
+                              {
+                                "type" : "container",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 10,
+                                  "lg" : 10
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "repeatedCollection" : {
+                                    "type" : "variable",
+                                    "value" : ""
+                                  }
+                                },
+                                "reference" : "3ed52e66-6aa7-4366-bc13-3b89cb991757",
+                                "hasValidationError" : false,
+                                "id" : "pbContainer",
+                                "rows" : [
+                                  [
+                                    {
+                                      "type" : "formContainer",
+                                      "dimension" : {
+                                        "xs" : 12,
+                                        "sm" : 12,
+                                        "md" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "hidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        }
+                                      },
+                                      "reference" : "36506a09-b2b9-4cfa-b04c-f2cd0843d247",
+                                      "hasValidationError" : false,
+                                      "id" : "pbFormContainer",
+                                      "container" : {
+                                        "type" : "container",
+                                        "dimension" : {
+                                          "xs" : 12
+                                        },
+                                        "propertyValues" : { },
+                                        "reference" : "09eca8ee-d4e6-4d89-8305-7543b43d820c",
+                                        "hasValidationError" : false,
+                                        "id" : "pbContainer",
+                                        "rows" : [
+                                          [
+                                            {
+                                              "type" : "container",
+                                              "dimension" : {
+                                                "xs" : 12,
+                                                "sm" : 12,
+                                                "md" : 12,
+                                                "lg" : 12
+                                              },
+                                              "propertyValues" : {
+                                                "cssClasses" : {
+                                                  "type" : "constant",
+                                                  "value" : ""
+                                                },
+                                                "hidden" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "repeatedCollection" : {
+                                                  "type" : "variable",
+                                                  "value" : ""
+                                                }
+                                              },
+                                              "reference" : "e628c9bc-42c3-4ed5-b168-08aad57b6bbd",
+                                              "hasValidationError" : false,
+                                              "id" : "pbContainer",
+                                              "rows" : [
+                                                [
+                                                  {
+                                                    "type" : "component",
+                                                    "dimension" : {
+                                                      "xs" : 12,
+                                                      "sm" : 12,
+                                                      "md" : 8,
+                                                      "lg" : 8
+                                                    },
+                                                    "propertyValues" : {
+                                                      "cssClasses" : {
+                                                        "type" : "constant",
+                                                        "value" : ""
+                                                      },
+                                                      "hidden" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "required" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "minLength" : {
+                                                        "type" : "constant",
+                                                        "value" : ""
+                                                      },
+                                                      "maxLength" : {
+                                                        "type" : "constant",
+                                                        "value" : ""
+                                                      },
+                                                      "readOnly" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "labelHidden" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "label" : {
+                                                        "type" : "interpolation",
+                                                        "value" : "Indice Client"
+                                                      },
+                                                      "labelPosition" : {
+                                                        "type" : "constant",
+                                                        "value" : "left"
+                                                      },
+                                                      "labelWidth" : {
+                                                        "type" : "constant",
+                                                        "value" : 7
+                                                      },
+                                                      "placeholder" : {
+                                                        "type" : "interpolation"
+                                                      },
+                                                      "value" : {
+                                                        "type" : "variable",
+                                                        "value" : ""
+                                                      },
+                                                      "type" : {
+                                                        "type" : "constant",
+                                                        "value" : "text"
+                                                      },
+                                                      "min" : {
+                                                        "type" : "constant"
+                                                      },
+                                                      "max" : {
+                                                        "type" : "constant"
+                                                      },
+                                                      "step" : {
+                                                        "type" : "constant",
+                                                        "value" : 1
+                                                      },
+                                                      "allowHTML" : {
+                                                        "type" : "constant",
+                                                        "value" : true
+                                                      }
+                                                    },
+                                                    "reference" : "e4c20cc0-170d-4aec-b6fa-728ad5166150",
+                                                    "hasValidationError" : false,
+                                                    "id" : "pbInput"
+                                                  },
+                                                  {
+                                                    "type" : "component",
+                                                    "dimension" : {
+                                                      "xs" : 12,
+                                                      "sm" : 12,
+                                                      "md" : 4,
+                                                      "lg" : 4
+                                                    },
+                                                    "propertyValues" : {
+                                                      "cssClasses" : {
+                                                        "type" : "constant",
+                                                        "value" : ""
+                                                      },
+                                                      "hidden" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "disabled" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "label" : {
+                                                        "type" : "interpolation",
+                                                        "value" : "Charger"
+                                                      },
+                                                      "alignment" : {
+                                                        "type" : "constant",
+                                                        "value" : "left"
+                                                      },
+                                                      "buttonStyle" : {
+                                                        "type" : "constant",
+                                                        "value" : "default"
+                                                      },
+                                                      "action" : {
+                                                        "type" : "constant",
+                                                        "value" : "Submit task"
+                                                      },
+                                                      "assign" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "url" : {
+                                                        "type" : "interpolation"
+                                                      },
+                                                      "responseStatusCode" : {
+                                                        "type" : "variable",
+                                                        "value" : ""
+                                                      },
+                                                      "dataToSend" : {
+                                                        "type" : "constant"
+                                                      },
+                                                      "dataFromSuccess" : {
+                                                        "type" : "variable",
+                                                        "value" : ""
+                                                      },
+                                                      "closeOnSuccess" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "dataFromError" : {
+                                                        "type" : "variable",
+                                                        "value" : ""
+                                                      },
+                                                      "targetUrlOnSuccess" : {
+                                                        "type" : "interpolation"
+                                                      },
+                                                      "collectionToModify" : {
+                                                        "type" : "variable"
+                                                      },
+                                                      "modalId" : {
+                                                        "type" : "constant",
+                                                        "value" : ""
+                                                      },
+                                                      "collectionPosition" : {
+                                                        "type" : "constant",
+                                                        "value" : "Last"
+                                                      },
+                                                      "valueToAdd" : {
+                                                        "type" : "constant"
+                                                      },
+                                                      "removeItem" : {
+                                                        "type" : "variable"
+                                                      },
+                                                      "allowHTML" : {
+                                                        "type" : "constant",
+                                                        "value" : true
+                                                      }
+                                                    },
+                                                    "reference" : "73cbb9f4-3473-44f4-b0d0-f1130c63bd7a",
+                                                    "hasValidationError" : false,
+                                                    "id" : "pbButton"
+                                                  }
+                                                ]
+                                              ]
+                                            }
+                                          ],
+                                          [
+                                            {
+                                              "type" : "container",
+                                              "dimension" : {
+                                                "xs" : 12,
+                                                "sm" : 12,
+                                                "md" : 12,
+                                                "lg" : 12
+                                              },
+                                              "propertyValues" : {
+                                                "cssClasses" : {
+                                                  "type" : "constant",
+                                                  "value" : ""
+                                                },
+                                                "hidden" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "repeatedCollection" : {
+                                                  "type" : "variable",
+                                                  "value" : ""
+                                                }
+                                              },
+                                              "reference" : "031e6042-5c51-428c-b55c-5d71f526f5fd",
+                                              "hasValidationError" : false,
+                                              "id" : "pbContainer",
+                                              "rows" : [
+                                                [
+                                                  {
+                                                    "type" : "component",
+                                                    "dimension" : {
+                                                      "xs" : 12,
+                                                      "sm" : 12,
+                                                      "md" : 12,
+                                                      "lg" : 12
+                                                    },
+                                                    "propertyValues" : {
+                                                      "cssClasses" : {
+                                                        "type" : "constant",
+                                                        "value" : ""
+                                                      },
+                                                      "hidden" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "text" : {
+                                                        "type" : "interpolation",
+                                                        "value" : "Informations Personnelles"
+                                                      },
+                                                      "level" : {
+                                                        "type" : "constant",
+                                                        "value" : "Level 4"
+                                                      },
+                                                      "alignment" : {
+                                                        "type" : "constant",
+                                                        "value" : "left"
+                                                      },
+                                                      "allowHTML" : {
+                                                        "type" : "constant",
+                                                        "value" : true
+                                                      }
+                                                    },
+                                                    "reference" : "e6de4ece-1477-4727-8f7d-4c0249931dd3",
+                                                    "hasValidationError" : false,
+                                                    "id" : "pbTitle"
+                                                  }
+                                                ],
+                                                [
+                                                  {
+                                                    "type" : "container",
+                                                    "dimension" : {
+                                                      "xs" : 12,
+                                                      "sm" : 12,
+                                                      "md" : 2,
+                                                      "lg" : 1
+                                                    },
+                                                    "propertyValues" : {
+                                                      "cssClasses" : {
+                                                        "type" : "constant",
+                                                        "value" : ""
+                                                      },
+                                                      "hidden" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "repeatedCollection" : {
+                                                        "type" : "variable",
+                                                        "value" : ""
+                                                      }
+                                                    },
+                                                    "reference" : "69501eec-dd61-479f-9fbb-86e0595a9e7f",
+                                                    "hasValidationError" : false,
+                                                    "id" : "pbContainer",
+                                                    "rows" : [
+                                                      [
+                                                        {
+                                                          "type" : "component",
+                                                          "dimension" : {
+                                                            "xs" : 12,
+                                                            "sm" : 12,
+                                                            "md" : 12,
+                                                            "lg" : 12
+                                                          },
+                                                          "propertyValues" : {
+                                                            "cssClasses" : {
+                                                              "type" : "constant",
+                                                              "value" : ""
+                                                            },
+                                                            "hidden" : {
+                                                              "type" : "constant",
+                                                              "value" : false
+                                                            },
+                                                            "labelHidden" : {
+                                                              "type" : "constant",
+                                                              "value" : true
+                                                            },
+                                                            "label" : {
+                                                              "type" : "interpolation",
+                                                              "value" : "Default label"
+                                                            },
+                                                            "labelPosition" : {
+                                                              "type" : "constant",
+                                                              "value" : "top"
+                                                            },
+                                                            "labelWidth" : {
+                                                              "type" : "constant",
+                                                              "value" : 4
+                                                            },
+                                                            "allowHTML" : {
+                                                              "type" : "constant",
+                                                              "value" : true
+                                                            },
+                                                            "text" : {
+                                                              "type" : "interpolation",
+                                                              "value" : "{{color}}"
+                                                            },
+                                                            "alignment" : {
+                                                              "type" : "constant",
+                                                              "value" : "right"
+                                                            },
+                                                            "textStyle" : {
+                                                              "type" : "constant",
+                                                              "value" : "primary"
+                                                            }
+                                                          },
+                                                          "reference" : "f8a8be3b-ed38-48d1-8945-7fec93ef6ad9",
+                                                          "hasValidationError" : false,
+                                                          "id" : "customTextColor"
+                                                        }
+                                                      ],
+                                                      [
+                                                        {
+                                                          "type" : "component",
+                                                          "dimension" : {
+                                                            "xs" : 12,
+                                                            "sm" : 12,
+                                                            "md" : 12,
+                                                            "lg" : 12
+                                                          },
+                                                          "propertyValues" : {
+                                                            "cssClasses" : {
+                                                              "type" : "constant",
+                                                              "value" : ""
+                                                            },
+                                                            "hidden" : {
+                                                              "type" : "constant",
+                                                              "value" : false
+                                                            },
+                                                            "value" : {
+                                                              "type" : "expression",
+                                                              "value" : ""
+                                                            },
+                                                            "color" : {
+                                                              "type" : "constant",
+                                                              "value" : "RebeccaPurple"
+                                                            },
+                                                            "background" : {
+                                                              "type" : "constant",
+                                                              "value" : "Yellow"
+                                                            },
+                                                            "alignment" : {
+                                                              "type" : "constant",
+                                                              "value" : "right"
+                                                            }
+                                                          },
+                                                          "reference" : "89ecb9a3-68be-455f-ad7f-3ba69982003f",
+                                                          "hasValidationError" : false,
+                                                          "id" : "customStatus"
+                                                        }
+                                                      ]
+                                                    ]
+                                                  },
+                                                  {
+                                                    "type" : "container",
+                                                    "dimension" : {
+                                                      "xs" : 12,
+                                                      "sm" : 12,
+                                                      "md" : 10,
+                                                      "lg" : 11
+                                                    },
+                                                    "propertyValues" : {
+                                                      "cssClasses" : {
+                                                        "type" : "constant",
+                                                        "value" : "panel panel-success"
+                                                      },
+                                                      "hidden" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "repeatedCollection" : {
+                                                        "type" : "variable",
+                                                        "value" : ""
+                                                      }
+                                                    },
+                                                    "reference" : "76d72c0a-d9d9-4022-b4e4-e0a5bb1a196b",
+                                                    "hasValidationError" : false,
+                                                    "id" : "pbContainer",
+                                                    "rows" : [
+                                                      [
+                                                        {
+                                                          "type" : "container",
+                                                          "dimension" : {
+                                                            "xs" : 12,
+                                                            "sm" : 12,
+                                                            "md" : 5,
+                                                            "lg" : 5
+                                                          },
+                                                          "propertyValues" : {
+                                                            "cssClasses" : {
+                                                              "type" : "constant",
+                                                              "value" : ""
+                                                            },
+                                                            "hidden" : {
+                                                              "type" : "constant",
+                                                              "value" : false
+                                                            },
+                                                            "repeatedCollection" : {
+                                                              "type" : "variable",
+                                                              "value" : ""
+                                                            }
+                                                          },
+                                                          "reference" : "a37b4c7e-9c94-4d29-a0be-91d08e777c04",
+                                                          "hasValidationError" : false,
+                                                          "id" : "pbContainer",
+                                                          "rows" : [
+                                                            [
+                                                              {
+                                                                "type" : "component",
+                                                                "dimension" : {
+                                                                  "xs" : 12,
+                                                                  "sm" : 12,
+                                                                  "md" : 12,
+                                                                  "lg" : 12
+                                                                },
+                                                                "propertyValues" : {
+                                                                  "cssClasses" : {
+                                                                    "type" : "constant",
+                                                                    "value" : ""
+                                                                  },
+                                                                  "hidden" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
+                                                                  },
+                                                                  "required" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
+                                                                  },
+                                                                  "minLength" : {
+                                                                    "type" : "constant",
+                                                                    "value" : ""
+                                                                  },
+                                                                  "maxLength" : {
+                                                                    "type" : "constant",
+                                                                    "value" : ""
+                                                                  },
+                                                                  "readOnly" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
+                                                                  },
+                                                                  "labelHidden" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
+                                                                  },
+                                                                  "label" : {
+                                                                    "type" : "interpolation",
+                                                                    "value" : "Nom"
+                                                                  },
+                                                                  "labelPosition" : {
+                                                                    "type" : "constant",
+                                                                    "value" : "left"
+                                                                  },
+                                                                  "labelWidth" : {
+                                                                    "type" : "constant",
+                                                                    "value" : 4
+                                                                  },
+                                                                  "placeholder" : {
+                                                                    "type" : "interpolation"
+                                                                  },
+                                                                  "value" : {
+                                                                    "type" : "variable",
+                                                                    "value" : ""
+                                                                  },
+                                                                  "type" : {
+                                                                    "type" : "constant",
+                                                                    "value" : "text"
+                                                                  },
+                                                                  "min" : {
+                                                                    "type" : "constant"
+                                                                  },
+                                                                  "max" : {
+                                                                    "type" : "constant"
+                                                                  },
+                                                                  "step" : {
+                                                                    "type" : "constant",
+                                                                    "value" : 1
+                                                                  },
+                                                                  "allowHTML" : {
+                                                                    "type" : "constant",
+                                                                    "value" : true
+                                                                  }
+                                                                },
+                                                                "reference" : "8890afbb-fc43-40a0-852e-4bb956369cda",
+                                                                "hasValidationError" : false,
+                                                                "id" : "pbInput"
+                                                              }
+                                                            ],
+                                                            [
+                                                              {
+                                                                "type" : "component",
+                                                                "dimension" : {
+                                                                  "xs" : 12,
+                                                                  "sm" : 12,
+                                                                  "md" : 12,
+                                                                  "lg" : 12
+                                                                },
+                                                                "propertyValues" : {
+                                                                  "cssClasses" : {
+                                                                    "type" : "constant",
+                                                                    "value" : ""
+                                                                  },
+                                                                  "hidden" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
+                                                                  },
+                                                                  "required" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
+                                                                  },
+                                                                  "minLength" : {
+                                                                    "type" : "constant",
+                                                                    "value" : ""
+                                                                  },
+                                                                  "maxLength" : {
+                                                                    "type" : "constant",
+                                                                    "value" : ""
+                                                                  },
+                                                                  "readOnly" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
+                                                                  },
+                                                                  "labelHidden" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
+                                                                  },
+                                                                  "label" : {
+                                                                    "type" : "interpolation",
+                                                                    "value" : "Prénom"
+                                                                  },
+                                                                  "labelPosition" : {
+                                                                    "type" : "constant",
+                                                                    "value" : "left"
+                                                                  },
+                                                                  "labelWidth" : {
+                                                                    "type" : "constant",
+                                                                    "value" : 4
+                                                                  },
+                                                                  "placeholder" : {
+                                                                    "type" : "interpolation"
+                                                                  },
+                                                                  "value" : {
+                                                                    "type" : "variable",
+                                                                    "value" : ""
+                                                                  },
+                                                                  "type" : {
+                                                                    "type" : "constant",
+                                                                    "value" : "text"
+                                                                  },
+                                                                  "min" : {
+                                                                    "type" : "constant"
+                                                                  },
+                                                                  "max" : {
+                                                                    "type" : "constant"
+                                                                  },
+                                                                  "step" : {
+                                                                    "type" : "constant",
+                                                                    "value" : 1
+                                                                  },
+                                                                  "allowHTML" : {
+                                                                    "type" : "constant",
+                                                                    "value" : true
+                                                                  }
+                                                                },
+                                                                "reference" : "39dfaa61-5f02-4d55-90be-6d039bb68c17",
+                                                                "hasValidationError" : false,
+                                                                "id" : "pbInput"
+                                                              }
+                                                            ]
+                                                          ]
+                                                        },
+                                                        {
+                                                          "type" : "container",
+                                                          "dimension" : {
+                                                            "xs" : 12,
+                                                            "sm" : 12,
+                                                            "md" : 7,
+                                                            "lg" : 7
+                                                          },
+                                                          "propertyValues" : {
+                                                            "cssClasses" : {
+                                                              "type" : "constant",
+                                                              "value" : ""
+                                                            },
+                                                            "hidden" : {
+                                                              "type" : "constant",
+                                                              "value" : false
+                                                            },
+                                                            "repeatedCollection" : {
+                                                              "type" : "variable",
+                                                              "value" : ""
+                                                            }
+                                                          },
+                                                          "reference" : "6357cdce-2a77-46e6-bdcd-c23435c572ea",
+                                                          "hasValidationError" : false,
+                                                          "id" : "pbContainer",
+                                                          "rows" : [
+                                                            [
+                                                              {
+                                                                "type" : "component",
+                                                                "dimension" : {
+                                                                  "xs" : 12,
+                                                                  "sm" : 12,
+                                                                  "md" : 6,
+                                                                  "lg" : 4
+                                                                },
+                                                                "propertyValues" : {
+                                                                  "cssClasses" : {
+                                                                    "type" : "constant",
+                                                                    "value" : ""
+                                                                  },
+                                                                  "hidden" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
+                                                                  },
+                                                                  "required" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
+                                                                  },
+                                                                  "labelHidden" : {
+                                                                    "type" : "constant",
+                                                                    "value" : true
+                                                                  },
+                                                                  "label" : {
+                                                                    "type" : "interpolation",
+                                                                    "value" : "Default label"
+                                                                  },
+                                                                  "labelPosition" : {
+                                                                    "type" : "constant",
+                                                                    "value" : "top"
+                                                                  },
+                                                                  "labelWidth" : {
+                                                                    "type" : "constant",
+                                                                    "value" : 4
+                                                                  },
+                                                                  "placeholder" : {
+                                                                    "type" : "interpolation"
+                                                                  },
+                                                                  "url" : {
+                                                                    "type" : "constant",
+                                                                    "value" : "../API/formFileUpload"
+                                                                  },
+                                                                  "value" : {
+                                                                    "type" : "variable",
+                                                                    "value" : ""
+                                                                  },
+                                                                  "errorContent" : {
+                                                                    "type" : "variable",
+                                                                    "value" : ""
+                                                                  },
+                                                                  "allowHTML" : {
+                                                                    "type" : "constant",
+                                                                    "value" : true
+                                                                  }
+                                                                },
+                                                                "reference" : "4f92e575-e4b5-4670-a457-65d628d86172",
+                                                                "hasValidationError" : false,
+                                                                "id" : "pbUpload"
+                                                              },
+                                                              {
+                                                                "type" : "component",
+                                                                "dimension" : {
+                                                                  "xs" : 12,
+                                                                  "sm" : 12,
+                                                                  "md" : 3,
+                                                                  "lg" : 5
+                                                                },
+                                                                "propertyValues" : {
+                                                                  "cssClasses" : {
+                                                                    "type" : "constant",
+                                                                    "value" : ""
+                                                                  },
+                                                                  "hidden" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
+                                                                  },
+                                                                  "disabled" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
+                                                                  },
+                                                                  "required" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
+                                                                  },
+                                                                  "labelHidden" : {
+                                                                    "type" : "constant",
+                                                                    "value" : true
+                                                                  },
+                                                                  "label" : {
+                                                                    "type" : "interpolation",
+                                                                    "value" : "Select"
+                                                                  },
+                                                                  "labelPosition" : {
+                                                                    "type" : "constant",
+                                                                    "value" : "left"
+                                                                  },
+                                                                  "labelWidth" : {
+                                                                    "type" : "constant",
+                                                                    "value" : 4
+                                                                  },
+                                                                  "placeholder" : {
+                                                                    "type" : "interpolation",
+                                                                    "value" : "Select an option"
+                                                                  },
+                                                                  "availableValues" : {
+                                                                    "type" : "expression",
+                                                                    "value" : "typeDecision"
+                                                                  },
+                                                                  "displayedKey" : {
+                                                                    "type" : "constant",
+                                                                    "value" : "text"
+                                                                  },
+                                                                  "returnedKey" : {
+                                                                    "type" : "expression",
+                                                                    "value" : "value"
+                                                                  },
+                                                                  "value" : {
+                                                                    "type" : "variable",
+                                                                    "value" : "selectedDecision"
+                                                                  },
+                                                                  "allowHTML" : {
+                                                                    "type" : "constant",
+                                                                    "value" : true
+                                                                  }
+                                                                },
+                                                                "reference" : "e0e9c25f-d2e7-4ca5-b0a3-7949c72ed10f",
+                                                                "hasValidationError" : false,
+                                                                "id" : "pbSelect"
+                                                              }
+                                                            ],
+                                                            [
+                                                              {
+                                                                "type" : "component",
+                                                                "dimension" : {
+                                                                  "xs" : 12,
+                                                                  "sm" : 12,
+                                                                  "md" : 12,
+                                                                  "lg" : 12
+                                                                },
+                                                                "propertyValues" : {
+                                                                  "cssClasses" : {
+                                                                    "type" : "constant",
+                                                                    "value" : ""
+                                                                  },
+                                                                  "hidden" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
+                                                                  },
+                                                                  "labelHidden" : {
+                                                                    "type" : "constant",
+                                                                    "value" : true
+                                                                  },
+                                                                  "label" : {
+                                                                    "type" : "interpolation",
+                                                                    "value" : "Default label"
+                                                                  },
+                                                                  "labelPosition" : {
+                                                                    "type" : "constant",
+                                                                    "value" : "top"
+                                                                  },
+                                                                  "labelWidth" : {
+                                                                    "type" : "constant",
+                                                                    "value" : 4
+                                                                  },
+                                                                  "allowHTML" : {
+                                                                    "type" : "constant",
+                                                                    "value" : true
+                                                                  },
+                                                                  "text" : {
+                                                                    "type" : "interpolation",
+                                                                    "value" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,<br/>consectetur,<br/>adipisci velit..."
+                                                                  },
+                                                                  "alignment" : {
+                                                                    "type" : "constant",
+                                                                    "value" : "left"
+                                                                  }
+                                                                },
+                                                                "reference" : "68a2d651-9081-462e-bbc9-441e322a7015",
+                                                                "hasValidationError" : false,
+                                                                "id" : "pbText"
+                                                              }
+                                                            ]
+                                                          ]
+                                                        }
+                                                      ]
+                                                    ]
+                                                  }
+                                                ]
+                                              ]
+                                            }
+                                          ],
+                                          [
+                                            {
+                                              "type" : "container",
+                                              "dimension" : {
+                                                "xs" : 12,
+                                                "sm" : 12,
+                                                "md" : 6,
+                                                "lg" : 6
+                                              },
+                                              "propertyValues" : {
+                                                "cssClasses" : {
+                                                  "type" : "constant",
+                                                  "value" : ""
+                                                },
+                                                "hidden" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "repeatedCollection" : {
+                                                  "type" : "variable",
+                                                  "value" : ""
+                                                }
+                                              },
+                                              "reference" : "4e43f232-ce20-441d-870e-0f76a1752158",
+                                              "hasValidationError" : false,
+                                              "id" : "pbContainer",
+                                              "rows" : [
+                                                [ ]
+                                              ]
+                                            },
+                                            {
+                                              "type" : "container",
+                                              "dimension" : {
+                                                "xs" : 12,
+                                                "sm" : 12,
+                                                "md" : 6,
+                                                "lg" : 6
+                                              },
+                                              "propertyValues" : {
+                                                "cssClasses" : {
+                                                  "type" : "constant",
+                                                  "value" : ""
+                                                },
+                                                "hidden" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "repeatedCollection" : {
+                                                  "type" : "variable",
+                                                  "value" : ""
+                                                }
+                                              },
+                                              "reference" : "6035e93a-482e-4660-b20a-b2517beaf0d3",
+                                              "hasValidationError" : false,
+                                              "id" : "pbContainer",
+                                              "rows" : [
+                                                [ ]
+                                              ]
+                                            }
+                                          ],
+                                          [
+                                            {
+                                              "type" : "container",
+                                              "dimension" : {
+                                                "xs" : 12,
+                                                "sm" : 12,
+                                                "md" : 12,
+                                                "lg" : 12
+                                              },
+                                              "propertyValues" : {
+                                                "cssClasses" : {
+                                                  "type" : "constant",
+                                                  "value" : ""
+                                                },
+                                                "hidden" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "repeatedCollection" : {
+                                                  "type" : "variable",
+                                                  "value" : ""
+                                                }
+                                              },
+                                              "reference" : "40fa5e27-69a5-4cfd-b492-d09cdb1c96d4",
+                                              "hasValidationError" : false,
+                                              "id" : "pbContainer",
+                                              "rows" : [
+                                                [ ]
+                                              ]
+                                            }
+                                          ]
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                ]
+                              },
+                              {
+                                "type" : "container",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 1,
+                                  "lg" : 1
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "repeatedCollection" : {
+                                    "type" : "variable",
+                                    "value" : ""
+                                  }
+                                },
+                                "reference" : "10322012-eeaf-42a9-b503-8bacd5110a11",
+                                "hasValidationError" : false,
+                                "id" : "pbContainer",
+                                "rows" : [
+                                  [ ]
+                                ]
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "type" : "tabContainer",
+                  "dimension" : {
+                    "xs" : 12,
+                    "sm" : 12,
+                    "md" : 12,
+                    "lg" : 12
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "disabled" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "title" : {
+                      "type" : "interpolation",
+                      "value" : "Tab 3"
+                    },
+                    "active" : {
+                      "type" : "variable",
+                      "value" : ""
+                    },
+                    "allowHTML" : {
+                      "type" : "constant",
+                      "value" : true
+                    }
+                  },
+                  "reference" : "0ece9602-867f-4efc-a3c8-69f021902493",
+                  "hasValidationError" : false,
+                  "id" : "pbTabContainer",
+                  "container" : {
+                    "type" : "container",
+                    "dimension" : {
+                      "xs" : 12
+                    },
+                    "propertyValues" : { },
+                    "reference" : "2f3d55a0-be23-4fe9-88f1-f60fd3b0c5e0",
+                    "hasValidationError" : false,
+                    "id" : "pbContainer",
+                    "rows" : [
+                      [
+                        {
+                          "type" : "container",
+                          "dimension" : {
+                            "xs" : 12,
+                            "sm" : 12,
+                            "md" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "hidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "repeatedCollection" : {
+                              "type" : "variable",
+                              "value" : ""
+                            }
+                          },
+                          "reference" : "85ea5746-6508-4fbf-8fe3-24e62cc07c35",
+                          "hasValidationError" : false,
+                          "id" : "pbContainer",
+                          "rows" : [
+                            [
+                              {
+                                "type" : "container",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "repeatedCollection" : {
+                                    "type" : "variable",
+                                    "value" : ""
+                                  }
+                                },
+                                "reference" : "a7201517-9837-42e2-887e-fc035595568f",
+                                "hasValidationError" : false,
+                                "id" : "pbContainer",
+                                "rows" : [
+                                  [
+                                    {
+                                      "type" : "component",
+                                      "dimension" : {
+                                        "xs" : 12,
+                                        "sm" : 12,
+                                        "md" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "hidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "value" : {
+                                          "type" : "constant",
+                                          "value" : "This is the initial value"
+                                        },
+                                        "color" : {
+                                          "type" : "constant",
+                                          "value" : "RebeccaPurple"
+                                        },
+                                        "background" : {
+                                          "type" : "constant",
+                                          "value" : "Yellow"
+                                        }
+                                      },
+                                      "reference" : "d0523e0e-e0fb-419b-b5e8-40367e5f5ae9",
+                                      "hasValidationError" : false,
+                                      "id" : "customEmbded"
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "type" : "container",
+                                      "dimension" : {
+                                        "xs" : 12,
+                                        "sm" : 12,
+                                        "md" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "hidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "repeatedCollection" : {
+                                          "type" : "variable",
+                                          "value" : ""
+                                        }
+                                      },
+                                      "reference" : "11f1b37d-5292-4e54-a2d1-3deb518fc39c",
+                                      "hasValidationError" : false,
+                                      "id" : "pbContainer",
+                                      "rows" : [
+                                        [
+                                          {
+                                            "type" : "component",
+                                            "dimension" : {
+                                              "xs" : 12,
+                                              "sm" : 12,
+                                              "md" : 12,
+                                              "lg" : 12
+                                            },
+                                            "propertyValues" : {
+                                              "cssClasses" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "hidden" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "type" : {
+                                                "type" : "constant",
+                                                "value" : "Process document"
+                                              },
+                                              "url" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "document" : {
+                                                "type" : "variable",
+                                                "value" : ""
+                                              },
+                                              "showPreview" : {
+                                                "type" : "constant",
+                                                "value" : true
+                                              }
+                                            },
+                                            "reference" : "6d6f4b66-6246-45a8-acf4-34ede104cdb6",
+                                            "hasValidationError" : false,
+                                            "id" : "pbFileViewer"
+                                          }
+                                        ]
+                                      ]
+                                    }
+                                  ]
+                                ]
+                              },
+                              {
+                                "type" : "container",
+                                "dimension" : {
+                                  "xs" : 12,
+                                  "sm" : 12,
+                                  "md" : 6,
+                                  "lg" : 6
+                                },
+                                "propertyValues" : {
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "repeatedCollection" : {
+                                    "type" : "variable",
+                                    "value" : ""
+                                  }
+                                },
+                                "reference" : "e26b8a4d-9e14-4e47-8a29-f1be8cd98cc8",
+                                "hasValidationError" : false,
+                                "id" : "pbContainer",
+                                "rows" : [
+                                  [
+                                    {
+                                      "type" : "component",
+                                      "dimension" : {
+                                        "xs" : 12,
+                                        "sm" : 12,
+                                        "md" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "hidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "labelHidden" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        },
+                                        "label" : {
+                                          "type" : "interpolation",
+                                          "value" : "Default label"
+                                        },
+                                        "labelPosition" : {
+                                          "type" : "constant",
+                                          "value" : "top"
+                                        },
+                                        "labelWidth" : {
+                                          "type" : "constant",
+                                          "value" : 4
+                                        },
+                                        "allowHTML" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        },
+                                        "text" : {
+                                          "type" : "interpolation",
+                                          "value" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,<br/>consectetur,<br/>adipisci velit..."
+                                        },
+                                        "alignment" : {
+                                          "type" : "constant",
+                                          "value" : "left"
+                                        }
+                                      },
+                                      "reference" : "a41d5bf4-cff4-43ca-91fa-dd4f8c593764",
+                                      "hasValidationError" : false,
+                                      "id" : "pbText"
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "type" : "component",
+                                      "dimension" : {
+                                        "xs" : 12,
+                                        "sm" : 12,
+                                        "md" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "hidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "type" : {
+                                          "type" : "constant",
+                                          "value" : "Process document"
+                                        },
+                                        "url" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "document" : {
+                                          "type" : "variable",
+                                          "value" : ""
+                                        },
+                                        "showPreview" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        }
+                                      },
+                                      "reference" : "8bd31a32-455f-4e6c-aaa8-a3caedbda651",
+                                      "hasValidationError" : false,
+                                      "id" : "customFileViewerCustom"
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "type" : "component",
+                                      "dimension" : {
+                                        "xs" : 12,
+                                        "sm" : 12,
+                                        "md" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "hidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "value" : {
+                                          "type" : "constant",
+                                          "value" : "This is the initial value"
+                                        },
+                                        "nomvar" : {
+                                          "type" : "constant"
+                                        },
+                                        "value1" : {
+                                          "type" : "constant"
+                                        },
+                                        "nomvar1" : {
+                                          "type" : "constant"
+                                        },
+                                        "value2" : {
+                                          "type" : "constant"
+                                        },
+                                        "nomvar2" : {
+                                          "type" : "constant"
+                                        },
+                                        "value3" : {
+                                          "type" : "constant"
+                                        },
+                                        "nomvar3" : {
+                                          "type" : "constant"
+                                        },
+                                        "value4" : {
+                                          "type" : "constant"
+                                        },
+                                        "nomvar4" : {
+                                          "type" : "constant"
+                                        },
+                                        "value5" : {
+                                          "type" : "constant"
+                                        },
+                                        "nomvar5" : {
+                                          "type" : "constant"
+                                        },
+                                        "value6" : {
+                                          "type" : "constant"
+                                        },
+                                        "nomvar6" : {
+                                          "type" : "constant"
+                                        },
+                                        "value7" : {
+                                          "type" : "constant"
+                                        },
+                                        "nomvar7" : {
+                                          "type" : "constant"
+                                        },
+                                        "value8" : {
+                                          "type" : "constant"
+                                        },
+                                        "nomvar8" : {
+                                          "type" : "constant"
+                                        },
+                                        "value9" : {
+                                          "type" : "constant"
+                                        },
+                                        "nomvar9" : {
+                                          "type" : "constant"
+                                        },
+                                        "value10" : {
+                                          "type" : "constant"
+                                        },
+                                        "nomvar10" : {
+                                          "type" : "constant"
+                                        },
+                                        "value11" : {
+                                          "type" : "constant"
+                                        },
+                                        "nomvar11" : {
+                                          "type" : "constant"
+                                        },
+                                        "value12" : {
+                                          "type" : "constant"
+                                        },
+                                        "nomvar12" : {
+                                          "type" : "constant"
+                                        },
+                                        "value13" : {
+                                          "type" : "constant"
+                                        },
+                                        "nomvar13" : {
+                                          "type" : "constant"
+                                        },
+                                        "value14" : {
+                                          "type" : "expression",
+                                          "value" : "color"
+                                        },
+                                        "nomvar14" : {
+                                          "type" : "constant",
+                                          "value" : "color"
+                                        },
+                                        "value15" : {
+                                          "type" : "expression",
+                                          "value" : "selectedDecision"
+                                        },
+                                        "nomvar15" : {
+                                          "type" : "constant",
+                                          "value" : "selectedDecision"
+                                        }
+                                      },
+                                      "reference" : "cf883472-8e8d-4f44-bd88-4de1b079b8ea",
+                                      "hasValidationError" : false,
+                                      "id" : "customAffichageVariableF"
+                                    }
+                                  ]
+                                ]
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 6,
+          "lg" : 8
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "ac17d726-5dbb-47c4-b5f0-cc8b87e18042",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "url" : {
+                  "type" : "expression",
+                  "value" : "fileUrl"
+                },
+                "style" : {
+                  "type" : "constant",
+                  "value" : "width:100%;border: none;"
+                }
+              },
+              "reference" : "32541eba-ae8c-4dbb-9234-993063022707",
+              "hasValidationError" : false,
+              "id" : "customIFrameV703Drak"
+            }
+          ]
+        ]
+      },
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 6,
+          "lg" : 4
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "09d569c7-cd9e-458c-a17a-20da5b646c6a",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : "max-height: 100%"
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "Default label"
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "<pre>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,<br/>consectetur,<br/>adipisci velit...</pre>"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                }
+              },
+              "reference" : "147c5fb7-f0db-4249-8198-d05e49e6ac91",
+              "hasValidationError" : false,
+              "id" : "pbText"
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "1fb4227d-2be9-41af-8338-7a851373e5bd",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "a0cb4340-145f-4611-9af2-a83add650565",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "selectedDecision" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "color" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.selectedDecision.value === \"valid\")",
+        "{",
+        "    return \"<h4><span class=\\\"glyphicon glyphicon-ok text-success\\\" aria-hidden=\\\"true\\\"></span></h4>\";",
+        "}",
+        "",
+        "if($data.selectedDecision.value === \"denied\")",
+        "{",
+        "    return \"<h4><span class=\\\"glyphicon glyphicon-remove text-danger\\\" aria-hidden=\\\"true\\\"></span></h4>\";",
+        "}",
+        "",
+        "",
+        "return null;"
+      ],
+      "exposed" : false
+    },
+    "typeDecision" : {
+      "type" : "json",
+      "value" : [
+        "[{\"text\":\"Valider\", \"value\":\"valid\"},{\"text\":\"Rejeter\", \"value\":\"denied\"}]"
+      ],
+      "exposed" : false
+    },
+    "fileUrl" : {
+      "type" : "constant",
+      "value" : [
+        "http://localhost:8081/bonita/preview/page/no-app-selected/API/formsDocumentImage?document=1"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "2aa33203-035f-455e-8446-4c57352ae661",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}

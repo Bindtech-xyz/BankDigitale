@@ -1,0 +1,217 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "value",
+      "name" : "value",
+      "type" : "text",
+      "defaultValue" : "This is the initial value",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar",
+      "name" : "nomvar",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value1",
+      "name" : "value1",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar1",
+      "name" : "nomvar1",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value2",
+      "name" : "value2",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar2",
+      "name" : "nomvar2",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value3",
+      "name" : "value3",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar3",
+      "name" : "nomvar3",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value4",
+      "name" : "value4",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar4",
+      "name" : "nomvar4",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value5",
+      "name" : "value5",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar5",
+      "name" : "nomvar5",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value6",
+      "name" : "value6",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar6",
+      "name" : "nomvar6",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value7",
+      "name" : "value7",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar7",
+      "name" : "nomvar7",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value8",
+      "name" : "value8",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar8",
+      "name" : "nomvar8",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value9",
+      "name" : "value9",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar9",
+      "name" : "nomvar9",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value10",
+      "name" : "value10",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar10",
+      "name" : "nomvar10",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value11",
+      "name" : "value11",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar11",
+      "name" : "nomvar11",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value12",
+      "name" : "value12",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar12",
+      "name" : "nomvar12",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value13",
+      "name" : "value13",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar13",
+      "name" : "nomvar13",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value14",
+      "name" : "value14",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar14",
+      "name" : "nomvar14",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "value15",
+      "name" : "value15",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nomvar15",
+      "name" : "nomvar15",
+      "type" : "text",
+      "bond" : "constant"
+    }
+  ],
+  "id" : "customAffichageVariableF",
+  "name" : "affichageVariableF",
+  "lastUpdate" : 1666032934517,
+  "template" : "@customAffichageVariableF.tpl.html",
+  "controller" : "@customAffichageVariableF.ctrl.js",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "0844e8aa-8e90-42d9-986e-cd2e976081a0",
+      "name" : "transition.js",
+      "type" : "js",
+      "order" : 2,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

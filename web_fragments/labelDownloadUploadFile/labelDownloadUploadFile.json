@@ -1,0 +1,272 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "id" : "labelDownloadUploadFile",
+  "name" : "labelDownloadUploadFile",
+  "lastUpdate" : 1666032936260,
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "6a08d4ae-93ca-4b18-a016-47a86015650d",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "container",
+              "dimension" : {
+                "md" : 4,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 4
+              },
+              "propertyValues" : {
+                "repeatedCollection" : {
+                  "type" : "variable",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "99bcfdad-e1c2-455b-9e73-d425f9af7fb2",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "row-no-gutters"
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "{{label|uppercase}} :"
+                      },
+                      "level" : {
+                        "type" : "constant",
+                        "value" : "Level 5"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "right"
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : true
+                      }
+                    },
+                    "reference" : "800e915a-fcbd-41ef-ae61-ee11a5313106",
+                    "hasValidationError" : false,
+                    "id" : "pbTitle"
+                  }
+                ]
+              ]
+            },
+            {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 3,
+                "lg" : 3
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable",
+                  "value" : ""
+                }
+              },
+              "reference" : "47d4b22a-3730-4762-b364-14db4ff89d94",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "md" : 12,
+                      "sm" : 12,
+                      "xs" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "showPreview" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "text-left"
+                      },
+                      "document" : {
+                        "type" : "variable",
+                        "value" : "fichier"
+                      },
+                      "type" : {
+                        "type" : "constant",
+                        "value" : "Process document"
+                      },
+                      "dimension" : {
+                        "type" : "constant",
+                        "value" : 12
+                      },
+                      "url" : {
+                        "type" : "constant"
+                      }
+                    },
+                    "reference" : "f145ef79-db66-45de-b1a6-74866d9811db",
+                    "hasValidationError" : false,
+                    "id" : "pbFileViewer",
+                    "description" : ""
+                  }
+                ]
+              ]
+            },
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 5,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 5
+              },
+              "propertyValues" : {
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "Piece Identification Part"
+                },
+                "placeholder" : {
+                  "type" : "constant",
+                  "value" : "Browse to update the file..."
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                },
+                "value" : {
+                  "type" : "variable",
+                  "value" : "fichier.newValue"
+                },
+                "required" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "url" : {
+                  "type" : "constant",
+                  "value" : "../API/formFileUpload"
+                },
+                "errorContent" : {
+                  "type" : "variable",
+                  "value" : ""
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
+                }
+              },
+              "reference" : "8014f223-25e5-4dfe-ac2b-eeeb47ee795d",
+              "hasValidationError" : false,
+              "id" : "pbUpload",
+              "description" : ""
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "label" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "fichier" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    }
+  },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

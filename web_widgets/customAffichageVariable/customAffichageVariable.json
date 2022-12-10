@@ -1,0 +1,43 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Value",
+      "name" : "value",
+      "type" : "text",
+      "defaultValue" : "This is the initial value",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Nom de la variable",
+      "name" : "nomVar",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "Color",
+      "name" : "color",
+      "type" : "choice",
+      "defaultValue" : "primary",
+      "choiceValues" : [
+        "primary",
+        "info",
+        "warning",
+        "success",
+        "danger"
+      ],
+      "bond" : "constant"
+    }
+  ],
+  "id" : "customAffichageVariable",
+  "name" : "affichageVariable",
+  "lastUpdate" : 1666032934942,
+  "template" : "@customAffichageVariable.tpl.html",
+  "controller" : "@customAffichageVariable.ctrl.js",
+  "custom" : true,
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

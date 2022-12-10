@@ -1,0 +1,120 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "id" : "chats",
+  "name" : "chats",
+  "lastUpdate" : 1666032936153,
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : "comments"
+          }
+        },
+        "reference" : "c0e20a07-e301-425a-8c6b-8929e415bbde",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "value" : {
+                  "type" : "constant",
+                  "value" : "This is the initial value"
+                },
+                "color" : {
+                  "type" : "constant",
+                  "value" : "RebeccaPurple"
+                },
+                "background" : {
+                  "type" : "constant",
+                  "value" : "Yellow"
+                },
+                "userInfo" : {
+                  "type" : "expression",
+                  "value" : "userInfo.id"
+                },
+                "comment" : {
+                  "type" : "expression",
+                  "value" : "$item"
+                },
+                "userId" : {
+                  "type" : "expression",
+                  "value" : "userInfo.id"
+                }
+              },
+              "reference" : "78999fe6-a5c4-4496-a142-992df923079f",
+              "hasValidationError" : false,
+              "id" : "customChatCommentaires"
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "userInfo" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "comments" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "dummyData" : {
+      "type" : "expression",
+      "value" : [
+        "let listComments = [ { ",
+        "    \"persistenceId\": 2, \"persistenceId_string\": \"2\", \"persistenceVersion\": 0, \"persistenceVersion_string\": \"0\", \"id\": null, \"id_string\": null, \"caseId\": null, \"caseId_string\": null, \"processId\": 4008, \"processId_string\": \"4008\", \"processVersion\": \"7167590565433014180\", \"dateComment\": \"2022-08-02T00:44:47.21846\", \"idUser\": \"1\", \"nomUser\": \"bates\", \"prenomUser\": \"Walter\", \"comment\": \"<p>rien ne marche comme il faut<br/></p>\", \"nivo\": \"zero\", \"lu\": true } ];",
+        "",
+        "return {",
+        "    user : { \"firstname\": \"Walter\", \"professional_data\": { \"country\": \"\", \"website\": \"\", \"address\": \"qsdqsdqsdqsdqsd\", \"city\": \"\", \"fax_number\": \"\", \"building\": \"\", \"room\": \"\", \"zipcode\": \"\", \"phone_number\": \"2343245353423\", \"state\": \"\", \"id\": \"1\", \"mobile_number\": \"\", \"email\": \"walter.bates@digital.com\" }, \"icon\": \"icons/default/icon_user.png\", \"creation_date\": \"2022-07-26 22:11:11.215\", \"userName\": \"walter.bates\", \"title\": \"Mr\", \"created_by_user_id\": \"-1\", \"enabled\": \"true\", \"lastname\": \"bates\", \"last_connection\": \"2022-08-01 23:07:58.774\", \"password\": \"\", \"manager_id\": \"19\", \"id\": \"1\", \"job_title\": \"\", \"last_update_date\": \"2022-07-26 22:11:11.215\" },",
+        "    comments : listComments",
+        "}"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

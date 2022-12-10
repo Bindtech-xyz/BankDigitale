@@ -1,0 +1,68 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Headers",
+      "name" : "headers",
+      "type" : "collection",
+      "defaultValue" : [
+        "Id",
+        "Name",
+        "Description",
+        "Date"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "Available values",
+      "name" : "availableValues",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Columns key",
+      "name" : "columnsKey",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Selected Row",
+      "name" : "selectedRow",
+      "type" : "text",
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customFancyTable",
+  "name" : "fancyTable",
+  "lastUpdate" : 1666032936294,
+  "template" : "@customFancyTable.tpl.html",
+  "controller" : "@customFancyTable.ctrl.js",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "eddd503e-d020-4c90-adaa-bffadf03f01b",
+      "name" : "https://cdn.datatables.net/1.10.7/css/jquery.dataTables.css",
+      "type" : "css",
+      "order" : 4,
+      "external" : true
+    },
+    {
+      "id" : "f2749b60-fdea-4d61-80aa-52d2c6ae4256",
+      "name" : "https://code.jquery.com/jquery-2.1.4.min.js",
+      "type" : "js",
+      "order" : 2,
+      "external" : true
+    },
+    {
+      "id" : "3288acda-6b37-4eb0-a7cf-11e86335641e",
+      "name" : "jquery.dataTables.min.js",
+      "type" : "js",
+      "order" : 3,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

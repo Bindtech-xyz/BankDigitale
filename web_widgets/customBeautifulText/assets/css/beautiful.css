@@ -1,0 +1,23 @@
+
+.dl-horizontal dl {
+    border: 0.5em solid #00FF00;
+    padding: 0.5em;
+    border-width: 1px 13px 0 0;
+  }
+.dl-horizontal dt {
+
+    width: 30%;
+    background: red;
+    text-align: right;
+    font-weight: bold;
+    
+  }
+.dl-horizontal dt::after {
+    content: " :";
+    margin-right: 0.2em;
+  }
+.dl-horizontal dd {
+margin-left:32%;
+    padding: 0 0 0.2em 0;
+    background: yellow;
+  }

@@ -1,0 +1,61 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Label",
+      "name" : "label",
+      "type" : "text",
+      "defaultValue" : "Days OFF left",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Value",
+      "name" : "value",
+      "type" : "integer",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Total",
+      "name" : "total",
+      "type" : "integer",
+      "defaultValue" : 100,
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customProgressBarNoLabel",
+  "name" : "progressBarNoLabel",
+  "lastUpdate" : 1666032935473,
+  "template" : "@customProgressBarNoLabel.tpl.html",
+  "controller" : "@customProgressBarNoLabel.ctrl.js",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "ee2f1e4b-0b19-4931-9e29-e1f69256ce1e",
+      "name" : "ui-bootstrap-tpls-0.13.3.min.js",
+      "type" : "js",
+      "order" : 1,
+      "external" : false
+    },
+    {
+      "id" : "7df8d7b6-b66c-4ea0-9193-14cb5b52fa25",
+      "name" : "progressBar.css",
+      "type" : "css",
+      "order" : 3,
+      "external" : false
+    },
+    {
+      "id" : "67ad6c03-d97e-49c7-9b7d-1ad8875797b4",
+      "name" : "count-to.js",
+      "type" : "js",
+      "order" : 2,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [
+    "ui.bootstrap",
+    "countTo"
+  ],
+  "type" : "widget",
+  "hasHelp" : false
+}

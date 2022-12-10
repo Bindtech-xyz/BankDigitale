@@ -1,0 +1,56 @@
+{
+  "modelVersion" : "2.3",
+  "properties" : [
+    {
+      "label" : "Value",
+      "name" : "value",
+      "type" : "text",
+      "defaultValue" : "This is the initial value",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Color",
+      "name" : "color",
+      "type" : "choice",
+      "defaultValue" : "RebeccaPurple",
+      "choiceValues" : [
+        "RebeccaPurple",
+        "Chartreuse",
+        "Tomato",
+        "DeepSkyBlue"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "Background color on click",
+      "name" : "background",
+      "type" : "choice",
+      "defaultValue" : "Yellow",
+      "choiceValues" : [
+        "Yellow",
+        "LightGray"
+      ],
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customCarousel",
+  "name" : "carousel",
+  "lastUpdate" : 1666465532615,
+  "template" : "@customCarousel.tpl.html",
+  "controller" : "@customCarousel.ctrl.js",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "05ec75a7-acf1-4969-91f9-027cebbf2cb5",
+      "name" : "ui-bootstrap-tpls-2.5.0.min.js",
+      "type" : "js",
+      "order" : 1,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [
+    "ui.bootstrap"
+  ],
+  "type" : "widget",
+  "hasHelp" : false
+}

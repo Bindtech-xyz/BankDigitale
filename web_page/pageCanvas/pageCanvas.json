@@ -1,0 +1,31 @@
+{
+  "modelVersion" : "2.3",
+  "id" : "pageCanvas",
+  "name" : "pageCanvas",
+  "lastUpdate" : 1666488559594,
+  "rows" : [
+    [ ]
+  ],
+  "assets" : [
+    {
+      "id" : "cd659126-4855-46c3-99ca-8947a9301a58",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "2e8e0712-99e9-4c1e-b6c9-03886a965d5b",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : { },
+  "hasValidationError" : false,
+  "uuid" : "22bf629e-15fc-4748-a57d-d7983cd844b9",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}

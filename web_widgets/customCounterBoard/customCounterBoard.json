@@ -1,0 +1,45 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Données à compter",
+      "name" : "donnee",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Couleur",
+      "name" : "color",
+      "type" : "choice",
+      "defaultValue" : "primary",
+      "choiceValues" : [
+        "success",
+        "info",
+        "danger",
+        "primary"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "Texte à afficher",
+      "name" : "texte",
+      "type" : "text",
+      "choiceValues" : [
+        "Yellow",
+        "LightGray"
+      ],
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customCounterBoard",
+  "name" : "counterBoard",
+  "lastUpdate" : 1666032934563,
+  "template" : "@customCounterBoard.tpl.html",
+  "controller" : "@customCounterBoard.ctrl.js",
+  "custom" : true,
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

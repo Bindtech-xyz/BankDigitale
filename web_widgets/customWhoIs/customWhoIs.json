@@ -1,0 +1,43 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Information Utilisateur",
+      "name" : "userInfo",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Taches en Attentes",
+      "name" : "enAttente",
+      "type" : "collection",
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customWhoIs",
+  "name" : "whoIs",
+  "lastUpdate" : 1666032934549,
+  "template" : "@customWhoIs.tpl.html",
+  "controller" : "@customWhoIs.ctrl.js",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "6f399733-6c9e-44d1-b6b1-9006c3bb64de",
+      "name" : "angular-locale_fr-fr.js",
+      "type" : "js",
+      "order" : 1,
+      "external" : false
+    },
+    {
+      "id" : "d7857129-f7bc-4d03-96cb-a9250a5022af",
+      "name" : "moment.js",
+      "type" : "js",
+      "order" : 2,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

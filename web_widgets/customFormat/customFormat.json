@@ -1,0 +1,27 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Type",
+      "name" : "type",
+      "type" : "choice",
+      "defaultValue" : "br",
+      "choiceValues" : [
+        "br",
+        "hr"
+      ],
+      "bond" : "constant"
+    }
+  ],
+  "id" : "customFormat",
+  "name" : "format",
+  "lastUpdate" : 1666032937744,
+  "template" : "@customFormat.tpl.html",
+  "controller" : "@customFormat.ctrl.js",
+  "custom" : true,
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

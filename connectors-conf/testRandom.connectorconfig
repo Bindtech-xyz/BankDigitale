@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="scripting-groovy-script" version="1.0.1" name="testRandom" modelVersion="7.12.0-004">
+  <parameters key="script">
+    <expression xsi:type="expression:Expression" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="variables">
+    <expression xsi:type="expression:Expression" returnType="java.util.List" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="fakeScriptExpression">
+    <expression xsi:type="expression:Expression" name="newScript()" content="import java.util.logging.Logger;&#xA;&#xA;public static void info(String mes, def value)&#xA;&#x9;{&#xA;&#x9;&#x9;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;&#x9;def textestart = &quot; - [START]&quot;.padLeft(129,'%')&#xA;&#x9;&#x9;def textestop = &quot; - [STOP]&quot;.padLeft(129,'%')&#xA;&#x9;&#x9;def texto = &quot;( [ &quot;+mes.toUpperCase()+&quot; ] => &quot;&#xA;&#x9;&#x9;def suffx = &quot;[ &quot;+value+&quot; ] &quot;&#xA;&#x9;&#x9;def newText = texto.padLeft(60,'-')+suffx.padRight(30,'-')+' )'&#xA;&#x9;&#x9;loggerd.info(textestart);&#xA;&#x9;&#x9;loggerd.info(newText);&#xA;&#x9;&#x9;loggerd.info(textestop);&#xA;&#x9;&#x9;loggerd.info(&quot;#&quot;);&#xA;&#x9;&#x9;loggerd.info(&quot;#&quot;);&#xA;&#x9;&#x9;&#xA;&#x9;}&#xA;&#xA;def z = [&quot;green&quot;, &quot;yellow&quot;, &quot;red&quot;]&#xA;Random rnd = new Random()&#xA;Logger loggera = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;def cool = z[rnd.nextInt(z.size)];&#xA;def lower = 1&#xA;def upper = 100&#xA;def next = rnd.nextInt(lower - upper) + lower&#xA;info(&quot;Next value &quot;, next)&#xA;&#xA;&#xA;for (int i=0; i &lt; 10; i++) {&#xA;   println(z[rnd.nextInt(z.size)])&#xA;   loggera.info(z[rnd.nextInt(z.size)])&#xA;}&#xA;&#xA;info(&quot;test random cool &quot;, cool)&#xA;return cool" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

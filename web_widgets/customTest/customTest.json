@@ -1,0 +1,46 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Value",
+      "name" : "value",
+      "type" : "text",
+      "defaultValue" : "This is the initial value",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Color",
+      "name" : "color",
+      "type" : "choice",
+      "defaultValue" : "RebeccaPurple",
+      "choiceValues" : [
+        "RebeccaPurple",
+        "Chartreuse",
+        "Tomato",
+        "DeepSkyBlue"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "Background color on click",
+      "name" : "clientIndice",
+      "type" : "text",
+      "choiceValues" : [
+        "Yellow",
+        "LightGray"
+      ],
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customTest",
+  "name" : "test",
+  "lastUpdate" : 1666032938077,
+  "template" : "@customTest.tpl.html",
+  "controller" : "@customTest.ctrl.js",
+  "custom" : true,
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

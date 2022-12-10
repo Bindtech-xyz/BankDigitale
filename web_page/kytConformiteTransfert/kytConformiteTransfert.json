@@ -1,0 +1,3619 @@
+{
+  "modelVersion" : "2.3",
+  "id" : "kytConformiteTransfert",
+  "name" : "kytConformiteTransfert",
+  "lastUpdate" : 1670713482355,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "value" : {
+            "type" : "expression",
+            "value" : "context"
+          },
+          "nomvar" : {
+            "type" : "constant",
+            "value" : "context"
+          },
+          "value1" : {
+            "type" : "expression",
+            "value" : "laDemandeTransfert"
+          },
+          "nomvar1" : {
+            "type" : "constant",
+            "value" : "laDemandeTransfert"
+          },
+          "value2" : {
+            "type" : "expression",
+            "value" : "listDesCommentaires"
+          },
+          "nomvar2" : {
+            "type" : "constant",
+            "value" : "listDesCommentaires"
+          },
+          "value3" : {
+            "type" : "expression",
+            "value" : "userData"
+          },
+          "nomvar3" : {
+            "type" : "constant",
+            "value" : "userData"
+          },
+          "value4" : {
+            "type" : "expression",
+            "value" : "formOutput"
+          },
+          "nomvar4" : {
+            "type" : "constant",
+            "value" : "formOutput"
+          },
+          "value5" : {
+            "type" : "constant"
+          },
+          "nomvar5" : {
+            "type" : "constant"
+          },
+          "value6" : {
+            "type" : "constant"
+          },
+          "nomvar6" : {
+            "type" : "constant"
+          },
+          "value7" : {
+            "type" : "constant"
+          },
+          "nomvar7" : {
+            "type" : "constant"
+          },
+          "value8" : {
+            "type" : "constant"
+          },
+          "nomvar8" : {
+            "type" : "constant"
+          },
+          "value9" : {
+            "type" : "constant"
+          },
+          "nomvar9" : {
+            "type" : "constant"
+          },
+          "value10" : {
+            "type" : "constant"
+          },
+          "nomvar10" : {
+            "type" : "constant"
+          },
+          "value11" : {
+            "type" : "constant"
+          },
+          "nomvar11" : {
+            "type" : "constant"
+          },
+          "value12" : {
+            "type" : "constant"
+          },
+          "nomvar12" : {
+            "type" : "constant"
+          },
+          "value13" : {
+            "type" : "constant"
+          },
+          "nomvar13" : {
+            "type" : "constant"
+          },
+          "value14" : {
+            "type" : "constant"
+          },
+          "nomvar14" : {
+            "type" : "constant"
+          },
+          "value15" : {
+            "type" : "constant"
+          },
+          "nomvar15" : {
+            "type" : "constant"
+          }
+        },
+        "reference" : "952cc677-be0c-40ff-a0ac-51c5bf2275e6",
+        "hasValidationError" : false,
+        "id" : "customAffichageVariableF"
+      }
+    ],
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 1,
+          "lg" : 1
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "eb8ec995-ba20-4da0-94ae-f90d96da67c3",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [ ]
+        ]
+      },
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 10,
+          "lg" : 10
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "cec0357a-606a-4bd9-b6ed-fac294d538eb",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "fragment",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "81bcbb70-6770-46cb-9b5b-54694be3e412",
+              "hasValidationError" : false,
+              "id" : "enteteUserDate",
+              "binding" : {
+                "userData" : "userData"
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 1,
+          "lg" : 1
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "240acb86-41b5-4a13-87b4-2b79920d47ac",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [ ]
+        ]
+      }
+    ],
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "b1977678-ceae-4339-981f-9bc8cbf36de3",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "KYT Conformite Transfert"
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 3"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                }
+              },
+              "reference" : "febc72b8-f3e7-49d7-ac3b-9c27e8c2c51e",
+              "hasValidationError" : false,
+              "id" : "pbTitle"
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "7cc29350-3516-46fe-b30c-c663a00889f6",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "Default label"
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "<hr/>"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                }
+              },
+              "reference" : "e38d2fa9-d4dc-41c9-a2fa-c0f6b0f85f9e",
+              "hasValidationError" : false,
+              "id" : "pbText"
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 1,
+          "lg" : 1
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "1b003aa0-5c11-4a5f-aa9e-03fd71c4fd3e",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [ ]
+        ]
+      },
+      {
+        "type" : "formContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 10,
+          "lg" : 10
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "layout-content"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "203131b2-3700-4c35-9b19-052ea0b001b5",
+        "hasValidationError" : false,
+        "id" : "pbFormContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "9ab32886-a5de-43d8-9dd8-039c89dfd722",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "tabsContainer",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "vertical" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "tabs"
+                  }
+                },
+                "reference" : "a5f20ec5-76d5-4ea3-bc9f-098267610b39",
+                "hasValidationError" : false,
+                "id" : "pbTabsContainer",
+                "tabList" : [
+                  {
+                    "type" : "tabContainer",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "disabled" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "title" : {
+                        "type" : "interpolation",
+                        "value" : "Détail du Dossier"
+                      },
+                      "active" : {
+                        "type" : "variable"
+                      }
+                    },
+                    "reference" : "0452e766-4f7b-4992-9ca6-09c41aa90459",
+                    "hasValidationError" : false,
+                    "id" : "pbTabContainer",
+                    "container" : {
+                      "type" : "container",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : { },
+                      "reference" : "882a1e31-9a99-4b55-8e21-486b71894d79",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : "panel panel-primary"
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              }
+                            },
+                            "reference" : "da53ff02-6a17-46d0-b9cb-37342d5aa03c",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "text" : {
+                                      "type" : "interpolation",
+                                      "value" : "Émetteur : {{request.response.intitule}}"
+                                    },
+                                    "level" : {
+                                      "type" : "constant",
+                                      "value" : "Level 4"
+                                    },
+                                    "alignment" : {
+                                      "type" : "constant",
+                                      "value" : "left"
+                                    }
+                                  },
+                                  "reference" : "c4ca7507-8279-425d-8c0c-65ca28f3dd24",
+                                  "hasValidationError" : false,
+                                  "id" : "pbTitle"
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 2,
+                                    "lg" : 2
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "repeatedCollection" : {
+                                      "type" : "variable"
+                                    }
+                                  },
+                                  "reference" : "ab74de3f-c709-46fa-b3e3-d515c6eaf554",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "rows" : [
+                                    [ ]
+                                  ]
+                                },
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 10,
+                                    "lg" : 10
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "repeatedCollection" : {
+                                      "type" : "variable"
+                                    }
+                                  },
+                                  "reference" : "a820adf8-0faf-4632-a10b-a33d3804509d",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "rows" : [
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "required" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "minLength" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "maxLength" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "readOnly" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Devises"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "placeholder" : {
+                                            "type" : "interpolation"
+                                          },
+                                          "value" : {
+                                            "type" : "variable",
+                                            "value" : "laDemandeTransfert.devise"
+                                          },
+                                          "type" : {
+                                            "type" : "constant",
+                                            "value" : "text"
+                                          },
+                                          "min" : {
+                                            "type" : "constant"
+                                          },
+                                          "max" : {
+                                            "type" : "constant"
+                                          },
+                                          "step" : {
+                                            "type" : "constant",
+                                            "value" : 1
+                                          }
+                                        },
+                                        "reference" : "90b6deab-b48b-4963-9027-48a0fd02ae17",
+                                        "hasValidationError" : false,
+                                        "id" : "pbInput"
+                                      },
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "required" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "readOnly" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Montant"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "placeholder" : {
+                                            "type" : "interpolation"
+                                          },
+                                          "value" : {
+                                            "type" : "variable",
+                                            "value" : "laDemandeTransfert.montant"
+                                          },
+                                          "min" : {
+                                            "type" : "constant"
+                                          },
+                                          "max" : {
+                                            "type" : "constant"
+                                          },
+                                          "maskCurrency" : {
+                                            "type" : "expression",
+                                            "value" : "laDemandeTransfert.devise"
+                                          },
+                                          "orientation" : {
+                                            "type" : "constant",
+                                            "value" : "right"
+                                          },
+                                          "indentation" : {
+                                            "type" : "constant",
+                                            "value" : "whitespace"
+                                          },
+                                          "decimalSize" : {
+                                            "type" : "expression",
+                                            "value" : "deviseJson.fractionSize"
+                                          },
+                                          "decimal" : {
+                                            "type" : "constant",
+                                            "value" : ","
+                                          },
+                                          "group" : {
+                                            "type" : "constant",
+                                            "value" : "whitespace"
+                                          }
+                                        },
+                                        "reference" : "92cc3d2f-a082-49f9-b82b-67aaf087edbe",
+                                        "hasValidationError" : false,
+                                        "id" : "pbCurrencyInput"
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "readOnly" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "required" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Date de virement"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "value" : {
+                                            "type" : "variable",
+                                            "value" : "laDemandeTransfert.dateVirement"
+                                          },
+                                          "dateFormat" : {
+                                            "type" : "constant",
+                                            "value" : "MM/dd/yyyy"
+                                          },
+                                          "placeholder" : {
+                                            "type" : "interpolation",
+                                            "value" : "Enter a date (mm/dd/yyyy)"
+                                          },
+                                          "showToday" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "todayLabel" : {
+                                            "type" : "interpolation",
+                                            "value" : "Today"
+                                          }
+                                        },
+                                        "reference" : "f09af1e3-67df-46a1-96fd-b4826fba1429",
+                                        "hasValidationError" : false,
+                                        "id" : "pbDatePicker"
+                                      },
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "readOnly" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "required" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "minLength" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "maxLength" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Motif"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "value" : {
+                                            "type" : "variable",
+                                            "value" : "laDemandeTransfert.motif"
+                                          }
+                                        },
+                                        "reference" : "8b4ef7d7-7bc7-4042-9551-9c1565cc718c",
+                                        "hasValidationError" : false,
+                                        "id" : "pbTextarea"
+                                      }
+                                    ]
+                                  ]
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Default label"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 4
+                                    },
+                                    "text" : {
+                                      "type" : "interpolation",
+                                      "value" : "<br/>"
+                                    },
+                                    "alignment" : {
+                                      "type" : "constant",
+                                      "value" : "left"
+                                    }
+                                  },
+                                  "reference" : "9c76787f-7c0f-4d73-9205-08ac48921748",
+                                  "hasValidationError" : false,
+                                  "id" : "pbText"
+                                }
+                              ]
+                            ]
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "expression",
+                                "value" : "panelCSS"
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              }
+                            },
+                            "reference" : "b3178e70-6c83-4905-89dc-a0a34a42eb00",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "text" : {
+                                      "type" : "interpolation",
+                                      "value" : "Bénéficiaire"
+                                    },
+                                    "level" : {
+                                      "type" : "constant",
+                                      "value" : "Level 4"
+                                    },
+                                    "alignment" : {
+                                      "type" : "constant",
+                                      "value" : "left"
+                                    }
+                                  },
+                                  "reference" : "76a226a7-8ec2-4e36-9272-5419322c11f9",
+                                  "hasValidationError" : false,
+                                  "id" : "pbTitle"
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 2,
+                                    "lg" : 2
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "repeatedCollection" : {
+                                      "type" : "variable"
+                                    }
+                                  },
+                                  "reference" : "fdb8c136-b5c5-4999-8878-73dff821ff74",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "rows" : [
+                                    [ ]
+                                  ]
+                                },
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 10,
+                                    "lg" : 10
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "repeatedCollection" : {
+                                      "type" : "variable"
+                                    }
+                                  },
+                                  "reference" : "7d8ed3b2-870a-4dbb-a322-be80a324522c",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "rows" : [
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "required" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "minLength" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "maxLength" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "readOnly" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Nom"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "placeholder" : {
+                                            "type" : "interpolation"
+                                          },
+                                          "value" : {
+                                            "type" : "variable",
+                                            "value" : "laDemandeTransfert.bnfNom"
+                                          },
+                                          "type" : {
+                                            "type" : "constant",
+                                            "value" : "text"
+                                          },
+                                          "min" : {
+                                            "type" : "constant"
+                                          },
+                                          "max" : {
+                                            "type" : "constant"
+                                          },
+                                          "step" : {
+                                            "type" : "constant",
+                                            "value" : 1
+                                          }
+                                        },
+                                        "reference" : "1cffcf4b-d7b3-4b9a-9803-890ce9280cb3",
+                                        "hasValidationError" : false,
+                                        "id" : "pbInput"
+                                      },
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "readOnly" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "required" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Pays Destination"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "placeholder" : {
+                                            "type" : "interpolation",
+                                            "value" : "Select an option"
+                                          },
+                                          "availableValues" : {
+                                            "type" : "constant"
+                                          },
+                                          "value" : {
+                                            "type" : "variable",
+                                            "value" : "laDemandeTransfert.bnfPays"
+                                          }
+                                        },
+                                        "reference" : "51d0febb-7cdf-4d1a-80d1-5c9ef585ef7b",
+                                        "hasValidationError" : false,
+                                        "id" : "customSelectCountry"
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "required" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "minLength" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "maxLength" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "readOnly" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "RIB"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "placeholder" : {
+                                            "type" : "interpolation"
+                                          },
+                                          "value" : {
+                                            "type" : "variable",
+                                            "value" : "laDemandeTransfert.bnfRib"
+                                          },
+                                          "type" : {
+                                            "type" : "constant",
+                                            "value" : "text"
+                                          },
+                                          "min" : {
+                                            "type" : "constant"
+                                          },
+                                          "max" : {
+                                            "type" : "constant"
+                                          },
+                                          "step" : {
+                                            "type" : "constant",
+                                            "value" : 1
+                                          }
+                                        },
+                                        "reference" : "9d3aabf6-46e1-42a9-a051-9312bc588b5b",
+                                        "hasValidationError" : false,
+                                        "id" : "pbInput"
+                                      },
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "required" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "minLength" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "maxLength" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "readOnly" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "BIC (SWIFT)"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "placeholder" : {
+                                            "type" : "interpolation"
+                                          },
+                                          "value" : {
+                                            "type" : "variable",
+                                            "value" : "laDemandeTransfert.bnfBic"
+                                          },
+                                          "type" : {
+                                            "type" : "constant",
+                                            "value" : "text"
+                                          },
+                                          "min" : {
+                                            "type" : "constant"
+                                          },
+                                          "max" : {
+                                            "type" : "constant"
+                                          },
+                                          "step" : {
+                                            "type" : "constant",
+                                            "value" : 1
+                                          }
+                                        },
+                                        "reference" : "e254c0a0-2861-4443-855e-41c8546e97c5",
+                                        "hasValidationError" : false,
+                                        "id" : "pbInput"
+                                      }
+                                    ]
+                                  ]
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Default label"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 4
+                                    },
+                                    "text" : {
+                                      "type" : "interpolation",
+                                      "value" : "<br/>"
+                                    },
+                                    "alignment" : {
+                                      "type" : "constant",
+                                      "value" : "left"
+                                    }
+                                  },
+                                  "reference" : "3f2dd8af-095e-49f4-aeef-028dde0975a1",
+                                  "hasValidationError" : false,
+                                  "id" : "pbText"
+                                }
+                              ]
+                            ]
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "expression",
+                                "value" : "panelCSS"
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              }
+                            },
+                            "reference" : "afc4fb98-70bd-4971-a48e-9822062399ba",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 6,
+                                    "lg" : 6
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "text" : {
+                                      "type" : "interpolation",
+                                      "value" : "Domiciliation N° : {{laDemandeTransfert.numeroDomiciliation}}"
+                                    },
+                                    "level" : {
+                                      "type" : "constant",
+                                      "value" : "Level 4"
+                                    },
+                                    "alignment" : {
+                                      "type" : "constant",
+                                      "value" : "left"
+                                    }
+                                  },
+                                  "reference" : "394a24ce-5434-41c6-aaba-1cce3bab6fd9",
+                                  "hasValidationError" : false,
+                                  "id" : "pbTitle"
+                                },
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 6,
+                                    "lg" : 6
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "text" : {
+                                      "type" : "interpolation",
+                                      "value" : "Date dernière transaction : <em> {{ '2022-12-10' | uiDate}}</em>"
+                                    },
+                                    "level" : {
+                                      "type" : "constant",
+                                      "value" : "Level 5"
+                                    },
+                                    "alignment" : {
+                                      "type" : "constant",
+                                      "value" : "right"
+                                    }
+                                  },
+                                  "reference" : "fcf6b02d-b09b-4a52-b51e-023202d0e56b",
+                                  "hasValidationError" : false,
+                                  "id" : "pbTitle"
+                                }
+                              ]
+                            ]
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "expression",
+                                "value" : "panelCSS"
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              }
+                            },
+                            "reference" : "d243ff7e-f995-4e26-8e68-35c683473b28",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "text" : {
+                                      "type" : "interpolation",
+                                      "value" : "Documentation"
+                                    },
+                                    "level" : {
+                                      "type" : "constant",
+                                      "value" : "Level 4"
+                                    },
+                                    "alignment" : {
+                                      "type" : "constant",
+                                      "value" : "left"
+                                    }
+                                  },
+                                  "reference" : "ed624c4f-d14e-4051-9538-26b55a2140d5",
+                                  "hasValidationError" : false,
+                                  "id" : "pbTitle"
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 2,
+                                    "lg" : 2
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "repeatedCollection" : {
+                                      "type" : "variable"
+                                    }
+                                  },
+                                  "reference" : "a4e0c8c2-58d1-4a07-abb0-b24b6e88a01d",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "rows" : [
+                                    [ ]
+                                  ]
+                                },
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 10,
+                                    "lg" : 10
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "repeatedCollection" : {
+                                      "type" : "variable"
+                                    }
+                                  },
+                                  "reference" : "aed5593d-1c3b-4b86-8192-da6dc75f36f6",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "rows" : [
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "text" : {
+                                            "type" : "interpolation",
+                                            "value" : "DPI :"
+                                          },
+                                          "level" : {
+                                            "type" : "constant",
+                                            "value" : "Level 5"
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "right"
+                                          }
+                                        },
+                                        "reference" : "2f4aff24-a6a3-46cc-91ae-6cb3e557933a",
+                                        "hasValidationError" : false,
+                                        "id" : "pbTitle"
+                                      },
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "type" : {
+                                            "type" : "constant",
+                                            "value" : "Process document"
+                                          },
+                                          "url" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "document" : {
+                                            "type" : "variable",
+                                            "value" : "context.docDpi_ref"
+                                          },
+                                          "showPreview" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          }
+                                        },
+                                        "reference" : "cd1a2460-2b01-43e7-9a15-4c80050a9bc3",
+                                        "hasValidationError" : false,
+                                        "id" : "pbFileViewer"
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "text" : {
+                                            "type" : "interpolation",
+                                            "value" : "Autorisation de Change :"
+                                          },
+                                          "level" : {
+                                            "type" : "constant",
+                                            "value" : "Level 5"
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "right"
+                                          }
+                                        },
+                                        "reference" : "8d31afd4-5c5f-42af-a0ab-70b0c5fdbda8",
+                                        "hasValidationError" : false,
+                                        "id" : "pbTitle"
+                                      },
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "type" : {
+                                            "type" : "constant",
+                                            "value" : "Process document"
+                                          },
+                                          "url" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "document" : {
+                                            "type" : "variable",
+                                            "value" : "context.docAutorisation_ref"
+                                          },
+                                          "showPreview" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          }
+                                        },
+                                        "reference" : "38cdc92e-c5c5-4a20-8a47-363dd051afb7",
+                                        "hasValidationError" : false,
+                                        "id" : "pbFileViewer"
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "text" : {
+                                            "type" : "interpolation",
+                                            "value" : "Facture Proforma :"
+                                          },
+                                          "level" : {
+                                            "type" : "constant",
+                                            "value" : "Level 5"
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "right"
+                                          }
+                                        },
+                                        "reference" : "aa3ad449-a2f7-46e3-a881-175cc49b3f58",
+                                        "hasValidationError" : false,
+                                        "id" : "pbTitle"
+                                      },
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "type" : {
+                                            "type" : "constant",
+                                            "value" : "Process document"
+                                          },
+                                          "url" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "document" : {
+                                            "type" : "variable",
+                                            "value" : "context.docProforma_ref"
+                                          },
+                                          "showPreview" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          }
+                                        },
+                                        "reference" : "adfc9145-26f5-4133-a482-2c4d7b3643ff",
+                                        "hasValidationError" : false,
+                                        "id" : "pbFileViewer"
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "text" : {
+                                            "type" : "interpolation",
+                                            "value" : "Ordre de Virement :"
+                                          },
+                                          "level" : {
+                                            "type" : "constant",
+                                            "value" : "Level 5"
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "right"
+                                          }
+                                        },
+                                        "reference" : "899e23e8-5cd9-4512-8ad4-51397743042e",
+                                        "hasValidationError" : false,
+                                        "id" : "pbTitle"
+                                      },
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 6,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "type" : {
+                                            "type" : "constant",
+                                            "value" : "Process document"
+                                          },
+                                          "url" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "document" : {
+                                            "type" : "variable",
+                                            "value" : "context.docOrdre_ref"
+                                          },
+                                          "showPreview" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          }
+                                        },
+                                        "reference" : "9fc61991-c022-40a6-8386-5f37f3f7e9ed",
+                                        "hasValidationError" : false,
+                                        "id" : "pbFileViewer"
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "container",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "repeatedCollection" : {
+                                            "type" : "variable"
+                                          }
+                                        },
+                                        "reference" : "d831ec84-8ebd-4e1c-ae03-be8f69249ad6",
+                                        "hasValidationError" : false,
+                                        "id" : "pbContainer",
+                                        "rows" : [
+                                          [
+                                            {
+                                              "type" : "component",
+                                              "dimension" : {
+                                                "xs" : 12,
+                                                "sm" : 12,
+                                                "md" : 6,
+                                                "lg" : 6
+                                              },
+                                              "propertyValues" : {
+                                                "cssClasses" : {
+                                                  "type" : "constant",
+                                                  "value" : ""
+                                                },
+                                                "hidden" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "allowHTML" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "text" : {
+                                                  "type" : "interpolation",
+                                                  "value" : "Attestation d'importation :"
+                                                },
+                                                "level" : {
+                                                  "type" : "constant",
+                                                  "value" : "Level 5"
+                                                },
+                                                "alignment" : {
+                                                  "type" : "constant",
+                                                  "value" : "right"
+                                                }
+                                              },
+                                              "reference" : "e0dd1b66-0171-473b-9ff0-2925783fc708",
+                                              "hasValidationError" : false,
+                                              "id" : "pbTitle"
+                                            },
+                                            {
+                                              "type" : "component",
+                                              "dimension" : {
+                                                "xs" : 12,
+                                                "sm" : 12,
+                                                "md" : 6,
+                                                "lg" : 6
+                                              },
+                                              "propertyValues" : {
+                                                "cssClasses" : {
+                                                  "type" : "constant",
+                                                  "value" : ""
+                                                },
+                                                "hidden" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "type" : {
+                                                  "type" : "constant",
+                                                  "value" : "Process document"
+                                                },
+                                                "url" : {
+                                                  "type" : "constant",
+                                                  "value" : ""
+                                                },
+                                                "document" : {
+                                                  "type" : "variable",
+                                                  "value" : "context.docAttestation_ref"
+                                                },
+                                                "showPreview" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                }
+                                              },
+                                              "reference" : "2ba3a438-f474-4dab-bf4c-7445bf3bfb2a",
+                                              "hasValidationError" : false,
+                                              "id" : "pbFileViewer"
+                                            }
+                                          ]
+                                        ]
+                                      }
+                                    ]
+                                  ]
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Default label"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 4
+                                    },
+                                    "text" : {
+                                      "type" : "interpolation",
+                                      "value" : "<br/>"
+                                    },
+                                    "alignment" : {
+                                      "type" : "constant",
+                                      "value" : "left"
+                                    }
+                                  },
+                                  "reference" : "b4865179-0cfe-4f0e-8d31-98d8a5879940",
+                                  "hasValidationError" : false,
+                                  "id" : "pbText"
+                                }
+                              ]
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  },
+                  {
+                    "type" : "tabContainer",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "disabled" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "title" : {
+                        "type" : "interpolation",
+                        "value" : "Rapport KYC"
+                      },
+                      "active" : {
+                        "type" : "variable"
+                      }
+                    },
+                    "reference" : "a9edd74b-ac98-42af-afaa-6a047adbc298",
+                    "hasValidationError" : false,
+                    "id" : "pbTabContainer",
+                    "container" : {
+                      "type" : "container",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : { },
+                      "reference" : "ebc26812-e611-481a-b08d-64887026ab70",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : "panel panel-info"
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              }
+                            },
+                            "reference" : "2cf877b6-b65e-4271-9120-cd5be3ad086a",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "text" : {
+                                      "type" : "interpolation",
+                                      "value" : "<i class=\"glyphicon glyphicon-level-up\"></i> {{ \"Documents collectés sur la GED\" | uiTranslate}}"
+                                    },
+                                    "level" : {
+                                      "type" : "constant",
+                                      "value" : "Level 4"
+                                    },
+                                    "alignment" : {
+                                      "type" : "constant",
+                                      "value" : "left"
+                                    }
+                                  },
+                                  "reference" : "f3bdf1f4-9b9c-4e75-9387-021f9d9fbbfe",
+                                  "hasValidationError" : false,
+                                  "id" : "pbTitle"
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "repeatedCollection" : {
+                                      "type" : "variable"
+                                    }
+                                  },
+                                  "reference" : "09061539-78e6-4635-ba29-da3050d078fd",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "rows" : [
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Default label"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "text" : {
+                                            "type" : "interpolation",
+                                            "value" : "Aucun Documents disponible pour ce client dans la GED."
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "center"
+                                          }
+                                        },
+                                        "reference" : "c1acae9b-890a-48cc-9319-b126b1fc2533",
+                                        "hasValidationError" : false,
+                                        "id" : "pbText"
+                                      }
+                                    ]
+                                  ]
+                                }
+                              ]
+                            ]
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              }
+                            },
+                            "reference" : "8cb70876-6ce5-40aa-b27c-065d79aebab3",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "fragment",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "0a4df088-5939-40a1-93b8-9c66ebd8b968",
+                                  "hasValidationError" : false,
+                                  "id" : "labelDownloadFile",
+                                  "binding" : {
+                                    "label" : "Fiche Ouverture de compte",
+                                    "fichier" : "linkDownload"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "fragment",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "ffe8c8d9-e929-4bc6-a87b-3d466e0f069f",
+                                  "hasValidationError" : false,
+                                  "id" : "labelDownloadFile",
+                                  "binding" : {
+                                    "label" : "",
+                                    "fichier" : ""
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "fragment",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "1cbcdeea-3802-4e9a-b5e3-64ef1299577d",
+                                  "hasValidationError" : false,
+                                  "id" : "labelDownloadFile",
+                                  "binding" : {
+                                    "label" : "",
+                                    "fichier" : ""
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  },
+                  {
+                    "type" : "tabContainer",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "disabled" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "title" : {
+                        "type" : "interpolation",
+                        "value" : "Votre avis sur le Dossier"
+                      },
+                      "active" : {
+                        "type" : "variable"
+                      }
+                    },
+                    "reference" : "93743685-39c9-4c0c-8cdf-6006a65f3bc3",
+                    "hasValidationError" : false,
+                    "id" : "pbTabContainer",
+                    "container" : {
+                      "type" : "container",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : { },
+                      "reference" : "271a24e7-48bf-4b93-be09-fa02a80a0001",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 6,
+                              "lg" : 6
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : "panel panel-primary"
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              }
+                            },
+                            "reference" : "e6f0a109-4114-461c-9e49-1fc0817df720",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "listDesCommentaires.length <= 0"
+                                    },
+                                    "repeatedCollection" : {
+                                      "type" : "variable",
+                                      "value" : "listDesCommentaires"
+                                    }
+                                  },
+                                  "reference" : "76c30c03-023d-4d2c-b2a3-e1a4feca78df",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "rows" : [
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Default label"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "text" : {
+                                            "type" : "interpolation",
+                                            "value" : "<div class=\"media\">\n      <div class=\"media-left\">\n        <a href=\"#\">\n          <img class=\"media-object\" data-src=\"holder.js/64x64\" alt=\"64x64\" style=\"width: 64px; height: 64px;\" src=\"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xODRmZDk4Njc3OSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE4NGZkOTg2Nzc5Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41NDE2NjYwMzA4ODM3ODkiIHk9IjM2Ljk1Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==\" data-holder-rendered=\"true\">\n        </a>\n      </div>\n      <div class=\"media-body\">\n        <h5 class=\"media-heading\"><i class=\"glyphicon glyphicon-user\"></i> {{$item.nomUser}} {{$item.prenomUser}}</h5>\n        <i class=\"glyphicon glyphicon-envelope\"></i><strong> </strong> {{$item.commentaire}}\n        \n<p class=\"text-right\"><small><em>KYT Validation Officer</em> : {{$item.dateCommentaire | uiDate:'dd-MM-yyyy à HH:mm'}}</small></p>\n      </div>\n    </div>"
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "left"
+                                          }
+                                        },
+                                        "reference" : "b9e02dad-9775-4629-ba15-85ab229fa846",
+                                        "hasValidationError" : false,
+                                        "id" : "pbText"
+                                      }
+                                    ]
+                                  ]
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "listDesCommentaires.length > 0"
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Default label"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 4
+                                    },
+                                    "text" : {
+                                      "type" : "interpolation",
+                                      "value" : "Aucun commentaires..."
+                                    },
+                                    "alignment" : {
+                                      "type" : "constant",
+                                      "value" : "center"
+                                    }
+                                  },
+                                  "reference" : "d4b319df-3d2a-4fff-92cf-b02158119873",
+                                  "hasValidationError" : false,
+                                  "id" : "pbText"
+                                }
+                              ]
+                            ]
+                          },
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 6,
+                              "lg" : 6
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              }
+                            },
+                            "reference" : "50fd42a7-2686-49de-b9b8-f978c84ba086",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : "panel panel-primary"
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "repeatedCollection" : {
+                                      "type" : "variable"
+                                    }
+                                  },
+                                  "reference" : "5deb179c-7d4b-4207-ba2e-e570f5c8fb28",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "rows" : [
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "disabled" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "required" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Décision ?"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "left"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "inline" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "availableValues" : {
+                                            "type" : "expression",
+                                            "value" : "decisionList"
+                                          },
+                                          "displayedKey" : {
+                                            "type" : "constant",
+                                            "value" : "label"
+                                          },
+                                          "returnedKey" : {
+                                            "type" : "constant"
+                                          },
+                                          "selectedValue" : {
+                                            "type" : "variable",
+                                            "value" : "decisionSelected"
+                                          }
+                                        },
+                                        "reference" : "673de447-3094-4d4d-bf09-950d141073af",
+                                        "hasValidationError" : false,
+                                        "id" : "pbRadioButtons"
+                                      }
+                                    ]
+                                  ]
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "decisionSelected === undefined"
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "required" : {
+                                      "type" : "expression",
+                                      "value" : "decisionSelected.mandatory"
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "minLength" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "maxLength" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "{{decisionSelected.question}}"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 4
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "formInput.lesCommentairesInput.commentaire"
+                                    }
+                                  },
+                                  "reference" : "8a405497-273d-49c0-8a01-6c4df7376c44",
+                                  "hasValidationError" : false,
+                                  "id" : "pbTextarea"
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "repeatedCollection" : {
+                                      "type" : "variable"
+                                    }
+                                  },
+                                  "reference" : "df7088e0-bbe0-468f-b2bc-ef2b5fbfb944",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "rows" : [
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Default label"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "text" : {
+                                            "type" : "interpolation",
+                                            "value" : "<hr/>"
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "left"
+                                          }
+                                        },
+                                        "reference" : "9a6fef9d-25f8-4bab-8d2f-41afdbcc6052",
+                                        "hasValidationError" : false,
+                                        "id" : "pbText"
+                                      }
+                                    ]
+                                  ]
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "repeatedCollection" : {
+                                      "type" : "variable"
+                                    }
+                                  },
+                                  "reference" : "1250f9f7-456f-4855-b53c-ca1dd3376a69",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "rows" : [
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "expression",
+                                            "value" : "decisionSelected === undefined"
+                                          },
+                                          "disabled" : {
+                                            "type" : "expression",
+                                            "value" : "$form.$invalid"
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "{{decisionSelected.bouton}}"
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "center"
+                                          },
+                                          "buttonStyle" : {
+                                            "type" : "expression",
+                                            "value" : "decisionSelected.class"
+                                          },
+                                          "action" : {
+                                            "type" : "constant",
+                                            "value" : "Submit task"
+                                          },
+                                          "assign" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "url" : {
+                                            "type" : "interpolation"
+                                          },
+                                          "responseStatusCode" : {
+                                            "type" : "variable"
+                                          },
+                                          "dataToSend" : {
+                                            "type" : "expression",
+                                            "value" : "formOutput"
+                                          },
+                                          "dataFromSuccess" : {
+                                            "type" : "variable"
+                                          },
+                                          "closeOnSuccess" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "dataFromError" : {
+                                            "type" : "variable",
+                                            "value" : "formOutput._submitError"
+                                          },
+                                          "targetUrlOnSuccess" : {
+                                            "type" : "interpolation",
+                                            "value" : "{{applicationPage.backUrl}}"
+                                          },
+                                          "collectionToModify" : {
+                                            "type" : "variable"
+                                          },
+                                          "modalId" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "collectionPosition" : {
+                                            "type" : "constant",
+                                            "value" : "Last"
+                                          },
+                                          "valueToAdd" : {
+                                            "type" : "constant"
+                                          },
+                                          "removeItem" : {
+                                            "type" : "variable"
+                                          }
+                                        },
+                                        "reference" : "9de0bc5d-a134-487d-9161-0953fe86e8d8",
+                                        "hasValidationError" : false,
+                                        "id" : "customButtonColor"
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 12,
+                                          "lg" : 6
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "text" : {
+                                            "type" : "interpolation",
+                                            "value" : "Retour Accueil"
+                                          },
+                                          "type" : {
+                                            "type" : "constant",
+                                            "value" : "page"
+                                          },
+                                          "targetUrl" : {
+                                            "type" : "constant",
+                                            "value" : "http://"
+                                          },
+                                          "pageToken" : {
+                                            "type" : "expression",
+                                            "value" : "applicationPage.pageToken"
+                                          },
+                                          "processName" : {
+                                            "type" : "constant"
+                                          },
+                                          "processVersion" : {
+                                            "type" : "constant"
+                                          },
+                                          "taskId" : {
+                                            "type" : "constant"
+                                          },
+                                          "caseId" : {
+                                            "type" : "constant"
+                                          },
+                                          "target" : {
+                                            "type" : "constant",
+                                            "value" : "_self"
+                                          },
+                                          "appToken" : {
+                                            "type" : "expression",
+                                            "value" : "applicationPage.appToken"
+                                          },
+                                          "urlParams" : {
+                                            "type" : "constant"
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "center"
+                                          },
+                                          "buttonStyle" : {
+                                            "type" : "constant",
+                                            "value" : "warning"
+                                          }
+                                        },
+                                        "reference" : "f3d714b8-21bf-42ac-b37e-43fcfa1f0631",
+                                        "hasValidationError" : false,
+                                        "id" : "pbLink"
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : "alert alert-danger col-lg-6 col-lg-offset-3"
+                                          },
+                                          "hidden" : {
+                                            "type" : "expression",
+                                            "value" : "!formOutput._submitError.message"
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Default label"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "text" : {
+                                            "type" : "interpolation",
+                                            "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "left"
+                                          }
+                                        },
+                                        "reference" : "9b62e88f-5365-489b-9ea8-90ff7144dd6a",
+                                        "hasValidationError" : false,
+                                        "id" : "pbText"
+                                      }
+                                    ]
+                                  ]
+                                }
+                              ]
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 1,
+          "lg" : 1
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "0a8a7258-f439-4ef7-b495-b3148528bb72",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [ ]
+        ]
+      }
+    ],
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "c6c5125d-eda0-4ed3-91e4-335932f94a27",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [ ]
+        ]
+      }
+    ],
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "layout-footer remove-padding-and-margin"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "2c5382ef-42ab-4717-b213-8c311d95effc",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : "footer"
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "Default label"
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "<br/>\nPlateforme B-COMPLIANCE @2022\n<br/>"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                }
+              },
+              "reference" : "df9a56f6-01ad-446b-ac79-cdc0ad379a2f",
+              "hasValidationError" : false,
+              "id" : "pbText"
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "bbdc166b-c140-4958-b4c1-580ad4792e08",
+      "name" : "theme.css",
+      "type" : "css",
+      "order" : 1,
+      "external" : false
+    },
+    {
+      "id" : "acde0f1f-07f5-4c5d-9f98-01b553dd1542",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "3462be51-f148-47d5-94cb-a5d84b6af635",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "panelCSS" : {
+      "type" : "constant",
+      "value" : [
+        "panel panel-primary"
+      ],
+      "exposed" : false
+    },
+    "deviseJson" : {
+      "type" : "json",
+      "value" : [
+        "{}"
+      ],
+      "exposed" : false
+    },
+    "decisionSelected" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "decisionList" : {
+      "type" : "expression",
+      "value" : [
+        "let decision = [];",
+        "",
+        "let green = {",
+        "    \"label\" : \"Valider le dossier\",",
+        "    \"value\" : \"approved\",",
+        "    \"question\": \"Bonne nouvelle, quelque chose à ajouter avant !\",",
+        "    \"bouton\":\"Valider le dossier\",",
+        "    \"class\":\"success\",",
+        "    \"mandatory\": false",
+        "};",
+        "",
+        "let red = {",
+        "    \"label\" : \"Refuser le dossier\",",
+        "    \"value\" : \"denied\",",
+        "    \"question\": \"Quel est le motif de ce Refus ?\",",
+        "    \"bouton\":\"Rejeter le dossier\",",
+        "    \"class\":\"danger\",",
+        "    \"mandatory\": true",
+        "};",
+        "",
+        "let yellow = {",
+        "    \"label\" : \"Demander une correction\",",
+        "    \"value\" : \"updated\",",
+        "    \"question\": \"Que souhaitiez vous faire corriger sur le dossier ?\",",
+        "    \"bouton\":\"Demander une correction\",",
+        "    \"class\":\"warning\",",
+        "    \"mandatory\": true",
+        "};",
+        "",
+        "decision.push(red,yellow,green);",
+        "",
+        "return decision;"
+      ],
+      "exposed" : false
+    },
+    "aaaaDummyData" : {
+      "type" : "expression",
+      "value" : [
+        "//$data.request.response = $data.aaaaExample;",
+        "$data.taskId = 20015; ",
+        "return \"hello\";"
+      ],
+      "exposed" : false
+    },
+    "request" : {
+      "type" : "json",
+      "value" : [
+        "{",
+        "    \"status\": \"\",",
+        "    \"response\": \"\",",
+        "    \"error\": \"\"",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{",
+        "    \"lesCommentairesInput\" : { ",
+        "        \"idUser\" : \"\", ",
+        "        \"nomUser\" : \"\", ",
+        "        \"prenomUser\" : \"\", ",
+        "        \"commentaire\" : \"\",",
+        "        \"decision\" : \"\"",
+        "    }",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : [
+        "if( $data.laDemandeTransfert ){",
+        "    $data.formInput.lesCommentairesInput.idUser = $data.userData.userInfo.id;",
+        "    $data.formInput.lesCommentairesInput.nomUser = $data.userData.userInfo.lastname;",
+        "    $data.formInput.lesCommentairesInput.prenomUser = $data.userData.userInfo.firstname;",
+        "    $data.formInput.lesCommentairesInput.commentaire = $data.formInput.lesCommentairesInput.commentaire === \"\" ? \"Rien à Signaler\" : $data.formInput.lesCommentairesInput.commentaire;",
+        "    $data.formInput.lesCommentairesInput.decision = $data.decisionSelected.value;",
+        "\treturn {",
+        "\t\t//map laDemandeTransfert variable to expected task contract input",
+        "\t\tlaDemandeTransfertInput: {",
+        "\t\t\tdecision: $data.laDemandeTransfert.decision !== undefined ? $data.laDemandeTransfert.decision : null",
+        "\t\t},",
+        "\t\tlesCommentairesInput: $data.formInput.lesCommentairesInput",
+        "\t};",
+        "}",
+        "return \"Error\";"
+      ],
+      "exposed" : false
+    },
+    "laDemandeTransfert" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.laDemandeTransfert_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "submit_errors_list" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.formOutput && $data.formOutput._submitError && $data.formOutput._submitError.explanations){ const liElements = $data.formOutput._submitError.explanations .filter(cause => cause !== null) .map(cause => \"<li>\" + cause + \"</li>\") .join(''); if(liElements){ return \"<ul>\" + liElements + \"</ul>\"; } }"
+      ],
+      "exposed" : false
+    },
+    "task" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
+      ],
+      "exposed" : false
+    },
+    "listDesCommentaires" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByCaseId [xyz.bindtech.model.Comments]\",\"businessObjectName\":\"Comments\",\"query\":{\"name\":\"findByCaseId\",\"displayName\":\"findByCaseId\"},\"id\":\"xyz.bindtech.model.Comments\",\"filters\":[{\"name\":\"caseId\",\"type\":\"LONG\",\"collection\":false,\"value\":\"{{laDemandeTransfert.caseId}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "session" : {
+      "type" : "url",
+      "value" : [
+        "../API/system/session/1"
+      ],
+      "exposed" : false
+    },
+    "sessionInfo" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user/{{session.user_id}}?d=professional_data"
+      ],
+      "exposed" : false
+    },
+    "sessionTasks" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/humanTask?c=10&p=0&f=state=ready&f=user_id={{session.user_id}}"
+      ],
+      "exposed" : false
+    },
+    "userData" : {
+      "type" : "expression",
+      "value" : [
+        "return {",
+        "    userInfo : $data.sessionInfo,",
+        "    taskInfo : $data.sessionTasks",
+        "};"
+      ],
+      "exposed" : false
+    },
+    "applicationPage" : {
+      "type" : "json",
+      "value" : [
+        "{ ",
+        "    \"pageToken\" : \"kyt\", ",
+        "    \"appToken\" : \"compliance\", ",
+        "    \"backUrl\" : \"/bonita/apps/compliance/kyt\"",
+        "}"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "123509ad-3233-4595-93d6-20bc3ddb78b3",
+  "type" : "form",
+  "description" : "",
+  "displayName" : "KYT CONFORMITE TRANSFERT"
+}

@@ -1,0 +1,29 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "URL",
+      "name" : "url",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "HTML Style",
+      "name" : "style",
+      "type" : "text",
+      "defaultValue" : "width:100%;",
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customIFrameV703Drak",
+  "name" : "iFrameV703Drak",
+  "lastUpdate" : 1666032936638,
+  "template" : "@customIFrameV703Drak.tpl.html",
+  "controller" : "@customIFrameV703Drak.ctrl.js",
+  "custom" : true,
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

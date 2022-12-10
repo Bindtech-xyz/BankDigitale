@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Digital">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="walter.bates">
+      <firstName>Walter</firstName>
+      <lastName>bates</lastName>
+      <title>Mr</title>
+      <manager>abdou.niang</manager>
+      <personalData/>
+      <professionalData>
+        <email>walter.bates@digital.com</email>
+        <phoneNumber>2343245353423</phoneNumber>
+        <address>qsdqsdqsdqsdqsd</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="samba.diop">
+      <firstName>Samba</firstName>
+      <lastName>diop</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData>
+        <email>samba.diop@digital.com</email>
+        <phoneNumber>+218 (791) 896-1687</phoneNumber>
+        <address>6 Sutteridge Way</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="amadou.sonko">
+      <firstName>Amadou</firstName>
+      <lastName>sonko</lastName>
+      <title>Mr</title>
+      <manager>abdou.niang</manager>
+      <personalData/>
+      <professionalData>
+        <email>amadou.sonko@digital.com</email>
+        <phoneNumber>+420 (949) 677-2662</phoneNumber>
+        <address>4374 Westport Point</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="abdou.ngom">
+      <firstName>abdou</firstName>
+      <lastName>ngom</lastName>
+      <title>Mr</title>
+      <manager>abdou.niang</manager>
+      <personalData/>
+      <professionalData>
+        <email>abdou.ngom@digital.com</email>
+        <phoneNumber>+374 (523) 685-7044</phoneNumber>
+        <address>017 Maryland Place</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="mouhamed.sall">
+      <firstName>mouhamed</firstName>
+      <lastName>sall</lastName>
+      <title>Mr</title>
+      <manager>sangone.seck</manager>
+      <personalData/>
+      <professionalData>
+        <email>mouhamed.sall@digital.com</email>
+        <phoneNumber>+66 (739) 120-8662</phoneNumber>
+        <address>63 Basil Drive</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="helen.dieng">
+      <firstName>helen</firstName>
+      <lastName>dieng</lastName>
+      <title>Mme</title>
+      <manager>khady.diallo</manager>
+      <personalData/>
+      <professionalData>
+        <email>helen.dieng@digital.com</email>
+        <phoneNumber>+62 (256) 339-8996</phoneNumber>
+        <address>848 Mariners Cove Park</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="djiby.niang">
+      <firstName>djiby</firstName>
+      <lastName>niang</lastName>
+      <title>Mr</title>
+      <manager>khady.diallo</manager>
+      <personalData/>
+      <professionalData>
+        <email>djiby.niang@digital.com</email>
+        <phoneNumber>+86 (751) 485-6861</phoneNumber>
+        <address>1506 Anniversary Avenue</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="omar.sonko">
+      <firstName>omar</firstName>
+      <lastName>sonko</lastName>
+      <title>Mr</title>
+      <manager>samba.diop</manager>
+      <personalData/>
+      <professionalData>
+        <email>omar.sonko@digital.com</email>
+        <phoneNumber>+55 (326) 312-5846</phoneNumber>
+        <address>21770 High Crossing Place</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="khady.diallo">
+      <firstName>khady</firstName>
+      <lastName>diallo</lastName>
+      <title>Mme</title>
+      <manager>mouhamed.sall</manager>
+      <personalData/>
+      <professionalData>
+        <email>khady.diallo@digital.com</email>
+        <phoneNumber>+1 (281) 965-5101</phoneNumber>
+        <address>8 Parkside Way</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="amadou.diallo">
+      <firstName>amadou</firstName>
+      <lastName>diallo</lastName>
+      <title>Mr</title>
+      <manager>astou.sonko</manager>
+      <personalData/>
+      <professionalData>
+        <email>amadou.diallo@digital.com</email>
+        <phoneNumber>+84 (177) 581-1152</phoneNumber>
+        <address>1 David Way</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="awa.diallo">
+      <firstName>awa</firstName>
+      <lastName>diallo</lastName>
+      <title>Mme</title>
+      <manager>khady.diallo</manager>
+      <personalData/>
+      <professionalData>
+        <email>awa.diallo@digital.com</email>
+        <phoneNumber>+1 (432) 467-9858</phoneNumber>
+        <address>552 Kropf Road</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="sangone.seck">
+      <firstName>sangone</firstName>
+      <lastName>seck</lastName>
+      <title>Mr</title>
+      <manager>helen.niang</manager>
+      <personalData/>
+      <professionalData>
+        <email>sangone.seck@digital.com</email>
+        <phoneNumber>+31 (398) 863-6239</phoneNumber>
+        <address>930 Laurel Road</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="mouhamed.fall">
+      <firstName>mouhamed</firstName>
+      <lastName>fall</lastName>
+      <title>Mr</title>
+      <manager>omar.sonko</manager>
+      <personalData/>
+      <professionalData>
+        <email>mouhamed.fall@digital.com</email>
+        <phoneNumber>+86 (498) 834-4330</phoneNumber>
+        <address>9261 Northport Circle</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="mansour.ndiaye">
+      <firstName>mansour</firstName>
+      <lastName>ndiaye</lastName>
+      <title>Mr</title>
+      <manager>moustapha.ndiaye</manager>
+      <personalData/>
+      <professionalData>
+        <email>mansour.ndiaye@digital.com</email>
+        <phoneNumber>+7 (244) 855-2229</phoneNumber>
+        <address>757 Sugar Point</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="helen.niang">
+      <firstName>helen</firstName>
+      <lastName>niang</lastName>
+      <title>Mme</title>
+      <personalData/>
+      <professionalData>
+        <email>helen.niang@digital.com</email>
+        <phoneNumber>+509 (290) 421-7713</phoneNumber>
+        <address>5240 Lerdahl Terrace</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="adele.niang">
+      <firstName>adele</firstName>
+      <lastName>niang</lastName>
+      <title>Mme</title>
+      <manager>astou.sonko</manager>
+      <personalData/>
+      <professionalData>
+        <email>adele.niang@digital.com</email>
+        <phoneNumber>+53 (711) 408-3264</phoneNumber>
+        <address>26 Rowland Pass</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="astou.sonko">
+      <firstName>astou</firstName>
+      <lastName>sonko</lastName>
+      <title>Mme</title>
+      <manager>mouhamed.fall</manager>
+      <personalData/>
+      <professionalData>
+        <email>astou.sonko@digital.com</email>
+        <phoneNumber>+86 (248) 396-6578</phoneNumber>
+        <address>1751 Huxley Lane</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="adja.ndiaye">
+      <firstName>adja</firstName>
+      <lastName>ndiaye</lastName>
+      <title>Mme</title>
+      <manager>astou.sonko</manager>
+      <personalData/>
+      <professionalData>
+        <email>adja.ndiaye@digital.com</email>
+        <phoneNumber>+86 (610) 620-8216</phoneNumber>
+        <address>75 Clarendon Parkway</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="abdou.niang">
+      <firstName>abdou</firstName>
+      <lastName>niang</lastName>
+      <title>Mr</title>
+      <manager>mansour.ndiaye</manager>
+      <personalData/>
+      <professionalData>
+        <email>abdou.niang@digital.com</email>
+        <phoneNumber>+977 (865) 911-4345</phoneNumber>
+        <address>6 Crest Line Drive</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="moustapha.ndiaye">
+      <firstName>moustapha</firstName>
+      <lastName>ndiaye</lastName>
+      <title>Mr</title>
+      <manager>samba.diop</manager>
+      <personalData/>
+      <professionalData>
+        <email>moustapha.ndiaye@digital.com</email>
+        <phoneNumber>+62 (702) 584-0521</phoneNumber>
+        <address>39 Veith Plaza</address>
+      </professionalData>
+      <password encrypted="false">bbpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Member">
+      <displayName>Member</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Digitale">
+      <displayName>Digitale</displayName>
+    </group>
+    <group name="KYC" parentPath="/Digitale">
+      <displayName>Know Your Customer</displayName>
+    </group>
+    <group name="RM" parentPath="/Digitale/KYC">
+      <displayName>KYC Relationship Manager</displayName>
+    </group>
+    <group name="OFFICER" parentPath="/Digitale/KYC">
+      <displayName>KYC Expert Officer</displayName>
+    </group>
+    <group name="COMPLIANCE" parentPath="/Digitale/KYC">
+      <displayName>KYC Compliance Officer</displayName>
+    </group>
+    <group name="OFFICERETS" parentPath="/Digitale/KYC">
+      <displayName>KYC Expert Ets</displayName>
+    </group>
+    <group name="KYT" parentPath="/Digitale">
+      <displayName>Know Your Transactions</displayName>
+    </group>
+    <group name="RM" parentPath="/Digitale/KYT">
+      <displayName>KYT Relationship Manager</displayName>
+    </group>
+    <group name="OFFICER" parentPath="/Digitale/KYT">
+      <displayName>KYT Expert Officer</displayName>
+    </group>
+    <group name="COMPLIANCE" parentPath="/Digitale/KYT">
+      <displayName>KYT Compliance Officer</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>amadou.sonko</userName>
+      <roleName>Member</roleName>
+      <groupName>RM</groupName>
+      <groupParentPath>/Digitale/KYC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>Member</roleName>
+      <groupName>RM</groupName>
+      <groupParentPath>/Digitale/KYC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>abdou.ngom</userName>
+      <roleName>Member</roleName>
+      <groupName>RM</groupName>
+      <groupParentPath>/Digitale/KYC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>adele.niang</userName>
+      <roleName>Member</roleName>
+      <groupName>OFFICER</groupName>
+      <groupParentPath>/Digitale/KYC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>adja.ndiaye</userName>
+      <roleName>Member</roleName>
+      <groupName>OFFICER</groupName>
+      <groupParentPath>/Digitale/KYC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>amadou.diallo</userName>
+      <roleName>Member</roleName>
+      <groupName>OFFICER</groupName>
+      <groupParentPath>/Digitale/KYC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>awa.diallo</userName>
+      <roleName>Member</roleName>
+      <groupName>COMPLIANCE</groupName>
+      <groupParentPath>/Digitale/KYC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>djiby.niang</userName>
+      <roleName>Member</roleName>
+      <groupName>COMPLIANCE</groupName>
+      <groupParentPath>/Digitale/KYC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>helen.dieng</userName>
+      <roleName>Member</roleName>
+      <groupName>COMPLIANCE</groupName>
+      <groupParentPath>/Digitale/KYC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>Member</roleName>
+      <groupName>OFFICER</groupName>
+      <groupParentPath>/Digitale/KYC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>Member</roleName>
+      <groupName>COMPLIANCE</groupName>
+      <groupParentPath>/Digitale/KYC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>abdou.ngom</userName>
+      <roleName>Member</roleName>
+      <groupName>RM</groupName>
+      <groupParentPath>/Digitale/KYT</groupParentPath>
+    </membership>
+    <membership>
+      <userName>adele.niang</userName>
+      <roleName>Member</roleName>
+      <groupName>OFFICER</groupName>
+      <groupParentPath>/Digitale/KYT</groupParentPath>
+    </membership>
+    <membership>
+      <userName>helen.dieng</userName>
+      <roleName>Member</roleName>
+      <groupName>COMPLIANCE</groupName>
+      <groupParentPath>/Digitale/KYT</groupParentPath>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>Member</roleName>
+      <groupName>RM</groupName>
+      <groupParentPath>/Digitale/KYT</groupParentPath>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>Member</roleName>
+      <groupName>OFFICER</groupName>
+      <groupParentPath>/Digitale/KYT</groupParentPath>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>Member</roleName>
+      <groupName>COMPLIANCE</groupName>
+      <groupParentPath>/Digitale/KYT</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>

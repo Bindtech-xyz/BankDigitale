@@ -1,0 +1,37 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Données",
+      "name" : "afficheDetails",
+      "type" : "collection",
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customMyaffiche",
+  "name" : "myaffiche",
+  "lastUpdate" : 1666032934558,
+  "template" : "@customMyaffiche.tpl.html",
+  "controller" : "@customMyaffiche.ctrl.js",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "13645127-bd5f-4aa5-8d19-2ffe12676cb0",
+      "name" : "bootstrap.min.css",
+      "type" : "css",
+      "order" : 1,
+      "external" : false
+    },
+    {
+      "id" : "919e68ed-141f-4c46-90da-0b80637edc00",
+      "name" : "angular-locale_fr-fr.js",
+      "type" : "js",
+      "order" : 2,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

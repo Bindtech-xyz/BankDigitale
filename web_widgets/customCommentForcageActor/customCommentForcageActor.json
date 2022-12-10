@@ -1,0 +1,65 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Données",
+      "name" : "afficheDetails",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Auteur à droite",
+      "name" : "permute",
+      "type" : "boolean",
+      "defaultValue" : false,
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customCommentForcageActor",
+  "name" : "commentForcageActor",
+  "lastUpdate" : 1666032934556,
+  "template" : "@customCommentForcageActor.tpl.html",
+  "controller" : "@customCommentForcageActor.ctrl.js",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "1e32954a-27d8-4470-be96-dd64916edc48",
+      "name" : "moment2.js",
+      "type" : "js",
+      "order" : 6,
+      "external" : false
+    },
+    {
+      "id" : "13645127-bd5f-4aa5-8d19-2ffe12676cb0",
+      "name" : "bootstrap.min.css",
+      "type" : "css",
+      "order" : 2,
+      "external" : false
+    },
+    {
+      "id" : "536d7912-240d-4c02-af10-4533b8b52ed3",
+      "name" : "date-ago-filter.js",
+      "type" : "js",
+      "order" : 4,
+      "external" : false
+    },
+    {
+      "id" : "919e68ed-141f-4c46-90da-0b80637edc00",
+      "name" : "angular-locale_fr-fr.js",
+      "type" : "js",
+      "order" : 3,
+      "external" : false
+    },
+    {
+      "id" : "d6933c29-54b1-4f59-9609-fda154f2446b",
+      "name" : "bootstrap.min.js",
+      "type" : "js",
+      "order" : 1,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

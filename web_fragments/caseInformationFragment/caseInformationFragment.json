@@ -1,0 +1,270 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "id" : "caseInformationFragment",
+  "name" : "caseInformationFragment",
+  "lastUpdate" : 1666492054103,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "stepList" : {
+            "type" : "expression",
+            "value" : "steps"
+          },
+          "currentStep" : {
+            "type" : "expression",
+            "value" : "employee[0].status"
+          },
+          "showStepNumber" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "fb5b3bc9-49b4-40ca-ba5b-4ba9fa37089b",
+        "hasValidationError" : false,
+        "id" : "customStepBar"
+      }
+    ],
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "tasks.length === 0"
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "a3b91a3f-864c-4b03-afe7-8613b45379c1",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "Default label"
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "<strong><em> {{ \"Pending tasks\" | uiTranslate }} </em></strong>"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                }
+              },
+              "reference" : "853d9aae-c24d-4c9b-99e6-76e167a01087",
+              "hasValidationError" : false,
+              "id" : "pbText"
+            }
+          ],
+          [
+            {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable",
+                  "value" : "tasksGroupedByFour"
+                }
+              },
+              "reference" : "8d620f9c-95bf-4939-9218-90ca4b318dde",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [
+                [
+                  {
+                    "type" : "container",
+                    "dimension" : {
+                      "xs" : 3,
+                      "sm" : 3,
+                      "md" : 3,
+                      "lg" : 3
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "app-item-container"
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "repeatedCollection" : {
+                        "type" : "variable",
+                        "value" : "$item"
+                      }
+                    },
+                    "reference" : "4ad49e37-4340-48b8-9f64-f436aa78fa25",
+                    "hasValidationError" : false,
+                    "id" : "pbContainer",
+                    "rows" : [
+                      [
+                        {
+                          "type" : "fragment",
+                          "dimension" : {
+                            "xs" : 12,
+                            "sm" : 12,
+                            "md" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : "applicationContainerClasses($item) itemLine"
+                            },
+                            "hidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            }
+                          },
+                          "reference" : "2d60ad9f-a5ef-479d-a4e9-a4f937bffb5a",
+                          "hasValidationError" : false,
+                          "id" : "pendingTaskItem",
+                          "binding" : {
+                            "task" : "$item"
+                          }
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "id" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "steps" : {
+      "type" : "json",
+      "value" : [
+        "[\"Pending\",\"Review\",\"Resourcing\",\"Completed\"]"
+      ],
+      "exposed" : false
+    },
+    "employee" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findById [com.company.hr.OBDEmployee]\",\"businessObjectName\":\"OBDEmployee\",\"query\":{\"name\":\"findById\",\"displayName\":\"findById\"},\"id\":\"com.company.hr.OBDEmployee\",\"filters\":[{\"name\":\"id\",\"type\":\"LONG\",\"collection\":false,\"value\":\"{{id}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "tasks" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/humanTask?c=10&p=0&f=state=ready&f=caseId={{id}}"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "tasksGroupedByFour" : {
+      "type" : "expression",
+      "value" : [
+        "if (!$data.tasks) {",
+        "    return [];",
+        "}",
+        "",
+        "var i = 0;",
+        "var result = [];",
+        "while (i < $data.tasks.length) {",
+        "    if (i%4 === 0) {",
+        "        result.push([]);",
+        "    }",
+        "    result[Math.floor(i/4)].push($data.tasks[i]);",
+        "    i++;",
+        "}",
+        "console.log(\"result\",result)",
+        "return result;"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

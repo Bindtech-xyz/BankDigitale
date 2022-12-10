@@ -1,0 +1,6 @@
+== Migration notes (17 octobre 2022 à 20:55:20 CEST)
+
+=== Updates
+
+* `bonita-runtime.version` property has been updated from `7.14.0` to `7.15.0`.
+

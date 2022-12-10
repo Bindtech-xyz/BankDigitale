@@ -1,0 +1,11 @@
+<!-- The custom widget template is defined here
+   - You can use standard HTML tags and AngularJS built-in directives, scope and interpolation system
+   - Custom widget properties defined on the right can be used as variables in a templates with properties.newProperty
+   - Functions exposed in the controller can be used with ctrl.newFunction()
+ -->
+<small><em><span translate>Days taken / Total Days</span></em></small>
+<progressbar ng-class="clase" max="properties.total" value="properties.total - properties.value.daysAvailableCounter" type="{{type}}"><i>{{ctrl.diff}} / {{properties.total}}</i></progressbar>
+
+<!--<progressbar class="progress-striped" max="100" value="progressValue" type="primary">-->
+<!--    <i><span count-to="{{countTo}}" duration="1" count-from="{{countFrom}}"></span> / {{properties.total}}</i>-->
+<!--</progressbar>-->

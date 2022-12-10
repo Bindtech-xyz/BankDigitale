@@ -1,0 +1,38 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "User ID",
+      "name" : "userId",
+      "type" : "text",
+      "choiceValues" : [
+        "RebeccaPurple",
+        "Chartreuse",
+        "Tomato",
+        "DeepSkyBlue"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "Commentaires",
+      "name" : "comment",
+      "type" : "html",
+      "choiceValues" : [
+        "Yellow",
+        "LightGray"
+      ],
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customChatCommentaires",
+  "name" : "ChatCommentaires",
+  "lastUpdate" : 1666032936147,
+  "template" : "@customChatCommentaires.tpl.html",
+  "controller" : "@customChatCommentaires.ctrl.js",
+  "custom" : true,
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

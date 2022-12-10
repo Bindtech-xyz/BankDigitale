@@ -1,0 +1,77 @@
+{
+  "modelVersion" : "2.3",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Label",
+      "name" : "label",
+      "showFor" : "properties.labelHidden.value === false",
+      "type" : "text",
+      "defaultValue" : "Default label",
+      "bond" : "interpolation"
+    },
+    {
+      "label" : "Label position",
+      "name" : "labelPosition",
+      "showFor" : "properties.labelHidden.value === false",
+      "type" : "choice",
+      "defaultValue" : "top",
+      "choiceValues" : [
+        "left",
+        "top"
+      ],
+      "bond" : "constant"
+    },
+    {
+      "label" : "Label width",
+      "name" : "labelWidth",
+      "showFor" : "properties.labelHidden.value === false",
+      "type" : "integer",
+      "defaultValue" : 4,
+      "bond" : "constant",
+      "constraints" : {
+        "min" : "1",
+        "max" : "12"
+      }
+    },
+    {
+      "label" : "Alignment",
+      "name" : "alignment",
+      "showFor" : "properties.labelHidden.value === true",
+      "type" : "choice",
+      "defaultValue" : "left",
+      "choiceValues" : [
+        "left",
+        "center",
+        "right"
+      ],
+      "bond" : "constant"
+    },
+    {
+      "label" : "Status String",
+      "name" : "statusString",
+      "type" : "text",
+      "defaultValue" : "Complete",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Label hidden",
+      "name" : "labelHidden",
+      "type" : "boolean",
+      "defaultValue" : false,
+      "bond" : "constant"
+    }
+  ],
+  "id" : "customStatusIndicator",
+  "name" : "statusIndicator",
+  "lastUpdate" : 1666032935565,
+  "template" : "@customStatusIndicator.tpl.html",
+  "icon" : "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 20'><g><path fill='#fff' d='M8.2,20h15v-1h-15V20z M8.2,17h31v-1h-31V17z M8.2,4h32V3h-32V4z M8.2,14h34v-1h-34V14z M8.2,7h30V6h-30V7z M8.2,1h35V0h-35V1z'/></g></svg>",
+  "description" : "Short string or paragraph of text to be displayed. Can include HTML tags",
+  "custom" : true,
+  "order" : 19,
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

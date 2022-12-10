@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="scripting-groovy-script" version="1.0.1" name="test" modelVersion="7.12.0-004">
+  <parameters key="script">
+    <expression xsi:type="expression:Expression" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="variables">
+    <expression xsi:type="expression:Expression" returnType="java.util.List" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="fakeScriptExpression">
+    <expression xsi:type="expression:Expression" name="newScript()" content="//def checkMail = settingsParamsDAO.findByTypeCfg(&quot;mail&quot;);&#xA;&#xA;//println(checkMail);&#xA;println(&quot;salut&quot;)&#xA;//def mailParam = settingsParamsDAO.newInstance();&#xA;//mailParam.hostCfg = &quot;127.0.0.1&quot;&#xA;//mailParam.portCfg = &quot;25&quot;&#xA;//mailParam.userCfg = &quot;admin&quot;&#xA;//mailParam.passCfg = &quot;adminSalut&quot;&#xA;//mailParam.createdAt = new Date();&#xA;// mailParam.updatedAt = new Date();&#xA;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

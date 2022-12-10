@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+                    <!-- LINE 1  -->
+                    <div class="row">
+                        <div ng-class="{{sens}} ? 'col-xs-push-10':''" class="col-xs-2" >
+                        <div class="thumbnail">
+                            <img src="http://localhost:8080/bonita/portal/../theme/icons/default/icon_user.png" alt="">
+                            <h6>
+                                <p class="text-center">{{properties.afficheDetails.nom | uppercase}}</p>
+                                <p class="text-center">{{properties.afficheDetails.prenom | uppercase}}</p>
+                            </h6>
+                        </div>
+                        </div>
+                        <div ng-class="{{sens}} ? 'col-xs-pull-2':''" class="col-xs-10 thumbnail" >
+                            <p class="text-left"><ins>Avis</ins> : <em>{{properties.afficheDetails.dateAvis | dateAgo }}</em></p>
+                            <p class="text-left">{{properties.afficheDetails.commentaire | uppercase}}</p>
+                            <p class="text-right"><small><ins>Post date :</ins> {{properties.afficheDetails.dateAvis | date:'dd MMMM yyyy à HH:mm'}}</small></p>
+                        </div>
+                    </div>
+    </body>
+</html>
