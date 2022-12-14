@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="cmis-listdocuments" version="1.0.0" name="testlist" modelVersion="7.12.0-004">
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="admin" content="admin" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="admin" content="admin" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="http://52.209.127.9:80/alfresco/api/-default-/public/cmis/versions/1.1/atom" content="http://52.209.127.9:80/alfresco/api/-default-/public/cmis/versions/1.1/atom" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="repository">
+    <expression xsi:type="expression:Expression" name="Main repository" content="Main repository" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="binding_type">
+    <expression xsi:type="expression:Expression" name="atompub" content="atompub" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="folder_path">
+    <expression xsi:type="expression:Expression" name="/CLIENTS/000234" content="/CLIENTS/000234" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsObjectServiceUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsObjectServiceEndpointUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsRepositoryServiceUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsRepositoryServiceEndpointUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

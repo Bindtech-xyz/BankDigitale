@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "kytConformiteTransfert",
   "name" : "kytConformiteTransfert",
-  "lastUpdate" : 1670713482355,
+  "lastUpdate" : 1670975717983,
   "rows" : [
     [
       {
@@ -296,7 +296,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "KYT Conformite Transfert"
+                  "value" : "Conformite Transfert Dossier N° : {{laDemandeTransfert.caseId}}"
                 },
                 "level" : {
                   "type" : "constant",

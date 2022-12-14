@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "validationOfficer",
   "name" : "validationOfficer",
-  "lastUpdate" : 1666459251696,
+  "lastUpdate" : 1671030235855,
   "rows" : [
     [
       {
@@ -168,7 +168,7 @@
                 },
                 "text" : {
                   "type" : "constant",
-                  "value" : "Validation Officer"
+                  "value" : "Validation Officer Dossier N°: {{ouvertureCompte.caseId}}"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -3986,7 +3986,7 @@
                                                           },
                                                           "text" : {
                                                             "type" : "constant",
-                                                            "value" : "Document : {{$item.name}}"
+                                                            "value" : "Document :"
                                                           },
                                                           "level" : {
                                                             "type" : "constant",

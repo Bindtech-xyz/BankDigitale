@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "validationConformite",
   "name" : "validationConformite",
-  "lastUpdate" : 1670684545269,
+  "lastUpdate" : 1671030648082,
   "rows" : [
     [
       {
@@ -166,7 +166,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "Validation Conformite"
+                  "value" : "Validation Conformite Dossier N°: {{ouvertureCompte.caseId}}"
                 },
                 "level" : {
                   "type" : "constant",
@@ -2532,7 +2532,7 @@
                                                                 },
                                                                 "text" : {
                                                                   "type" : "interpolation",
-                                                                  "value" : "Document : {{$item.name}}"
+                                                                  "value" : "Document :"
                                                                 },
                                                                 "level" : {
                                                                   "type" : "constant",
@@ -5617,8 +5617,8 @@
     "aaDummyData" : {
       "type" : "expression",
       "value" : [
-        "//$data.taskId = 1;",
-        "//$data.clientIndice = \"000234\";",
+        "//$data.taskId = 140144;",
+        "//$data.clientIndice = ;",
         "return \"Hello Dummy Data\";"
       ],
       "exposed" : false

@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "kytUpdateTransfert",
   "name" : "kytUpdateTransfert",
-  "lastUpdate" : 1670712935022,
+  "lastUpdate" : 1670975683308,
   "rows" : [
     [
       {
@@ -298,7 +298,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "KYT Modification Transfert"
+                  "value" : "Modification Transfert Dossier N° : {{laDemandeTransfert.caseId}}"
                 },
                 "level" : {
                   "type" : "constant",

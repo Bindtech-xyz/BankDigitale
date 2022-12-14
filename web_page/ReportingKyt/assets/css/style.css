@@ -25,6 +25,7 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
     border-color: #C00;
     border-width: 1px;
 }
+
 .bonita-modal{
     overflow-y: auto;
 }
@@ -34,8 +35,17 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
     z-index: 9999;
 }
 
-.vertical-bottom {
-    display: flex;
-    justify-content: flex-end;
-    align-items:flex-end;
+.mpanel {
+  background-color: #fff;
+  border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    margin-left: 10px;
+    margin-right: 10px;
+
 }

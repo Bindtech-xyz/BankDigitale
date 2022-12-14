@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "kytNewTransfert",
   "name" : "kytNewTransfert",
-  "lastUpdate" : 1670712776621,
+  "lastUpdate" : 1671021298953,
   "rows" : [
     [
       {
@@ -20,7 +20,7 @@
           },
           "hidden" : {
             "type" : "constant",
-            "value" : false
+            "value" : true
           },
           "value" : {
             "type" : "expression",
@@ -119,10 +119,12 @@
             "value" : "userData"
           },
           "value12" : {
-            "type" : "constant"
+            "type" : "expression",
+            "value" : "checkAutorisationChange"
           },
           "nomvar12" : {
-            "type" : "constant"
+            "type" : "constant",
+            "value" : "checkAutorisationChange"
           },
           "value13" : {
             "type" : "constant"
@@ -2102,16 +2104,16 @@
                                 "value" : ""
                               },
                               "hidden" : {
-                                "type" : "constant",
-                                "value" : false
+                                "type" : "expression",
+                                "value" : "clientData.total <= 0"
                               },
                               "readOnly" : {
                                 "type" : "expression",
                                 "value" : "clientData.total > 0"
                               },
                               "required" : {
-                                "type" : "expression",
-                                "value" : "clientData.total <= 0"
+                                "type" : "constant",
+                                "value" : false
                               },
                               "allowHTML" : {
                                 "type" : "constant",
@@ -2420,8 +2422,8 @@
                                 "value" : false
                               },
                               "required" : {
-                                "type" : "constant",
-                                "value" : true
+                                "type" : "expression",
+                                "value" : "checkAutorisationChange"
                               },
                               "labelHidden" : {
                                 "type" : "constant",
@@ -2610,7 +2612,7 @@
                               },
                               "required" : {
                                 "type" : "constant",
-                                "value" : false
+                                "value" : true
                               },
                               "labelHidden" : {
                                 "type" : "constant",
@@ -3327,13 +3329,14 @@
         "$data.formInput.laDemandeTransfertInput.fatca = $data.clientData.data.fatca;",
         "$data.formInput.laDemandeTransfertInput.ppe = $data.clientData.data.ppe;",
         "",
+        "",
         "return { ",
         "    laDemandeTransfertInput: $data.formInput.laDemandeTransfertInput, ",
         "    docDpiDocumentInput: $data.formInput.docDpiDocumentInput, ",
-        "    docAutorisationDocumentInput: $data.formInput.docAutorisationDocumentInput, ",
+        "    docAutorisationDocumentInput: !isEmpty($data.formInput.docAutorisationDocumentInput) ? $data.formInput.docAutorisationDocumentInput : null, ",
         "    docProformaDocumentInput: $data.formInput.docProformaDocumentInput, ",
         "    docOrdreDocumentInput: $data.formInput.docOrdreDocumentInput,",
-        "    docAttestationDocumentInput: !isEmpty($data.formInput.docAttestationDocumentInput) ? $data.formInput.docAttestationDocumentInput : null",
+        "    docAttestationDocumentInput: $data.formInput.docAttestationDocumentInput",
         "};"
       ],
       "exposed" : false
@@ -3435,6 +3438,14 @@
         "    \"appToken\" : \"compliance\", ",
         "    \"backUrl\" : \"/bonita/apps/compliance/kyt\" ",
         "}"
+      ],
+      "exposed" : false
+    },
+    "checkAutorisationChange" : {
+      "type" : "expression",
+      "value" : [
+        "// Il faudra générer ici la devise pour avoir l'equivalent dans la devise selectionné",
+        "return $data.formInput.laDemandeTransfertInput.montant > 10000000 ? true : false;"
       ],
       "exposed" : false
     }

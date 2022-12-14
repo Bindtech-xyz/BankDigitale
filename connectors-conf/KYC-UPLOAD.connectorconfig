@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="cmis-uploadnewdocument" version="2.0.1" name="KYC-UPLOAD" modelVersion="7.12.0-004">
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="gedUSer" content="gedUSer" type="TYPE_VARIABLE" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Data" name="gedUSer">
+        <dataType xsi:type="process:StringType" href="platform:/resource/BankDigitale/diagrams/KycOnboardingDiagram-2.0.proc#_wNiz9zxFEe2AS5zA7_uUoA"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="gedPass" content="gedPass" type="TYPE_VARIABLE" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Data" name="gedPass">
+        <dataType xsi:type="process:StringType" href="platform:/resource/BankDigitale/diagrams/KycOnboardingDiagram-2.0.proc#_wNiz9zxFEe2AS5zA7_uUoA"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="gedHost" content="gedHost" type="TYPE_VARIABLE" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Data" name="gedHost">
+        <dataType xsi:type="process:StringType" href="platform:/resource/BankDigitale/diagrams/KycOnboardingDiagram-2.0.proc#_wNiz9zxFEe2AS5zA7_uUoA"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="repository">
+    <expression xsi:type="expression:Expression" name="Main Repository" content="Main Repository" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="binding_type">
+    <expression xsi:type="expression:Expression" name="atompub" content="atompub" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsObjectServiceUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsObjectServiceEndpointUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsRepositoryServiceUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsRepositoryServiceEndpointUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="document">
+    <expression xsi:type="expression:Expression" name="pieceIdentificationPart" content="pieceIdentificationPart" type="DOCUMENT_REF_TYPE" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Document" name="pieceIdentificationPart"/>
+    </expression>
+  </parameters>
+  <parameters key="folder_path">
+    <expression xsi:type="expression:Expression" name="gedDossierParent" content="gedDossierParent" type="TYPE_VARIABLE" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Data" name="gedDossierParent">
+        <dataType xsi:type="process:StringType" href="platform:/resource/BankDigitale/diagrams/KycOnboardingDiagram-2.0.proc#_wNiz9zxFEe2AS5zA7_uUoA"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="destinationName">
+    <expression xsi:type="expression:Expression" name="destinationName()" content="return indiceClient + '_PIECE_IDENTIFICATION.PDF'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Data" name="indiceClient">
+        <dataType xsi:type="process:StringType" href="platform:/resource/BankDigitale/diagrams/KycOnboardingDiagram-2.0.proc#_wNiz9zxFEe2AS5zA7_uUoA"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

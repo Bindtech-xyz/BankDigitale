@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="cmis-createfolder" version="2.0.1" name="CREATE FOLDER" modelVersion="7.12.0-004">
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="gedUSer" content="gedUSer" type="TYPE_VARIABLE" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Data" name="gedUSer">
+        <dataType xsi:type="process:StringType" href="platform:/resource/BankDigitale/diagrams/%20KYT_TRANSFERT-1.0.proc#_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="gedPass" content="gedPass" type="TYPE_VARIABLE" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Data" name="gedPass">
+        <dataType xsi:type="process:StringType" href="platform:/resource/BankDigitale/diagrams/%20KYT_TRANSFERT-1.0.proc#_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="gedHost" content="gedHost" type="TYPE_VARIABLE" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Data" name="gedHost">
+        <dataType xsi:type="process:StringType" href="platform:/resource/BankDigitale/diagrams/%20KYT_TRANSFERT-1.0.proc#_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="repository">
+    <expression xsi:type="expression:Expression" name="Main Repository" content="Main Repository" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="binding_type">
+    <expression xsi:type="expression:Expression" name="atompub" content="atompub" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="folder_path">
+    <expression xsi:type="expression:Expression" name="/" content="/" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="subfolder_name">
+    <expression xsi:type="expression:Expression" name="CLIENTS" content="CLIENTS" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsObjectServiceUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsObjectServiceEndpointUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsRepositoryServiceUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsRepositoryServiceEndpointUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

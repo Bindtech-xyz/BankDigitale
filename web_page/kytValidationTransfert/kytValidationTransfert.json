@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "kytValidationTransfert",
   "name" : "kytValidationTransfert",
-  "lastUpdate" : 1670713531374,
+  "lastUpdate" : 1670975631704,
   "rows" : [
     [
       {
@@ -63,10 +63,12 @@
             "value" : "formOutput"
           },
           "value5" : {
-            "type" : "constant"
+            "type" : "expression",
+            "value" : "listeDocuments"
           },
           "nomvar5" : {
-            "type" : "constant"
+            "type" : "constant",
+            "value" : "listeDocuments"
           },
           "value6" : {
             "type" : "constant"
@@ -296,7 +298,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "KYT Validation Transfert"
+                  "value" : "Validation Transfert Dossier N° : {{laDemandeTransfert.caseId}}"
                 },
                 "level" : {
                   "type" : "constant",
@@ -2327,8 +2329,8 @@
                                       "value" : ""
                                     },
                                     "hidden" : {
-                                      "type" : "constant",
-                                      "value" : false
+                                      "type" : "expression",
+                                      "value" : "listeDocuments.length > 0"
                                     },
                                     "repeatedCollection" : {
                                       "type" : "variable"
@@ -2378,7 +2380,7 @@
                                           },
                                           "text" : {
                                             "type" : "interpolation",
-                                            "value" : "Aucun Documents disponible pour ce client dans la GED."
+                                            "value" : "Aucun Documents disponible pour ce client dans la GED. {{listeDocuments.length}}"
                                           },
                                           "alignment" : {
                                             "type" : "constant",
@@ -2392,44 +2394,15 @@
                                     ]
                                   ]
                                 }
-                              ]
-                            ]
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "container",
-                            "dimension" : {
-                              "xs" : 12,
-                              "sm" : 12,
-                              "md" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "repeatedCollection" : {
-                                "type" : "variable"
-                              }
-                            },
-                            "reference" : "cb46f5ec-c1d5-41ca-89f4-610451de2ad5",
-                            "hasValidationError" : false,
-                            "id" : "pbContainer",
-                            "rows" : [
+                              ],
                               [
                                 {
-                                  "type" : "fragment",
+                                  "type" : "container",
                                   "dimension" : {
                                     "xs" : 12,
                                     "sm" : 12,
-                                    "md" : 12,
-                                    "lg" : 12
+                                    "md" : 10,
+                                    "lg" : 6
                                   },
                                   "propertyValues" : {
                                     "cssClasses" : {
@@ -2437,22 +2410,92 @@
                                       "value" : ""
                                     },
                                     "hidden" : {
-                                      "type" : "constant",
-                                      "value" : false
+                                      "type" : "expression",
+                                      "value" : "listeDocuments.length <= 0"
+                                    },
+                                    "repeatedCollection" : {
+                                      "type" : "variable",
+                                      "value" : "listeDocuments"
                                     }
                                   },
-                                  "reference" : "83413b9e-414c-4bf0-be1b-33929f838a27",
+                                  "reference" : "9fb33bea-e0a9-4530-bc3e-6c67a800d677",
                                   "hasValidationError" : false,
-                                  "id" : "labelDownloadFile",
-                                  "binding" : {
-                                    "label" : "Fiche Ouverture de compte",
-                                    "fichier" : "linkDownload"
-                                  }
+                                  "id" : "pbContainer",
+                                  "rows" : [
+                                    [
+                                      {
+                                        "type" : "container",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 3,
+                                          "lg" : 4
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "repeatedCollection" : {
+                                            "type" : "variable"
+                                          }
+                                        },
+                                        "reference" : "7d574fc3-24d3-4a0c-9fe7-865eb23fdd5e",
+                                        "hasValidationError" : false,
+                                        "id" : "pbContainer",
+                                        "rows" : [
+                                          [ ]
+                                        ]
+                                      },
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 9,
+                                          "lg" : 4
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : "thumbnail"
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "type" : {
+                                            "type" : "constant",
+                                            "value" : "Process document"
+                                          },
+                                          "url" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "document" : {
+                                            "type" : "variable",
+                                            "value" : "$item"
+                                          },
+                                          "showPreview" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          }
+                                        },
+                                        "reference" : "97d40c74-d864-4ec9-ba01-c329e574daca",
+                                        "hasValidationError" : false,
+                                        "id" : "pbFileViewer"
+                                      }
+                                    ]
+                                  ]
                                 }
                               ],
                               [
                                 {
-                                  "type" : "fragment",
+                                  "type" : "component",
                                   "dimension" : {
                                     "xs" : 12,
                                     "sm" : 12,
@@ -2467,43 +2510,39 @@
                                     "hidden" : {
                                       "type" : "constant",
                                       "value" : false
-                                    }
-                                  },
-                                  "reference" : "57d9c0a7-34b7-4321-8d48-303b641c2a4f",
-                                  "hasValidationError" : false,
-                                  "id" : "labelDownloadFile",
-                                  "binding" : {
-                                    "label" : "",
-                                    "fichier" : ""
-                                  }
-                                }
-                              ],
-                              [
-                                {
-                                  "type" : "fragment",
-                                  "dimension" : {
-                                    "xs" : 12,
-                                    "sm" : 12,
-                                    "md" : 12,
-                                    "lg" : 12
-                                  },
-                                  "propertyValues" : {
-                                    "cssClasses" : {
-                                      "type" : "constant",
-                                      "value" : ""
                                     },
-                                    "hidden" : {
+                                    "allowHTML" : {
                                       "type" : "constant",
-                                      "value" : false
+                                      "value" : true
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Default label"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 4
+                                    },
+                                    "text" : {
+                                      "type" : "interpolation",
+                                      "value" : "<br/>"
+                                    },
+                                    "alignment" : {
+                                      "type" : "constant",
+                                      "value" : "left"
                                     }
                                   },
-                                  "reference" : "7f805e91-4bed-4f14-85dc-d6c233a679c4",
+                                  "reference" : "21a0b62a-3379-4a45-9292-0ac0ed47addd",
                                   "hasValidationError" : false,
-                                  "id" : "labelDownloadFile",
-                                  "binding" : {
-                                    "label" : "",
-                                    "fichier" : ""
-                                  }
+                                  "id" : "pbText"
                                 }
                               ]
                             ]
@@ -3474,7 +3513,7 @@
       "type" : "expression",
       "value" : [
         "//$data.request.response = $data.aaaaExample;",
-        "//$data.taskId = 20008; ",
+        "//$data.taskId = 120214; ",
         "return \"hello\";"
       ],
       "exposed" : false
@@ -3607,6 +3646,13 @@
         "    \"appToken\" : \"compliance\", ",
         "    \"backUrl\" : \"/bonita/apps/compliance/kyt\"",
         "}"
+      ],
+      "exposed" : false
+    },
+    "listeDocuments" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/caseDocument?p=0&c=20&s={{laDemandeTransfert.indice}}"
       ],
       "exposed" : false
     }
