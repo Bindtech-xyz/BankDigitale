@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "ApplicationKyt",
   "name" : "ApplicationKyt",
-  "lastUpdate" : 1671026089514,
+  "lastUpdate" : 1671063776548,
   "rows" : [
     [
       {
@@ -3367,7 +3367,7 @@
         "propertyValues" : {
           "cssClasses" : {
             "type" : "constant",
-            "value" : "-webkit-transition:width 1000ms ease-in-out; -moz-transition:width 1000ms ease-in-out; -o-transition:width 1000ms ease-in-out; transition:width 1000ms ease-in-out;"
+            "value" : ""
           },
           "hidden" : {
             "type" : "expression",
@@ -3384,12 +3384,12 @@
         "rows" : [
           [
             {
-              "type" : "fragment",
+              "type" : "container",
               "dimension" : {
                 "xs" : 12,
                 "sm" : 12,
-                "md" : 12,
-                "lg" : 12
+                "md" : 2,
+                "lg" : 4
               },
               "propertyValues" : {
                 "cssClasses" : {
@@ -3397,16 +3397,112 @@
                   "value" : ""
                 },
                 "hidden" : {
-                  "type" : "expression",
-                  "value" : "applicationAuthorized"
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable"
                 }
               },
-              "reference" : "39cec172-349d-4242-bb3c-1825916b6ee5",
+              "reference" : "607ed8c6-6014-4f25-842a-f2f70bcac544",
               "hasValidationError" : false,
-              "id" : "NotAuthrozedPage",
-              "binding" : {
-                "applicationPage" : "applicationPage"
-              }
+              "id" : "pbContainer",
+              "rows" : [
+                [ ]
+              ]
+            },
+            {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 8,
+                "lg" : 4
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable"
+                }
+              },
+              "reference" : "36037e7b-95ef-45ba-b3c2-ae6710f3099b",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 6
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "srcType" : {
+                        "type" : "constant",
+                        "value" : "Asset"
+                      },
+                      "url" : {
+                        "type" : "constant"
+                      },
+                      "assetName" : {
+                        "type" : "constant",
+                        "value" : "image_processing20210906-11731-hat7da.gif"
+                      },
+                      "alt" : {
+                        "type" : "interpolation"
+                      }
+                    },
+                    "reference" : "83952021-81f5-415b-be34-734f11b259f9",
+                    "hasValidationError" : false,
+                    "id" : "pbImage"
+                  }
+                ]
+              ]
+            },
+            {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 2,
+                "lg" : 4
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable"
+                }
+              },
+              "reference" : "acf5c972-2c58-4883-9fb2-fe11a21ce3f9",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [
+                [ ]
+              ]
             }
           ]
         ]
@@ -3605,6 +3701,13 @@
   ],
   "assets" : [
     {
+      "id" : "a0869104-9eab-443a-8bf1-a3a7ea83bb61",
+      "name" : "animation_300_lbobtk1q.gif",
+      "type" : "img",
+      "order" : 6,
+      "external" : false
+    },
+    {
       "id" : "bb122e7d-08fe-46c3-8838-a7ad2f4c3bdc",
       "name" : "theme.css",
       "type" : "css",
@@ -3612,10 +3715,31 @@
       "external" : false
     },
     {
+      "id" : "6bc2ecac-1534-4ba8-8c2c-32e135e3e901",
+      "name" : "animation_500_lbobx9ng.gif",
+      "type" : "img",
+      "order" : 7,
+      "external" : false
+    },
+    {
       "id" : "0376af42-1e78-4740-a268-5c1447736eb4",
       "name" : "myCheckmark.js",
       "type" : "js",
       "order" : 1,
+      "external" : false
+    },
+    {
+      "id" : "1892e368-f01c-4669-ae79-af2744b7fad9",
+      "name" : "c3914746ce89e3728a07e8832d4552de.gif",
+      "type" : "img",
+      "order" : 4,
+      "external" : false
+    },
+    {
+      "id" : "7857bc83-16f9-4c6f-ad72-6ba4ed67ae86",
+      "name" : "animation_200_lboc447s.gif",
+      "type" : "img",
+      "order" : 8,
       "external" : false
     },
     {
@@ -3637,6 +3761,13 @@
       "name" : "ui-bootstrap-tpls-0.13.0.min.js",
       "type" : "js",
       "order" : 2,
+      "external" : false
+    },
+    {
+      "id" : "5b46c836-d971-46c8-b65c-8440775cbdd1",
+      "name" : "image_processing20210906-11731-hat7da.gif",
+      "type" : "img",
+      "order" : 5,
       "external" : false
     }
   ],

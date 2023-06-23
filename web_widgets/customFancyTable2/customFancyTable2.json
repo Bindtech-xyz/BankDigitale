@@ -35,7 +35,7 @@
   ],
   "id" : "customFancyTable2",
   "name" : "fancyTable2",
-  "lastUpdate" : 1666032936291,
+  "lastUpdate" : 1671045661028,
   "template" : "@customFancyTable2.tpl.html",
   "controller" : "@customFancyTable2.ctrl.js",
   "custom" : true,

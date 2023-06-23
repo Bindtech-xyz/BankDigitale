@@ -1,0 +1,115 @@
+{
+  "modelVersion" : "2.3",
+  "id" : "TextFooterVersionV2",
+  "name" : "TextFooterVersionV2",
+  "lastUpdate" : 1682605699074,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<br>{{footerText}} {{versionRuntime}}_{{versionBranding}}_{{versionProcess}}<br><br>"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          }
+        },
+        "reference" : "f46fba50-66a8-48bc-afc7-7873b3122ab5",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "footerText" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "versionBranding" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.session.branding_version;"
+      ],
+      "exposed" : false
+    },
+    "versionProcess" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.processDef[0].version;"
+      ],
+      "exposed" : false
+    },
+    "versionRuntime" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.session.version;"
+      ],
+      "exposed" : false
+    },
+    "session" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "processName" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "processDef" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/process?f=name={{processName}}&p=0&c=1&o=version%20desc&f=activationState=ENABLED"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "validationConformite",
   "name" : "validationConformite",
-  "lastUpdate" : 1671030648082,
+  "lastUpdate" : 1671034513976,
   "rows" : [
     [
       {
@@ -5363,10 +5363,12 @@
             "value" : "requestResponse"
           },
           "value3" : {
-            "type" : "constant"
+            "type" : "expression",
+            "value" : "formOutput"
           },
           "nomvar3" : {
-            "type" : "constant"
+            "type" : "constant",
+            "value" : "formOutput"
           },
           "value4" : {
             "type" : "constant"
@@ -5522,7 +5524,8 @@
         "\treturn {",
         "\t\t//map ouvertureCompte variable to expected task contract input",
         "\t\touvertureCompteInput: {",
-        "\t\t\tstatusCompliance: $data.ouvertureCompte.statusCompliance !== undefined ? $data.ouvertureCompte.statusCompliance : null",
+        "\t\t\t//statusCompliance: $data.ouvertureCompte.statusCompliance !== undefined ? $data.ouvertureCompte.statusCompliance : null",
+        "\t\t\tstatusCompliance: $data.selectedDecision.value",
         "\t\t},",
         "\t\tcommentairesInput: $data.formInput.commentairesInput",
         "\t}",
@@ -5617,7 +5620,7 @@
     "aaDummyData" : {
       "type" : "expression",
       "value" : [
-        "//$data.taskId = 140144;",
+        "//$data.taskId = 140157;",
         "//$data.clientIndice = ;",
         "return \"Hello Dummy Data\";"
       ],

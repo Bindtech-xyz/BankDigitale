@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "validationOfficer",
   "name" : "validationOfficer",
-  "lastUpdate" : 1671030235855,
+  "lastUpdate" : 1673757912561,
   "rows" : [
     [
       {
@@ -148,45 +148,40 @@
             {
               "type" : "component",
               "dimension" : {
-                "md" : 12,
-                "sm" : 12,
                 "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
                 "lg" : 12
               },
               "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
                 "hidden" : {
                   "type" : "constant",
                   "value" : false
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "Validation Officer Dossier N°: {{ouvertureCompte.caseId}}"
                 },
                 "level" : {
                   "type" : "constant",
                   "value" : "Level 3"
                 },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "text" : {
-                  "type" : "constant",
-                  "value" : "Validation Officer Dossier N°: {{ouvertureCompte.caseId}}"
-                },
                 "alignment" : {
                   "type" : "constant",
                   "value" : "center"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : true
                 }
               },
-              "reference" : "0ff096d2-1582-47e8-b5fd-c4f4c1ceaede",
+              "reference" : "1b127353-1037-4984-8d5d-699bbf97e35f",
               "hasValidationError" : false,
-              "id" : "pbTitle",
-              "description" : ""
+              "id" : "pbTitle"
             }
           ]
         ]
@@ -327,6 +322,89 @@
                 }
               },
               "reference" : "0b609648-106a-43e5-8373-975998ae856b",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [
+                [ ]
+              ]
+            }
+          ],
+          [
+            {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 2,
+                "lg" : 4
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable"
+                }
+              },
+              "reference" : "a62334eb-9f57-4301-af3d-1a80c3942a9e",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [
+                [ ]
+              ]
+            },
+            {
+              "type" : "fragment",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 8,
+                "lg" : 4
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "ac779498-3e1e-47b1-8d68-7e7883a26880",
+              "hasValidationError" : false,
+              "id" : "RisqueBoard",
+              "binding" : {
+                "response" : "requestResponse"
+              }
+            },
+            {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 2,
+                "lg" : 4
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable"
+                }
+              },
+              "reference" : "2cbf9aa4-24e8-4a0c-91f5-6f4ecb3b6555",
               "hasValidationError" : false,
               "id" : "pbContainer",
               "rows" : [
@@ -7376,38 +7454,43 @@
             "value" : "requestResponse"
           },
           "value6" : {
-            "type" : "constant"
+            "type" : "expression",
+            "value" : "listDecision"
           },
           "nomvar6" : {
             "type" : "constant",
-            "value" : ""
+            "value" : "listDecision"
           },
           "value7" : {
-            "type" : "constant"
+            "type" : "expression",
+            "value" : "ouvertureCompte"
           },
           "nomvar7" : {
             "type" : "constant",
-            "value" : ""
+            "value" : "ouvertureCompte"
           },
           "value8" : {
-            "type" : "constant"
+            "type" : "expression",
+            "value" : "blockDecision"
           },
           "nomVar1" : {
             "type" : "constant"
           },
           "value9" : {
-            "type" : "constant"
+            "type" : "expression",
+            "value" : "formInput"
           },
           "nomvar9" : {
             "type" : "constant",
-            "value" : ""
+            "value" : "formInput"
           },
           "value10" : {
-            "type" : "constant"
+            "type" : "expression",
+            "value" : "formOutput"
           },
           "nomvar10" : {
             "type" : "constant",
-            "value" : ""
+            "value" : "formOutput"
           },
           "value11" : {
             "type" : "constant"
@@ -7444,7 +7527,7 @@
           },
           "nomvar8" : {
             "type" : "constant",
-            "value" : ""
+            "value" : "blockDecision"
           }
         },
         "reference" : "b7833535-e80a-442e-b052-181d4a1050b7",
@@ -7585,9 +7668,9 @@
         "let decision = [];",
         "// ouvertureCompte.score",
         "let green = {\"label\" : \"Valider le dossier\",\"value\" : \"approved\",\"question\": \"Bonne nouvelle, quelque chose à ajouter avant ?\",\"bouton\":\"Valider le dossier\",\"class\":\"success\"};",
-        "let red =     {\"label\" : \"Refuser le dossier\",\"value\" : \"denied\",\"question\": \"Quel est le motif de ce Refus ?\",\"bouton\":\"Rejeter le dossier\",\"class\":\"danger\"};",
+        "let red = {\"label\" : \"Refuser le dossier\",\"value\" : \"denied\",\"question\": \"Quel est le motif de ce Refus ?\",\"bouton\":\"Rejeter le dossier\",\"class\":\"danger\"};",
         "let yellow = {\"label\" : \"Demander une correction\",\"value\" : \"updated\",\"question\": \"Que souhaitez vous que le chargé corrige sur le dossier ?\",\"bouton\":\"Demander une correction\",\"class\":\"warning\"};",
-        "let score = $data.ouvertureCompte.score;",
+        "let score = $data.ouvertureCompte.score.toLowerCase();",
         "",
         "switch (score) {",
         "\tcase \"red\":",
@@ -7680,9 +7763,9 @@
     "aaDummyData" : {
       "type" : "expression",
       "value" : [
-        "//$data.taskId = 10;",
+        "//$data.taskId = 200028;",
         "//$data.requestResponse = {\"clientData\":{\"id\":3,\"banque\":{\"id\":1,\"code\":\"CBAO SN\",\"libelle\":\"CBAO GROUPE ATTIJARIWAFA SENEGAL\"},\"autresRevenusClients\":[],\"comptes\":[],\"compteLieClients\":[{\"id\":1,\"banque\":{\"id\":1,\"code\":\"CBAO SN\",\"libelle\":\"CBAO GROUPE ATTIJARIWAFA SENEGAL\"},\"client\":3,\"agence\":\"01001\",\"numeroCompte\":\"34000010301\",\"clc\":\"76\",\"typeRelation\":\"SIGNATAIRE\"}],\"patrimoineClients\":[],\"revenusLocatifsClients\":[{\"id\":1,\"banque\":{\"id\":1,\"code\":\"CBAO SN\",\"libelle\":\"CBAO GROUPE ATTIJARIWAFA SENEGAL\"},\"client\":3,\"natureBien\":null,\"localisation\":\"DAKAR LIBERTE 6\",\"loyerMensuel\":1300000,\"gerance\":\"AGENCE SAMA IMMO\"}],\"agenceCode\":\"01001\",\"agenceLibelle\":\"SIEGE\",\"indiceClient\":\"000235\",\"clientType\":\"PP\",\"nom\":\"DIOUF\",\"prenom\":\"MARC\",\"dateNaissance\":\"1984-05-12T22:00:00.000+00:00\",\"lieuNaissance\":\"DAKAR\",\"statutMatrimonial\":\"MARIE\",\"regimeMatrimonial\":\"MONOGAMIE\",\"intituleConjoint\":\"MARIE SAGNA\",\"nombreEnfants\":3,\"nomParent\":null,\"typePieceIdentite\":\"CNI\",\"numeroPieceIdentite\":\"1435198409286\",\"dateEmissionPieceIdentite\":\"2019-03-16T23:00:00.000+00:00\",\"dateExpirationPieceIdentite\":\"2022-07-08T22:00:00.000+00:00\",\"delivrePar\":\"MINT\",\"nationalite\":\"SENEGALAISE\",\"nationaliteAutre\":null,\"typeDocumentJustificatifAdresse\":\"CERTIFICAT DE RESIDENCE\",\"telephoneDomicile\":null,\"telephoneMobile\":\"+221776767623\",\"telephoneBureau\":null,\"email\":\"marcdiouf84ATgmail.com\",\"emailPro\":null,\"adresseStructure\":null,\"passeportAmericain\":true,\"neAuxUsa\":true,\"carteVerteVisaUsa\":false,\"adresseUsa\":true,\"sejourUsa\":true,\"dureeSejourUsa\":20,\"lienAutresComptes\":false,\"lienEmployeAdministrateur\":false,\"intituleEmployeAdministrateur\":null,\"clientPrestataire\":false,\"profession\":\"DIRECTEUR GENERAL\",\"autoEmployeur\":true,\"activiteAutoEmploi\":\"INFRASTRUCTURES INFORMATIQUES\",\"rccm\":\"SN120985B19\",\"ninea\":\"74873\",\"employeur\":null,\"adresseEmployeur\":null,\"telephoneEmployeur\":null,\"intitulePersonneContact\":\"MARIE SAGNA\",\"telephonePersonneContact\":\"+221789349023\",\"posteEmploi\":\"DIRECTEUR GENERAL\",\"montantSalaire\":3500000,\"naturePrimes\":\"PRIMES DE RESULTATS\",\"frequencePrimes\":\"ANNUELLES\",\"montantPrimes\":15000000,\"montantAutresRevenus\":null,\"montantDomiciliation\":3500000},\"rules\":[{\"name\":\"dateExpirationPieceIdentite\",\"error\":\"DATE D'EXPIRATION DE LA PIECE D'IDENTITE doit être anterieure à la date du jour\",\"value\":false},{\"name\":\"email\",\"error\":\"EMAIL est incorrect\",\"value\":false}],\"risks\":[{\"risk\":\"yellow\",\"description\":\"Client Americain, veillez à remplir le formulaire W9\"}]};",
-        "//$data.clientIndice = '000239';",
+        "//$data.clientIndice = '000235';",
         "return \"hello Dummy data\";"
       ],
       "exposed" : false
@@ -7782,10 +7865,10 @@
         "];",
         "",
         "if($data.ouvertureCompte){",
-        "    if($data.ouvertureCompte.typeClient === \"Particulier\"){",
+        "    if($data.ouvertureCompte.typeClient === \"PP\"){",
         "        return blockParticulier.every ( bloc => bloc !== null && bloc );",
         "    }",
-        "    if($data.ouvertureCompte.typeClient === \"Personne Morale\"){",
+        "    if($data.ouvertureCompte.typeClient === \"PM\"){",
         "        return blockEts.every ( bloc => bloc !== null && bloc );",
         "    }",
         "}",

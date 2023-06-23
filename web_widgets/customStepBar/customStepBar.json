@@ -1,6 +1,6 @@
 {
   "modelVersion" : "2.3",
-  "previousArtifactVersion" : "2.0",
+  "previousArtifactVersion" : "2.2",
   "properties" : [
     {
       "label" : "Step List",
@@ -29,14 +29,14 @@
   ],
   "id" : "customStepBar",
   "name" : "StepBar",
-  "lastUpdate" : 1666497084037,
+  "lastUpdate" : 1671045954505,
   "template" : "@customStepBar.tpl.html",
   "controller" : "@customStepBar.ctrl.js",
   "description" : "Step progress bar indicating main steps and the current one",
   "custom" : true,
   "assets" : [
     {
-      "id" : "a7cb3ca0-d4b5-4e52-b7e9-7b15d36ca208",
+      "id" : "069217cb-9773-4c80-bab8-3af38894f108",
       "name" : "custom.css",
       "type" : "css",
       "order" : 1,

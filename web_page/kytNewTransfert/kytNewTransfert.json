@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "kytNewTransfert",
   "name" : "kytNewTransfert",
-  "lastUpdate" : 1671021298953,
+  "lastUpdate" : 1671035521459,
   "rows" : [
     [
       {
@@ -312,7 +312,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "KYT Nouveau Transfert"
+                  "value" : "Nouveau Transfert"
                 },
                 "level" : {
                   "type" : "constant",
@@ -507,7 +507,7 @@
                       },
                       "label" : {
                         "type" : "interpolation",
-                        "value" : "Veuillez saisir l'indice du prospect..."
+                        "value" : "Veuillez saisir le N° Compte :"
                       },
                       "labelPosition" : {
                         "type" : "constant",

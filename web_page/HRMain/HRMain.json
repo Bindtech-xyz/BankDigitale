@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "HRMain",
   "name" : "HRMain",
-  "lastUpdate" : 1666491934230,
+  "lastUpdate" : 1673766313436,
   "rows" : [
     [
       {
@@ -903,6 +903,10 @@
                                         "allowHTML" : {
                                           "type" : "constant",
                                           "value" : true
+                                        },
+                                        "step" : {
+                                          "type" : "constant",
+                                          "value" : 1
                                         }
                                       },
                                       "reference" : "8da82aa7-d723-4ef8-80dc-d4099bfcc7b3",

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_vr-NMHc1Ee2d-ZIdjXwhRQ" name=" KYT_TRANSFERT" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_vr-0QHc1Ee2d-ZIdjXwhRQ" name="kytTransfert" displayName="KYT TRANSFERT">
+    <elements xmi:type="process:Pool" xmi:id="_vr-0QHc1Ee2d-ZIdjXwhRQ" name="kytTransfert" version="3.0" displayName="KYT TRANSFERT">
       <elements xmi:type="process:Lane" xmi:id="_vr-0QXc1Ee2d-ZIdjXwhRQ" name="KYT CHARGE CLIENT" actor="_vr_bW3c1Ee2d-ZIdjXwhRQ">
         <elements xmi:type="process:StartEvent" xmi:id="_vr-0Qnc1Ee2d-ZIdjXwhRQ" name="Démarrer" outgoing="_jtjCUHslEe2sX70oh8DRSw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_vr-0Q3c1Ee2d-ZIdjXwhRQ" name="" content="" returnTypeFixed="true"/>
@@ -132,8 +132,8 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_sxgWIHslEe2sX70oh8DRSw" name="caseId" content="caseId" type="TYPE_VARIABLE" returnType="java.lang.Long">
               <referencedElements xmi:type="process:Data" xmi:id="_tenTwHslEe2sX70oh8DRSw" name="caseId" dataType="_vr_bb3c1Ee2d-ZIdjXwhRQ"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_sxgWIXslEe2sX70oh8DRSw" name="GET CASEID" content="processInstanceId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
-              <referencedElements xmi:type="expression:Expression" xmi:id="_iPIIQHtAEe2CLff_ir0Tkw" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_sxgWIXslEe2sX70oh8DRSw" name="GET CASEID" content="&#xA;import java.util.logging.Logger;&#xA;&#xA;import javax.swing.text.Document&#xA;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;public static void info(String mes, def value)&#xA;{&#xA;&#xA;&#x9;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def textestart = &quot; - [START]&quot;.padLeft(129,'%')&#xA;&#x9;def textestop = &quot; - [STOP]&quot;.padLeft(129,'%')&#xA;&#x9;def suffx = &quot;[ &quot;+value+&quot; ] &quot;&#xA;&#x9;def texto = &quot;( [ &quot;+mes.toUpperCase()+&quot; ] => &quot;&#xA;&#x9;def newText = texto.padLeft(60,'-')+suffx.padRight(30,'-')+' )'&#xA;&#xA;&#x9;loggerd.info(textestart);&#xA;&#x9;loggerd.info(newText);&#xA;&#x9;loggerd.info(textestop);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;}&#xA;&#xA;public static void startOP(String value)&#xA;{&#xA;&#x9;Logger logger = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def textestart = &quot; - [START]&quot;.padLeft(129,'%')&#xA;&#x9;def texto = &quot; [ &quot;+value.toUpperCase()+&quot; ] &quot;&#xA;&#x9;def newText = ('@'*20 + ' ' + '-' *20) + texto + ('-' *20 +' '+ '@'*20)&#xA;&#x9;logger.info(textestart);&#xA;&#x9;logger.info(newText);&#xA;}&#xA;&#xA;public static void stopOP(String value)&#xA;{&#xA;&#x9;Logger logger = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def textestop = &quot; - [STOP]&quot;.padLeft(129,'%')&#xA;&#x9;def texto = &quot; [ FIN &quot;+value.toUpperCase()+&quot; ] &quot;&#xA;&#x9;def newText = ('@'*20 + ' ' + '-' *20) + texto + ('-' *20 +' '+ '@'*20)&#xA;&#x9;logger.info(newText);&#xA;&#x9;logger.info(textestop);&#xA;&#x9;logger.info(&quot;#&quot;);&#xA;&#x9;logger.info(&quot;#&quot;);&#xA;}&#xA;&#xA;startOP(&quot;STRATING PROCESS &quot; + processInstanceId.toString() )&#xA;info(&quot;CASE NUMBER ======> &quot;, processInstanceId.toString())&#xA;&#xA;&#xA;&#xA;return processInstanceId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_CYvsoHvcEe2CLff_ir0Tkw" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_sxgWInslEe2sX70oh8DRSw" type="ASSIGNMENT"/>
           </operations>
@@ -795,7 +795,9 @@
           <connectors xmi:type="process:Connector" xmi:id="_c5M_sHswEe2sX70oh8DRSw" name="DOWNLOAD KYC OTHERS DOCS" definitionId="cmis-downloaddocument" event="ON_FINISH" ignoreErrors="true" definitionVersion="2.0.1">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_c5ON0HswEe2sX70oh8DRSw" definitionId="cmis-downloaddocument" version="2.0.1" modelVersion="7.12.0-004">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Br9q8HszEe2sX70oh8DRSw" key="username">
-                <expression xmi:type="expression:Expression" xmi:id="_Br9q8XszEe2sX70oh8DRSw" name="gedUser" content="gedUser" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_Br9q8XszEe2sX70oh8DRSw" name="gedUSer" content="gedUSer" type="TYPE_VARIABLE" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_DmFiIHvfEe2CLff_ir0Tkw" name="gedUSer" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Br-5EHszEe2sX70oh8DRSw" key="password">
                 <expression xmi:type="expression:Expression" xmi:id="_Br_gIHszEe2sX70oh8DRSw" name="gedPass" content="gedPass" type="TYPE_VARIABLE" returnTypeFixed="true">
@@ -814,9 +816,9 @@
                 <expression xmi:type="expression:Expression" xmi:id="_Br_gKHszEe2sX70oh8DRSw" name="atompub" content="atompub" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Br_gKXszEe2sX70oh8DRSw" key="remote_document_path">
-                <expression xmi:type="expression:Expression" xmi:id="_Br_gKnszEe2sX70oh8DRSw" name="kycOthersFolder" content="import java.util.logging.Logger;&#xA;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;public static void info(String mes, def value)&#xA;{&#xA;&#x9;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def textestart = &quot; - [START]&quot;.padLeft(129,'%')&#xA;&#x9;def textestop = &quot; - [STOP]&quot;.padLeft(129,'%')&#xA;&#x9;def suffx = &quot;[ &quot;+value+&quot; ] &quot;&#xA;&#x9;def texto = &quot;( [ &quot;+mes.toUpperCase()+&quot; ] => &quot;&#xA;&#x9;def newText = texto.padLeft(60,'-')+suffx.padRight(30,'-')+' )'&#xA;&#xA;&#x9;loggerd.info(textestart);&#xA;&#x9;loggerd.info(newText);&#xA;&#x9;loggerd.info(textestop);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;}&#xA;&#xA;def chemin = kycOthersFolder + multiInstanceIterator&#xA;&#xA;info(&quot;CHEMIN ======> &quot;, chemin)&#xA;&#xA;return chemin" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_ISFqYHszEe2sX70oh8DRSw" name="multiInstanceIterator" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
-                  <referencedElements xmi:type="process:Data" xmi:id="_ISG4gHszEe2sX70oh8DRSw" name="kycOthersFolder" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
+                <expression xmi:type="expression:Expression" xmi:id="_Br_gKnszEe2sX70oh8DRSw" name="kycOthersFolder" content="import java.util.logging.Logger;&#xA;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;public static void info(String mes, def value)&#xA;{&#xA;&#x9;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def textestart = &quot; - [START]&quot;.padLeft(129,'%')&#xA;&#x9;def textestop = &quot; - [STOP]&quot;.padLeft(129,'%')&#xA;&#x9;def suffx = &quot;[ &quot;+value+&quot; ] &quot;&#xA;&#x9;def texto = &quot;( [ &quot;+mes.toUpperCase()+&quot; ] => &quot;&#xA;&#x9;def newText = texto.padLeft(60,'-')+suffx.padRight(30,'-')+' )'&#xA;&#xA;&#x9;loggerd.info(textestart);&#xA;&#x9;loggerd.info(newText);&#xA;&#x9;loggerd.info(textestop);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;}&#xA;&#xA;def chemin = kycOthersFolder + multiInstanceIterator&#xA;&#xA;info(&quot;FICHIER : ======> &quot;, chemin)&#xA;&#xA;return chemin" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_HW9BIHveEe2CLff_ir0Tkw" name="multiInstanceIterator" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_HW-PQHveEe2CLff_ir0Tkw" name="kycOthersFolder" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Br_gLHszEe2sX70oh8DRSw" key="wsObjectServiceUrl">
@@ -836,10 +838,11 @@
               <leftOperand xmi:type="expression:Expression" xmi:id="_BsAHMXszEe2sX70oh8DRSw" name="docKycOthers" content="docKycOthers" type="DOCUMENT_REF_TYPE" returnType="java.util.List">
                 <referencedElements xmi:type="process:Document" xmi:id="_BsAHMnszEe2sX70oh8DRSw" name="docKycOthers" multiple="true"/>
               </leftOperand>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_BsAHM3szEe2sX70oh8DRSw" name="DOC KYC OTHERS" content="import org.bonitasoft.engine.bpm.document.DocumentValue&#xA;import java.util.logging.Logger;&#xA;&#xA;import javax.swing.text.Document&#xA;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;public static void info(String mes, def value)&#xA;{&#xA;&#xA;&#x9;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def textestart = &quot; - [START]&quot;.padLeft(129,'%')&#xA;&#x9;def textestop = &quot; - [STOP]&quot;.padLeft(129,'%')&#xA;&#x9;def suffx = &quot;[ &quot;+value+&quot; ] &quot;&#xA;&#x9;def texto = &quot;( [ &quot;+mes.toUpperCase()+&quot; ] => &quot;&#xA;&#x9;def newText = texto.padLeft(60,'-')+suffx.padRight(30,'-')+' )'&#xA;&#xA;&#x9;loggerd.info(textestart);&#xA;&#x9;loggerd.info(newText);&#xA;&#x9;loggerd.info(textestop);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;}&#xA;&#xA;def mDoc = new DocumentValue(documentOutput.getContent(), documentOutput.getMimeType(), indiceClient+&quot;_&quot;+documentOutput.getFileName())&#xA;List&lt;DocumentValue> listDocs = docKycOthers&#xA;listDocs.add(mDoc)&#xA;info(&quot;listDocs ======> &quot;, listDocs.size())&#xA;return listDocs" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-                <referencedElements xmi:type="process:Data" xmi:id="_BsAHNHszEe2sX70oh8DRSw" name="indiceClient" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
-                <referencedElements xmi:type="definition:Output" xmi:id="_BsAHNXszEe2sX70oh8DRSw" name="documentOutput" type="org.bonitasoft.engine.bpm.document.DocumentValue"/>
-                <referencedElements xmi:type="process:Document" xmi:id="_BsAHNnszEe2sX70oh8DRSw" name="docKycOthers" multiple="true"/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_BsAHM3szEe2sX70oh8DRSw" name="DOC KYC OTHERS" content="import org.bonitasoft.engine.bpm.document.DocumentValue&#xA;import java.util.logging.Logger;&#xA;&#xA;import javax.swing.text.Document&#xA;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;public static void info(String mes, def value)&#xA;{&#xA;&#xA;&#x9;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def textestart = &quot; - [START]&quot;.padLeft(129,'%')&#xA;&#x9;def textestop = &quot; - [STOP]&quot;.padLeft(129,'%')&#xA;&#x9;def suffx = &quot;[ &quot;+value+&quot; ] &quot;&#xA;&#x9;def texto = &quot;( [ &quot;+mes.toUpperCase()+&quot; ] => &quot;&#xA;&#x9;def newText = texto.padLeft(60,'-')+suffx.padRight(30,'-')+' )'&#xA;&#xA;&#x9;loggerd.info(textestart);&#xA;&#x9;loggerd.info(newText);&#xA;&#x9;loggerd.info(textestop);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;}&#xA;public static void section(String value)&#xA;{&#xA;&#x9;Logger logger = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def texto = &quot;{ &quot;+value.toUpperCase()+&quot; }&quot;.padLeft(102,'-o')&#xA;&#x9;logger.info(texto);&#xA;}&#xA;&#xA;def mDoc = new DocumentValue(documentOutput.getContent(), documentOutput.getMimeType(), indiceClient+&quot;_&quot;+documentOutput.getFileName())&#xA;List&lt;DocumentValue> listDocs = docKycOthers&#xA;listDocs.add(mDoc)&#xA;info(&quot;listDocs ======> &quot;, listDocs.size())&#xA;section(&quot;FIN BOUCLE OTHERS &quot;+ multiInstanceIterator)&#xA;return listDocs" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+                <referencedElements xmi:type="process:Data" xmi:id="_HW-2UHveEe2CLff_ir0Tkw" name="indiceClient" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
+                <referencedElements xmi:type="definition:Output" xmi:id="_HW-2UXveEe2CLff_ir0Tkw" name="documentOutput" type="org.bonitasoft.engine.bpm.document.DocumentValue"/>
+                <referencedElements xmi:type="process:Document" xmi:id="_HW_dYHveEe2CLff_ir0Tkw" name="docKycOthers" multiple="true"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_HW_dYXveEe2CLff_ir0Tkw" name="multiInstanceIterator" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
               </rightOperand>
               <operator xmi:type="expression:Operator" xmi:id="_BsAHN3szEe2sX70oh8DRSw" type="DOCUMENT_LIST_SET"/>
             </outputs>
@@ -1176,7 +1179,9 @@
           <connectors xmi:type="process:Connector" xmi:id="_ZXPU0HswEe2sX70oh8DRSw" name="DOWNLOAD KYC DOCS" definitionId="cmis-downloaddocument" event="ON_FINISH" ignoreErrors="true" definitionVersion="2.0.1">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_ZXP74HswEe2sX70oh8DRSw" definitionId="cmis-downloaddocument" version="2.0.1" modelVersion="7.12.0-004">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_bURz0HsxEe2sX70oh8DRSw" key="username">
-                <expression xmi:type="expression:Expression" xmi:id="_bURz0XsxEe2sX70oh8DRSw" name="gedUser" content="gedUser" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_bURz0XsxEe2sX70oh8DRSw" name="gedUSer" content="gedUSer" type="TYPE_VARIABLE" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_BLfvAHvfEe2CLff_ir0Tkw" name="gedUSer" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_bUTpAHsxEe2sX70oh8DRSw" key="password">
                 <expression xmi:type="expression:Expression" xmi:id="_bUTpAXsxEe2sX70oh8DRSw" name="gedPass" content="gedPass" type="TYPE_VARIABLE" returnTypeFixed="true">
@@ -1195,9 +1200,9 @@
                 <expression xmi:type="expression:Expression" xmi:id="_bUUQFnsxEe2sX70oh8DRSw" name="atompub" content="atompub" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_bUUQF3sxEe2sX70oh8DRSw" key="remote_document_path">
-                <expression xmi:type="expression:Expression" xmi:id="_bUUQGHsxEe2sX70oh8DRSw" name="KYC FOLDER" content="import java.util.logging.Logger;&#xA;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;public static void info(String mes, def value)&#xA;{&#xA;&#x9;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def textestart = &quot; - [START]&quot;.padLeft(129,'%')&#xA;&#x9;def textestop = &quot; - [STOP]&quot;.padLeft(129,'%')&#xA;&#x9;def suffx = &quot;[ &quot;+value+&quot; ] &quot;&#xA;&#x9;def texto = &quot;( [ &quot;+mes.toUpperCase()+&quot; ] => &quot;&#xA;&#x9;def newText = texto.padLeft(60,'-')+suffx.padRight(30,'-')+' )'&#xA;&#xA;&#x9;loggerd.info(textestart);&#xA;&#x9;loggerd.info(newText);&#xA;&#x9;loggerd.info(textestop);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;}&#xA;&#xA;def chemin = kycFolder + multiInstanceIterator&#xA;&#xA;info(&quot;CHEMIN ======> &quot;, chemin)&#xA;&#xA;return chemin" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_JUBd8HsyEe2sX70oh8DRSw" name="multiInstanceIterator" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
-                  <referencedElements xmi:type="process:Data" xmi:id="_JUCsEHsyEe2sX70oh8DRSw" name="kycFolder" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
+                <expression xmi:type="expression:Expression" xmi:id="_bUUQGHsxEe2sX70oh8DRSw" name="KYC FOLDER" content="import java.util.logging.Logger;&#xA;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;public static void info(String mes, def value)&#xA;{&#xA;&#x9;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def textestart = &quot; - [START]&quot;.padLeft(129,'%')&#xA;&#x9;def textestop = &quot; - [STOP]&quot;.padLeft(129,'%')&#xA;&#x9;def suffx = &quot;[ &quot;+value+&quot; ] &quot;&#xA;&#x9;def texto = &quot;( [ &quot;+mes.toUpperCase()+&quot; ] => &quot;&#xA;&#x9;def newText = texto.padLeft(60,'-')+suffx.padRight(30,'-')+' )'&#xA;&#xA;&#x9;loggerd.info(textestart);&#xA;&#x9;loggerd.info(newText);&#xA;&#x9;loggerd.info(textestop);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;}&#xA;&#xA;def chemin = kycFolder + multiInstanceIterator&#xA;&#xA;info(&quot;FICHIER : ======> &quot;, chemin)&#xA;&#xA;return chemin" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_r_ObAHvdEe2CLff_ir0Tkw" name="multiInstanceIterator" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_r_QQMHvdEe2CLff_ir0Tkw" name="kycFolder" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_bUUQGnsxEe2sX70oh8DRSw" key="wsObjectServiceUrl">
@@ -1217,10 +1222,10 @@
               <leftOperand xmi:type="expression:Expression" xmi:id="_ZXQjBXswEe2sX70oh8DRSw" name="docKyc" content="docKyc" type="DOCUMENT_REF_TYPE" returnType="java.util.List">
                 <referencedElements xmi:type="process:Document" xmi:id="_bUU3IHsxEe2sX70oh8DRSw" name="docKyc" multiple="true"/>
               </leftOperand>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_ZXQjBnswEe2sX70oh8DRSw" name="KYC FOLDER" content="import org.bonitasoft.engine.bpm.document.DocumentValue&#xA;import java.util.logging.Logger;&#xA;&#xA;import javax.swing.text.Document&#xA;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;public static void info(String mes, def value)&#xA;{&#xA;&#xA;&#x9;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def textestart = &quot; - [START]&quot;.padLeft(129,'%')&#xA;&#x9;def textestop = &quot; - [STOP]&quot;.padLeft(129,'%')&#xA;&#x9;def suffx = &quot;[ &quot;+value+&quot; ] &quot;&#xA;&#x9;def texto = &quot;( [ &quot;+mes.toUpperCase()+&quot; ] => &quot;&#xA;&#x9;def newText = texto.padLeft(60,'-')+suffx.padRight(30,'-')+' )'&#xA;&#xA;&#x9;loggerd.info(textestart);&#xA;&#x9;loggerd.info(newText);&#xA;&#x9;loggerd.info(textestop);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;}&#xA;&#xA;&#xA;&#xA;def mDoc = new DocumentValue(documentOutput.getContent(), documentOutput.getMimeType(), indiceClient+&quot;_&quot;+documentOutput.getFileName())&#xA;List&lt;DocumentValue> listDocs = docKyc&#xA;listDocs.add(mDoc)&#xA;info(&quot;listDocs taille ======> &quot;, listDocs.size())&#xA;return listDocs" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-                <referencedElements xmi:type="process:Data" xmi:id="_JUDTIHsyEe2sX70oh8DRSw" name="indiceClient" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
-                <referencedElements xmi:type="definition:Output" xmi:id="_JUD6MHsyEe2sX70oh8DRSw" name="documentOutput" type="org.bonitasoft.engine.bpm.document.DocumentValue"/>
-                <referencedElements xmi:type="process:Document" xmi:id="_JUD6MXsyEe2sX70oh8DRSw" name="docKyc" multiple="true"/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_ZXQjBnswEe2sX70oh8DRSw" name="KYC FOLDER" content="import org.bonitasoft.engine.bpm.document.DocumentValue&#xA;import java.util.logging.Logger;&#xA;&#xA;import javax.swing.text.Document&#xA;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;public static void info(String mes, def value)&#xA;{&#xA;&#xA;&#x9;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def textestart = &quot; - [START]&quot;.padLeft(129,'%')&#xA;&#x9;def textestop = &quot; - [STOP]&quot;.padLeft(129,'%')&#xA;&#x9;def suffx = &quot;[ &quot;+value+&quot; ] &quot;&#xA;&#x9;def texto = &quot;( [ &quot;+mes.toUpperCase()+&quot; ] => &quot;&#xA;&#x9;def newText = texto.padLeft(60,'-')+suffx.padRight(30,'-')+' )'&#xA;&#xA;&#x9;loggerd.info(textestart);&#xA;&#x9;loggerd.info(newText);&#xA;&#x9;loggerd.info(textestop);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;}&#xA;public static void section(String value)&#xA;{&#xA;&#x9;Logger logger = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def texto = &quot;{ &quot;+value.toUpperCase()+&quot; }&quot;.padLeft(102,'-o')&#xA;&#x9;logger.info(texto);&#xA;}&#xA;&#xA;// Essentiellement les dossiers dans le répertoire principale contienne l'indice&#xA;//def mDoc = new DocumentValue(documentOutput.getContent(), documentOutput.getMimeType(), indiceClient+&quot;_&quot;+documentOutput.getFileName())&#xA;&#xA;def mDoc = new DocumentValue(documentOutput.getContent(), documentOutput.getMimeType(), documentOutput.getFileName())&#xA;List&lt;DocumentValue> listDocs = docKyc&#xA;listDocs.add(mDoc)&#xA;info(&quot;listDocs taille ======> &quot;, listDocs.size())&#xA;section(&quot;FIN DE BOUCLE &quot; + multiInstanceIterator)&#xA;return listDocs" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+                <referencedElements xmi:type="process:Document" xmi:id="_iuZogHvgEe2CLff_ir0Tkw" name="docKyc" multiple="true"/>
+                <referencedElements xmi:type="definition:Output" xmi:id="_iua2oHvgEe2CLff_ir0Tkw" name="documentOutput" type="org.bonitasoft.engine.bpm.document.DocumentValue"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_iubdsHvgEe2CLff_ir0Tkw" name="multiInstanceIterator" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ"/>
               </rightOperand>
               <operator xmi:type="expression:Operator" xmi:id="_ZXQjCHswEe2sX70oh8DRSw" type="DOCUMENT_LIST_SET"/>
             </outputs>
@@ -1238,8 +1243,8 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WcfOYHtFEe2CLff_ir0Tkw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Wcf1cXtFEe2CLff_ir0Tkw" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_fQD80HtFEe2CLff_ir0Tkw" name="Porte1" outgoing="_E2wv0HsvEe2sX70oh8DRSw _TpiloHtFEe2CLff_ir0Tkw" incoming="_IWFUYHtFEe2CLff_ir0Tkw">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_IU2lUHtFEe2CLff_ir0Tkw" name="" content="" returnTypeFixed="true"/>
+        <elements xmi:type="process:XORGateway" xmi:id="_fQD80HtFEe2CLff_ir0Tkw" name="Porte GED" outgoing="_E2wv0HsvEe2sX70oh8DRSw _TpiloHtFEe2CLff_ir0Tkw" incoming="_IWFUYHtFEe2CLff_ir0Tkw">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_IU2lUHtFEe2CLff_ir0Tkw" name="VERIFIER SI LE CLIENT" content="VERIFIER SI LE CLIENT" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_IU1-QHtFEe2CLff_ir0Tkw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_IU2lUXtFEe2CLff_ir0Tkw" name="" content="" returnTypeFixed="true"/>
         </elements>
@@ -1346,7 +1351,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_qBosAHskEe2sX70oh8DRSw" name="admin" content="admin"/>
       </data>
       <data xmi:type="process:Data" xmi:id="_rmJLsHskEe2sX70oh8DRSw" name="gedHost" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_rmKZ0HskEe2sX70oh8DRSw" name="init_gedHost()" content="return 'http://52.209.127.9:80/alfresco/api/-default-/public/cmis/versions/1.1/atom/';" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_rmKZ0HskEe2sX70oh8DRSw" name="init_gedHost()" content="return 'http://3.249.42.94:80/alfresco/api/-default-/public/cmis/versions/1.1/atom/';" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
       </data>
       <data xmi:type="process:Data" xmi:id="_0XWioHskEe2sX70oh8DRSw" name="applicationCode" dataType="_vr_bcXc1Ee2d-ZIdjXwhRQ">
         <defaultValue xmi:type="expression:Expression" xmi:id="_0XXwwHskEe2sX70oh8DRSw" name="KYT" content="KYT"/>
@@ -1382,7 +1387,7 @@
         <targetForm xmi:type="expression:Expression" xmi:id="_BlicoHgvEe2d-ZIdjXwhRQ" name="kytNewTransfert" content="fc6ad1e7-097a-4db3-8391-5063e2cd4398" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_vr_bVnc1Ee2d-ZIdjXwhRQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_dFP9AHjSEe2d-ZIdjXwhRQ" name="newForm5" content="7dfaf3d2-f8cd-49c6-8a78-2c7d5546e1e5" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_dFP9AHjSEe2d-ZIdjXwhRQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_vr_bWHc1Ee2d-ZIdjXwhRQ" target="_Gq8MYHiAEe2d-ZIdjXwhRQ" source="_E1x4YHsvEe2sX70oh8DRSw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_vr_bWXc1Ee2d-ZIdjXwhRQ"/>
@@ -1495,11 +1500,11 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_T9h-0HsoEe2sX70oh8DRSw"/>
         <condition xmi:type="expression:Expression" xmi:id="_T9h-0XsoEe2sX70oh8DRSw" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_E2wv0HsvEe2sX70oh8DRSw" target="_E1x4YHsvEe2sX70oh8DRSw" source="_fQD80HtFEe2CLff_ir0Tkw">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_E2wv0HsvEe2sX70oh8DRSw" name="TRUE" target="_E1x4YHsvEe2sX70oh8DRSw" source="_fQD80HtFEe2CLff_ir0Tkw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_E2zzIHsvEe2sX70oh8DRSw"/>
-        <condition xmi:type="expression:Expression" xmi:id="_E2zzIXsvEe2sX70oh8DRSw" name="newScript()" content="import java.util.logging.Logger;&#xA;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;public static void info(String mes, def value)&#xA;{&#xA;&#xA;&#x9;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def textestart = &quot; - [START]&quot;.padLeft(129,'%')&#xA;&#x9;def textestop = &quot; - [STOP]&quot;.padLeft(129,'%')&#xA;&#x9;def suffx = &quot;[ &quot;+value+&quot; ] &quot;&#xA;&#x9;def texto = &quot;( [ &quot;+mes.toUpperCase()+&quot; ] => &quot;&#xA;&#x9;def newText = texto.padLeft(60,'-')+suffx.padRight(30,'-')+' )'&#xA;&#xA;&#x9;loggerd.info(textestart);&#xA;&#x9;loggerd.info(newText);&#xA;&#x9;loggerd.info(textestop);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;}&#xA;&#xA;&#xA;info(&quot;gedListTransfertFiles.size() ======> &quot;, gedListTransfertFiles.size())&#xA;info(&quot;gedListOthersTransfertFiles.size() ======> &quot;, gedListOthersTransfertFiles.size())&#xA;&#xA;if(gedListTransfertFiles.size() > 0 || gedListOthersTransfertFiles.size() > 0){&#xA;&#x9;return true&#xA;}&#xA;return false&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:JavaObjectData" xmi:id="_8qlrsHtGEe2CLff_ir0Tkw" name="gedListTransfertFiles" dataType="_vr_bcnc1Ee2d-ZIdjXwhRQ" className="java.util.List"/>
-          <referencedElements xmi:type="process:JavaObjectData" xmi:id="_8qm50HtGEe2CLff_ir0Tkw" name="gedListOthersTransfertFiles" dataType="_vr_bcnc1Ee2d-ZIdjXwhRQ" className="java.util.List"/>
+        <condition xmi:type="expression:Expression" xmi:id="_E2zzIXsvEe2sX70oh8DRSw" name="newScript()" content="import java.util.logging.Logger;&#xA;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;public static void info(String mes, def value)&#xA;{&#xA;&#xA;&#x9;Logger loggerd = Logger.getLogger(&quot;org.bonitasoft&quot;);&#xA;&#x9;def textestart = &quot; - [START]&quot;.padLeft(129,'%')&#xA;&#x9;def textestop = &quot; - [STOP]&quot;.padLeft(129,'%')&#xA;&#x9;def suffx = &quot;[ &quot;+value+&quot; ] &quot;&#xA;&#x9;def texto = &quot;( [ &quot;+mes.toUpperCase()+&quot; ] => &quot;&#xA;&#x9;def newText = texto.padLeft(60,'-')+suffx.padRight(30,'-')+' )'&#xA;&#xA;&#x9;loggerd.info(textestart);&#xA;&#x9;loggerd.info(newText);&#xA;&#x9;loggerd.info(textestop);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;&#x9;loggerd.info(&quot;#&quot;);&#xA;}&#xA;&#xA;&#xA;info(&quot;gedListTransfertFiles.size() ======> &quot;, gedListTransfertFiles.size())&#xA;info(&quot;gedListOthersTransfertFiles.size() ======> &quot;, gedListOthersTransfertFiles.size())&#xA;&#xA;if(gedListTransfertFiles.size() > 0 || gedListOthersTransfertFiles.size() > 0){&#xA;&#x9;info(&quot;YOUPIE JE VAIS RECUPERER DES DOCUMENTS &quot;, &quot;GED&quot;)&#xA;&#x9;return true&#xA;}&#xA;return false&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:JavaObjectData" xmi:id="_WmoAUKrxEe2Bq_s9OaA9nA" name="gedListTransfertFiles" dataType="_vr_bcnc1Ee2d-ZIdjXwhRQ" className="java.util.List"/>
+          <referencedElements xmi:type="process:JavaObjectData" xmi:id="_WmrDoKrxEe2Bq_s9OaA9nA" name="gedListOthersTransfertFiles" dataType="_vr_bcnc1Ee2d-ZIdjXwhRQ" className="java.util.List"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_IWFUYHtFEe2CLff_ir0Tkw" target="_fQD80HtFEe2CLff_ir0Tkw" source="_T8XhMHsoEe2sX70oh8DRSw">
@@ -1861,7 +1866,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_E2PycHsvEe2sX70oh8DRSw" type="3027" element="_E1x4YHsvEe2sX70oh8DRSw" fontName=".AppleSystemUIFont" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_E2XuQHsvEe2sX70oh8DRSw" type="5017"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E2RAkHsvEe2sX70oh8DRSw" x="35" y="77"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E2RAkHsvEe2sX70oh8DRSw" x="54" y="77"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_WwHVAHtFEe2CLff_ir0Tkw" type="3008" element="_WwERsHtFEe2CLff_ir0Tkw" fontName=".AppleSystemUIFont">
               <children xmi:type="notation:DecorationNode" xmi:id="_WwH8EHtFEe2CLff_ir0Tkw" type="5026">
@@ -1925,7 +1930,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_vr_bkHc1Ee2d-ZIdjXwhRQ" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_vr_bkXc1Ee2d-ZIdjXwhRQ" fontName=".AppleSystemUIFont"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vr_bknc1Ee2d-ZIdjXwhRQ" points="[-33, 23, -13, -77]$[-33, 70, -13, -30]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vr_bknc1Ee2d-ZIdjXwhRQ" points="[-40, 23, -1, -77]$[-40, 70, -1, -30]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U30kMHslEe2sX70oh8DRSw" id="(0.89,0.54)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_GHqAAHdKEe2d-ZIdjXwhRQ" type="4001" element="_GHox4HdKEe2d-ZIdjXwhRQ" source="_FmgBcHdPEe2d-ZIdjXwhRQ" target="_lnHKQHgrEe2d-ZIdjXwhRQ" roundedBendpointsRadius="10" routing="Rectilinear">
@@ -1954,14 +1959,14 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_KKKzNHdKEe2d-ZIdjXwhRQ" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_KKKzMXdKEe2d-ZIdjXwhRQ" fontName=".AppleSystemUIFont"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KKKzMndKEe2d-ZIdjXwhRQ" points="[-1, -30, -1, 103]$[-1, -103, -1, 30]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KKKzMndKEe2d-ZIdjXwhRQ" points="[16, -30, 122, 131]$[16, -161, 122, 0]$[-46, -161, 60, 0]"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_MVcX8HdKEe2d-ZIdjXwhRQ" type="4001" element="_MVJdAHdKEe2d-ZIdjXwhRQ" source="__auGkHdMEe2d-ZIdjXwhRQ" target="_FmgBcHdPEe2d-ZIdjXwhRQ" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_MVfbQHdKEe2d-ZIdjXwhRQ" type="6001">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_MVfbQXdKEe2d-ZIdjXwhRQ" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_MVc_AHdKEe2d-ZIdjXwhRQ" fontName=".AppleSystemUIFont"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MVc_AXdKEe2d-ZIdjXwhRQ" points="[-120, -6, 308, -211]$[-240, -6, 188, -211]$[-240, 136, 188, -69]$[-408, 136, 20, -69]$[-408, 195, 20, -10]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MVc_AXdKEe2d-ZIdjXwhRQ" points="[-120, -8, 202, -241]$[-187, -8, 135, -241]$[-187, 157, 135, -76]$[-302, 157, 20, -76]$[-302, 223, 20, -10]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MVuEwHdKEe2d-ZIdjXwhRQ" id="(1.0,0.6)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MVuEwXdKEe2d-ZIdjXwhRQ" id="(0.38333333333333336,0.16666666666666666)"/>
     </edges>
@@ -2106,7 +2111,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_E24roXsvEe2sX70oh8DRSw" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_E21BQXsvEe2sX70oh8DRSw" fontName=".AppleSystemUIFont"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_E21BQnsvEe2sX70oh8DRSw" points="[0, -1, 92, -64]$[-93, -1, -1, -64]$[-93, 38, -1, -25]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_E21BQnsvEe2sX70oh8DRSw" points="[-2, 1, 71, -62]$[-74, 1, -1, -62]$[-74, 38, -1, -25]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PpLukHtFEe2CLff_ir0Tkw" id="(0.046511627906976744,0.46511627906976744)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_IWLbAHtFEe2CLff_ir0Tkw" type="4001" element="_IWFUYHtFEe2CLff_ir0Tkw" source="_T8v7sHsoEe2sX70oh8DRSw" target="_fQT0cHtFEe2CLff_ir0Tkw" roundedBendpointsRadius="10" routing="Rectilinear">
@@ -2121,7 +2126,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Tp1gkXtFEe2CLff_ir0Tkw" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_TpydQHtFEe2CLff_ir0Tkw" fontName=".AppleSystemUIFont"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TpydQXtFEe2CLff_ir0Tkw" points="[0, -6, -46, -96]$[43, -6, -3, -96]$[43, 85, -3, -5]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TpydQXtFEe2CLff_ir0Tkw" points="[0, -6, -46, -96]$[45, -6, -1, -96]$[45, 83, -1, -7]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TqEKEHtFEe2CLff_ir0Tkw" id="(1.0,0.627906976744186)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TqEKEXtFEe2CLff_ir0Tkw" id="(0.5116279069767442,0.16279069767441862)"/>
     </edges>

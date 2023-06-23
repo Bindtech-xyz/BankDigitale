@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "ouvertureProspect",
   "name" : "ouvertureProspect",
-  "lastUpdate" : 1666032936425,
+  "lastUpdate" : 1682621975206,
   "rows" : [
     [
       {
@@ -56,40 +56,52 @@
             "value" : "score"
           },
           "value4" : {
-            "type" : "constant"
+            "type" : "expression",
+            "value" : "session"
           },
           "nomvar4" : {
-            "type" : "constant"
+            "type" : "constant",
+            "value" : "session"
           },
           "value5" : {
-            "type" : "constant"
+            "type" : "expression",
+            "value" : "userInfo"
           },
           "nomvar5" : {
-            "type" : "constant"
+            "type" : "constant",
+            "value" : "userInfo"
           },
           "value6" : {
-            "type" : "constant"
+            "type" : "expression",
+            "value" : "userData"
           },
           "nomvar6" : {
-            "type" : "constant"
+            "type" : "constant",
+            "value" : "userData"
           },
           "value7" : {
-            "type" : "constant"
+            "type" : "expression",
+            "value" : "version"
           },
           "nomvar7" : {
-            "type" : "constant"
+            "type" : "constant",
+            "value" : "version"
           },
           "value8" : {
-            "type" : "constant"
+            "type" : "expression",
+            "value" : "processDef"
           },
           "nomvar8" : {
-            "type" : "constant"
+            "type" : "constant",
+            "value" : "processDef"
           },
           "value9" : {
-            "type" : "constant"
+            "type" : "expression",
+            "value" : "processVersion"
           },
           "nomvar9" : {
-            "type" : "constant"
+            "type" : "constant",
+            "value" : "processVersion"
           },
           "value10" : {
             "type" : "constant"
@@ -8210,7 +8222,7 @@
     ],
     [
       {
-        "type" : "container",
+        "type" : "fragment",
         "dimension" : {
           "xs" : 12,
           "sm" : 12,
@@ -8225,69 +8237,17 @@
           "hidden" : {
             "type" : "constant",
             "value" : false
-          },
-          "repeatedCollection" : {
-            "type" : "variable",
-            "value" : ""
           }
         },
-        "reference" : "dcb93780-ac1d-4f42-b8d4-1d8d3f5e07ca",
+        "reference" : "138d1840-cc58-4fb5-b61f-b8d31bd45386",
         "hasValidationError" : false,
-        "id" : "pbContainer",
-        "rows" : [
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "xs" : 12,
-                "sm" : 12,
-                "md" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "labelHidden" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "label" : {
-                  "type" : "interpolation",
-                  "value" : "Default label"
-                },
-                "labelPosition" : {
-                  "type" : "constant",
-                  "value" : "top"
-                },
-                "labelWidth" : {
-                  "type" : "constant",
-                  "value" : 4
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "<br>{{footerText}} <br><br>"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "center"
-                }
-              },
-              "reference" : "93a143e2-75fe-4f99-ba84-17b32989a03f",
-              "hasValidationError" : false,
-              "id" : "pbText"
-            }
-          ]
-        ]
+        "id" : "TextFooterVersion",
+        "binding" : {
+          "footerText" : "footerText",
+          "versionBranding" : "version_branding",
+          "versionProcess" : "processVersion",
+          "versionRuntime" : "version"
+        }
       }
     ]
   ],
@@ -8676,9 +8636,44 @@
       "exposed" : false
     },
     "footerText" : {
+      "type" : "constant",
+      "value" : [
+        "BCOMPLIANCE - KYC"
+      ],
+      "exposed" : false
+    },
+    "version" : {
       "type" : "expression",
       "value" : [
-        "return \"Plateforme de traitement KYC 2022\";"
+        "return $data.session.version;"
+      ],
+      "exposed" : false
+    },
+    "version_branding" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.session.branding_version;"
+      ],
+      "exposed" : false
+    },
+    "processName" : {
+      "type" : "constant",
+      "value" : [
+        "kyconboarding"
+      ],
+      "exposed" : false
+    },
+    "processDef" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/process?f=name={{processName}}&p=0&c=1&o=version%20desc&f=activationState=ENABLED"
+      ],
+      "exposed" : false
+    },
+    "processVersion" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.processDef[0].version;"
       ],
       "exposed" : false
     }

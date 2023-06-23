@@ -233,7 +233,9 @@
         </businessObject>
         <businessObject qualifiedName="xyz.bindtech.model.SettingsParams">
             <fields>
-                <field type="LONG" length="255" name="processDef" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="processId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="processName" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="processVersion" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="typeapp" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="hostapp" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="portapp" nullable="true" collection="false"/>
@@ -242,16 +244,27 @@
                 <field type="BOOLEAN" length="255" name="statusapp" nullable="true" collection="false"/>
                 <field type="LOCALDATETIME" length="255" name="createdAt" nullable="true" collection="false"/>
                 <field type="LOCALDATETIME" length="255" name="updatedAt" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="userId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="lastname" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="firstname" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints>
                 <uniqueConstraint name="uniqueSettings">
                     <fieldNames>
-                        <fieldName>processDef</fieldName>
+                        <fieldName>processName</fieldName>
                         <fieldName>typeapp</fieldName>
+                        <fieldName>processId</fieldName>
                     </fieldNames>
                 </uniqueConstraint>
             </uniqueConstraints>
-            <queries/>
+            <queries>
+                <query name="findByProcessNameAndVersion" content="SELECT s &#10;FROM SettingsParams s &#10;WHERE s.processName = :processName&#10;AND s.processVersion = :processVersion&#10;ORDER BY s.createdAt ASC" returnType="xyz.bindtech.model.SettingsParams">
+                    <queryParameters>
+                        <queryParameter name="processName" className="java.lang.String"/>
+                        <queryParameter name="processVersion" className="java.lang.String"/>
+                    </queryParameters>
+                </query>
+            </queries>
             <indexes/>
         </businessObject>
     </businessObjects>

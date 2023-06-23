@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "kycClientTable",
   "name" : "kycClientTable",
-  "lastUpdate" : 1666032935064,
+  "lastUpdate" : 1673771105916,
   "rows" : [
     [
       {
@@ -267,7 +267,7 @@
         "propertyValues" : {
           "cssClasses" : {
             "type" : "constant",
-            "value" : ""
+            "value" : "vertical-bottom"
           },
           "hidden" : {
             "type" : "constant",
@@ -289,7 +289,7 @@
                 "xs" : 12,
                 "sm" : 12,
                 "md" : 12,
-                "lg" : 12
+                "lg" : 6
               },
               "propertyValues" : {
                 "cssClasses" : {

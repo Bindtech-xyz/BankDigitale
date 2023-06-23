@@ -8,6 +8,7 @@
             <applicationPage customPage="custompage_ComplianceHome" token="acceuil"/>
             <applicationPage customPage="custompage_ApplicationKyc" token="kyc"/>
             <applicationPage customPage="custompage_ApplicationKyt" token="kyt"/>
+            <applicationPage customPage="custompage_RevuePeriodique" token="revues"/>
             <applicationPage customPage="custompage_ReportingKyc" token="reportKyc"/>
             <applicationPage customPage="custompage_ReportingKyt" token="reportKyt"/>
         </applicationPages>
@@ -20,6 +21,9 @@
             </applicationMenu>
             <applicationMenu applicationPage="kyt">
                 <displayName>KYT</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="revues">
+                <displayName>Revue Périodique</displayName>
             </applicationMenu>
             <applicationMenu>
                 <displayName>Reporting</displayName>

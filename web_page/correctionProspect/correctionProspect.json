@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "correctionProspect",
   "name" : "correctionProspect",
-  "lastUpdate" : 1670700775819,
+  "lastUpdate" : 1682606172918,
   "rows" : [
     [
       {
@@ -65,11 +65,11 @@
                   },
                   "value" : {
                     "type" : "expression",
-                    "value" : "allTask"
+                    "value" : "requestResponse"
                   },
                   "nomvar" : {
                     "type" : "constant",
-                    "value" : "allTask"
+                    "value" : "requestResponse"
                   },
                   "value1" : {
                     "type" : "expression",
@@ -105,19 +105,19 @@
                   },
                   "value5" : {
                     "type" : "expression",
-                    "value" : "userId"
+                    "value" : "requestUrl"
                   },
                   "nomvar5" : {
                     "type" : "constant",
-                    "value" : "userId"
+                    "value" : "requestUrl"
                   },
                   "value6" : {
                     "type" : "expression",
-                    "value" : "userData"
+                    "value" : "morgansUrl"
                   },
                   "nomvar6" : {
                     "type" : "constant",
-                    "value" : "USERDATA"
+                    "value" : "morgansUrl"
                   },
                   "value7" : {
                     "type" : "expression",
@@ -221,7 +221,7 @@
           },
           "hidden" : {
             "type" : "constant",
-            "value" : false
+            "value" : true
           },
           "repeatedCollection" : {
             "type" : "variable",
@@ -256,7 +256,7 @@
                 },
                 "label" : {
                   "type" : "interpolation",
-                  "value" : "Afficher Variable"
+                  "value" : "Debug"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -690,7 +690,7 @@
         "rows" : [
           [
             {
-              "type" : "container",
+              "type" : "fragment",
               "dimension" : {
                 "xs" : 12,
                 "sm" : 12,
@@ -700,328 +700,19 @@
               "propertyValues" : {
                 "cssClasses" : {
                   "type" : "constant",
-                  "value" : "alert alert-info"
+                  "value" : ""
                 },
                 "hidden" : {
-                  "type" : "expression",
-                  "value" : "(requestResponse.risk.description == null ) || requestResponse.risk.description.length == 0"
-                },
-                "repeatedCollection" : {
-                  "type" : "variable",
-                  "value" : ""
-                }
-              },
-              "reference" : "19569835-86df-4e15-8d1c-426ffaf8d287",
-              "hasValidationError" : false,
-              "id" : "pbContainer",
-              "rows" : [
-                [
-                  {
-                    "type" : "container",
-                    "dimension" : {
-                      "xs" : 12,
-                      "sm" : 12,
-                      "md" : 3,
-                      "lg" : 3
-                    },
-                    "propertyValues" : {
-                      "cssClasses" : {
-                        "type" : "constant",
-                        "value" : ""
-                      },
-                      "hidden" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "repeatedCollection" : {
-                        "type" : "variable",
-                        "value" : ""
-                      }
-                    },
-                    "reference" : "60d256be-0cb9-4fd5-99f8-5d0be1692ef2",
-                    "hasValidationError" : false,
-                    "id" : "pbContainer",
-                    "rows" : [
-                      [
-                        {
-                          "type" : "component",
-                          "dimension" : {
-                            "xs" : 12,
-                            "sm" : 12,
-                            "md" : 12,
-                            "lg" : 12
-                          },
-                          "propertyValues" : {
-                            "cssClasses" : {
-                              "type" : "constant",
-                              "value" : ""
-                            },
-                            "hidden" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "text" : {
-                              "type" : "interpolation",
-                              "value" : "Risques :"
-                            },
-                            "level" : {
-                              "type" : "constant",
-                              "value" : "Level 4"
-                            },
-                            "alignment" : {
-                              "type" : "constant",
-                              "value" : "right"
-                            },
-                            "allowHTML" : {
-                              "type" : "constant",
-                              "value" : true
-                            }
-                          },
-                          "reference" : "96bde36d-15d1-4a44-94ed-1e99e2f6354e",
-                          "hasValidationError" : false,
-                          "id" : "pbTitle"
-                        }
-                      ]
-                    ]
-                  },
-                  {
-                    "type" : "container",
-                    "dimension" : {
-                      "xs" : 12,
-                      "sm" : 12,
-                      "md" : 9,
-                      "lg" : 9
-                    },
-                    "propertyValues" : {
-                      "cssClasses" : {
-                        "type" : "constant",
-                        "value" : ""
-                      },
-                      "hidden" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "repeatedCollection" : {
-                        "type" : "variable",
-                        "value" : "requestResponse.risk.description"
-                      }
-                    },
-                    "reference" : "840b0f24-d3ea-4500-9144-aa82779bd741",
-                    "hasValidationError" : false,
-                    "id" : "pbContainer",
-                    "rows" : [
-                      [
-                        {
-                          "type" : "component",
-                          "dimension" : {
-                            "xs" : 12,
-                            "sm" : 12,
-                            "md" : 12,
-                            "lg" : 12
-                          },
-                          "propertyValues" : {
-                            "cssClasses" : {
-                              "type" : "constant",
-                              "value" : "text text-danger"
-                            },
-                            "hidden" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "text" : {
-                              "type" : "interpolation",
-                              "value" : "{{$item}}"
-                            },
-                            "level" : {
-                              "type" : "constant",
-                              "value" : "Level 5"
-                            },
-                            "alignment" : {
-                              "type" : "constant",
-                              "value" : "left"
-                            },
-                            "allowHTML" : {
-                              "type" : "constant",
-                              "value" : true
-                            }
-                          },
-                          "reference" : "b2a9875b-ad97-4330-8c4f-9d654c0118dc",
-                          "hasValidationError" : false,
-                          "id" : "pbTitle"
-                        }
-                      ]
-                    ]
-                  }
-                ]
-              ]
-            }
-          ],
-          [
-            {
-              "type" : "container",
-              "dimension" : {
-                "xs" : 12,
-                "sm" : 12,
-                "md" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "cssClasses" : {
                   "type" : "constant",
-                  "value" : "alert alert-warning"
-                },
-                "hidden" : {
-                  "type" : "expression",
-                  "value" : "(requestResponse.rules == null ) || requestResponse.rules.length == 0"
-                },
-                "repeatedCollection" : {
-                  "type" : "variable",
-                  "value" : ""
+                  "value" : false
                 }
               },
-              "reference" : "4327dd95-7046-46b6-8bcb-5bcee903a92a",
+              "reference" : "bbca1694-ef3d-4546-9c60-7a5918e1fe4a",
               "hasValidationError" : false,
-              "id" : "pbContainer",
-              "rows" : [
-                [
-                  {
-                    "type" : "container",
-                    "dimension" : {
-                      "xs" : 12,
-                      "sm" : 12,
-                      "md" : 3,
-                      "lg" : 3
-                    },
-                    "propertyValues" : {
-                      "cssClasses" : {
-                        "type" : "constant",
-                        "value" : ""
-                      },
-                      "hidden" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "repeatedCollection" : {
-                        "type" : "variable",
-                        "value" : ""
-                      }
-                    },
-                    "reference" : "a721ad52-d87c-402f-950b-58f043f671f8",
-                    "hasValidationError" : false,
-                    "id" : "pbContainer",
-                    "rows" : [
-                      [
-                        {
-                          "type" : "component",
-                          "dimension" : {
-                            "xs" : 12,
-                            "sm" : 12,
-                            "md" : 12,
-                            "lg" : 12
-                          },
-                          "propertyValues" : {
-                            "cssClasses" : {
-                              "type" : "constant",
-                              "value" : ""
-                            },
-                            "hidden" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "text" : {
-                              "type" : "interpolation",
-                              "value" : "Correction à apporter"
-                            },
-                            "level" : {
-                              "type" : "constant",
-                              "value" : "Level 5"
-                            },
-                            "alignment" : {
-                              "type" : "constant",
-                              "value" : "right"
-                            },
-                            "allowHTML" : {
-                              "type" : "constant",
-                              "value" : true
-                            }
-                          },
-                          "reference" : "deb5a571-ad0e-4f77-bb76-de81406b5461",
-                          "hasValidationError" : false,
-                          "id" : "pbTitle"
-                        }
-                      ]
-                    ]
-                  },
-                  {
-                    "type" : "container",
-                    "dimension" : {
-                      "xs" : 12,
-                      "sm" : 12,
-                      "md" : 9,
-                      "lg" : 9
-                    },
-                    "propertyValues" : {
-                      "cssClasses" : {
-                        "type" : "constant",
-                        "value" : ""
-                      },
-                      "hidden" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "repeatedCollection" : {
-                        "type" : "variable",
-                        "value" : "listErrors"
-                      }
-                    },
-                    "reference" : "1af338b7-8cc5-4ea2-94f2-944ceaa5066d",
-                    "hasValidationError" : false,
-                    "id" : "pbContainer",
-                    "rows" : [
-                      [
-                        {
-                          "type" : "component",
-                          "dimension" : {
-                            "xs" : 12,
-                            "sm" : 12,
-                            "md" : 12,
-                            "lg" : 12
-                          },
-                          "propertyValues" : {
-                            "cssClasses" : {
-                              "type" : "constant",
-                              "value" : "text text-danger"
-                            },
-                            "hidden" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "text" : {
-                              "type" : "interpolation",
-                              "value" : "{{ $item }}"
-                            },
-                            "level" : {
-                              "type" : "constant",
-                              "value" : "Level 6"
-                            },
-                            "alignment" : {
-                              "type" : "constant",
-                              "value" : "left"
-                            },
-                            "allowHTML" : {
-                              "type" : "constant",
-                              "value" : true
-                            }
-                          },
-                          "reference" : "89c00dae-9177-4e65-8756-12db2a0d13b6",
-                          "hasValidationError" : false,
-                          "id" : "pbTitle"
-                        }
-                      ]
-                    ]
-                  }
-                ]
-              ]
+              "id" : "RisqueBoard",
+              "binding" : {
+                "response" : "requestResponse"
+              }
             }
           ]
         ]
@@ -7520,6 +7211,35 @@
           ]
         ]
       }
+    ],
+    [
+      {
+        "type" : "fragment",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "26100b90-4821-4c3d-8564-074347a29f60",
+        "hasValidationError" : false,
+        "id" : "TextFooterVersionV2",
+        "binding" : {
+          "footerText" : "versionText",
+          "session" : "session",
+          "processName" : "processName"
+        }
+      }
     ]
   ],
   "assets" : [
@@ -7586,7 +7306,7 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.ouvertureCompte && $data.context ){",
+        "if($data.ouvertureCompte && $data.context ){",
         "",
         "    $data.formInput.commentairesInput.idUser = $data.userInfo.id;",
         "\t$data.formInput.commentairesInput.nomUser = $data.userInfo.lastname;",
@@ -7694,9 +7414,11 @@
         "\t\t\tfilename : doc.newValue && doc.newValue.filename ? doc.newValue.filename : null,",
         "\t\t\ttempPath : doc.newValue && doc.newValue.tempPath ? doc.newValue.tempPath : null,",
         "\t\t\tcontentType : doc.newValue && doc.newValue.contentType ? doc.newValue.contentType : null",
-        "\t\t})),",
+        "\t\t}))",
         "\t};",
-        "}"
+        "}",
+        "",
+        "return \"nothing\";"
       ],
       "exposed" : false
     },
@@ -7888,7 +7610,7 @@
     "requestResponse" : {
       "type" : "url",
       "value" : [
-        "{{morgansUrl}}"
+        "{{requestUrl}}"
       ],
       "advancedOptions" : {
         "statusCode" : "requestStatus",
@@ -7972,8 +7694,8 @@
     "aaDummyData" : {
       "type" : "expression",
       "value" : [
-        "//$data.taskId = 18;",
-        "//$data.indiceId = \"000235\";",
+        "//$data.taskId = 220008;",
+        "//$data.indiceId = \"000234\";",
         "",
         "//$data.requestResponse = {\"clientData\":{\"id\":3,\"banque\":{\"id\":1,\"code\":\"CBAO SN\",\"libelle\":\"CBAO GROUPE ATTIJARIWAFA SENEGAL\"},\"autresRevenusClients\":[],\"comptes\":[],\"compteLieClients\":[{\"id\":1,\"banque\":{\"id\":1,\"code\":\"CBAO SN\",\"libelle\":\"CBAO GROUPE ATTIJARIWAFA SENEGAL\"},\"client\":3,\"agence\":\"01001\",\"numeroCompte\":\"34000010301\",\"clc\":\"76\",\"typeRelation\":\"SIGNATAIRE\"}],\"patrimoineClients\":[],\"revenusLocatifsClients\":[{\"id\":1,\"banque\":{\"id\":1,\"code\":\"CBAO SN\",\"libelle\":\"CBAO GROUPE ATTIJARIWAFA SENEGAL\"},\"client\":3,\"natureBien\":null,\"localisation\":\"DAKAR LIBERTE 6\",\"loyerMensuel\":1300000,\"gerance\":\"AGENCE SAMA IMMO\"}],\"agenceCode\":\"01001\",\"agenceLibelle\":\"SIEGE\",\"indiceClient\":\"000235\",\"clientType\":\"PP\",\"nom\":\"DIOUF\",\"prenom\":\"MARC\",\"dateNaissance\":\"1984-05-12T22:00:00.000+00:00\",\"lieuNaissance\":\"DAKAR\",\"statutMatrimonial\":\"MARIE\",\"regimeMatrimonial\":\"MONOGAMIE\",\"intituleConjoint\":\"MARIE SAGNA\",\"nombreEnfants\":3,\"nomParent\":null,\"typePieceIdentite\":\"CNI\",\"numeroPieceIdentite\":\"1435198409286\",\"dateEmissionPieceIdentite\":\"2019-03-16T23:00:00.000+00:00\",\"dateExpirationPieceIdentite\":\"2022-07-08T22:00:00.000+00:00\",\"delivrePar\":\"MINT\",\"nationalite\":\"SENEGALAISE\",\"nationaliteAutre\":null,\"typeDocumentJustificatifAdresse\":\"CERTIFICAT DE RESIDENCE\",\"telephoneDomicile\":null,\"telephoneMobile\":\"+221776767623\",\"telephoneBureau\":null,\"email\":\"marcdiouf84ATgmail.com\",\"emailPro\":null,\"adresseStructure\":null,\"passeportAmericain\":true,\"neAuxUsa\":true,\"carteVerteVisaUsa\":false,\"adresseUsa\":true,\"sejourUsa\":true,\"dureeSejourUsa\":20,\"lienAutresComptes\":false,\"lienEmployeAdministrateur\":false,\"intituleEmployeAdministrateur\":null,\"clientPrestataire\":false,\"profession\":\"DIRECTEUR GENERAL\",\"autoEmployeur\":true,\"activiteAutoEmploi\":\"INFRASTRUCTURES INFORMATIQUES\",\"rccm\":\"SN120985B19\",\"ninea\":\"74873\",\"employeur\":null,\"adresseEmployeur\":null,\"telephoneEmployeur\":null,\"intitulePersonneContact\":\"MARIE SAGNA\",\"telephonePersonneContact\":\"+221789349023\",\"posteEmploi\":\"DIRECTEUR GENERAL\",\"montantSalaire\":3500000,\"naturePrimes\":\"PRIMES DE RESULTATS\",\"frequencePrimes\":\"ANNUELLES\",\"montantPrimes\":15000000,\"montantAutresRevenus\":null,\"montantDomiciliation\":3500000},\"rules\":[{\"name\":\"dateExpirationPieceIdentite\",\"error\":\"DATE D'EXPIRATION DE LA PIECE D'IDENTITE doit être anterieure à la date du jour\",\"value\":false},{\"name\":\"email\",\"error\":\"EMAIL est incorrect\",\"value\":false}],\"risks\":[{\"risk\":\"yellow\",\"description\":\"Client Americain, veillez à remplir le formulaire W9\"}]};",
         "//$data.clientIndice = '000235';",
@@ -8040,13 +7762,6 @@
       ],
       "exposed" : false
     },
-    "footerText" : {
-      "type" : "expression",
-      "value" : [
-        "return \"Plateforme de traitement KYC 2022\";"
-      ],
-      "exposed" : false
-    },
     "primeInfo" : {
       "type" : "json",
       "value" : [
@@ -8058,14 +7773,9 @@
       "type" : "expression",
       "value" : [
         "if($data.requestResponse){",
-        "    if($data.requestResponse.risks.length > 0)",
-        "    {",
-        "        let scoring = $data.requestResponse.risks[0];",
-        "        return scoring.risk;   ",
-        "    }else{",
-        "        return \"GREEN\";",
-        "    }",
-        "}"
+        "    return $data.requestResponse.risk.score;",
+        "}",
+        "return \"NOSCORE\";"
       ],
       "exposed" : false
     },
@@ -8095,6 +7805,20 @@
       "value" : [
         "const nice = $data.requestResponse.risk;",
         "return trimListMap(nice);"
+      ],
+      "exposed" : false
+    },
+    "versionText" : {
+      "type" : "constant",
+      "value" : [
+        "BCOMPLIANCE - KYC"
+      ],
+      "exposed" : false
+    },
+    "processName" : {
+      "type" : "constant",
+      "value" : [
+        "kyconboarding"
       ],
       "exposed" : false
     }
